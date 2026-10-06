@@ -1,0 +1,11 @@
+{
+  "migration_date": "2026-10-04",
+  "new_robot_run": false,
+  "source_hashes_verified": 327,
+  "saved_point_counts_verified": true,
+  "summaries_match_saved_evidence": true,
+  "fresh_run_preparation_verified": true,
+  "git_remote_state": "Private repository created on 2026-10-05; archives, code, tools, paper, results, provenance and environment uploaded on 2026-10-06. This document accompanies the final documentation batch.",
+  "raw_bags_included": false,
+  "archive_layout": "Historical trees restored from root ZIP files with tools/restore_experiments.py; initial Git history in repository-history.bundle."
+}
