@@ -1,0 +1,40 @@
+{
+  "interpretation": "Descriptive development comparison; unmatched starts/routes/budgets; internal pixel tests; no ground-truth accuracy claim.",
+  "source": "experiments/2026-10-02-guarded/COMPARISON.json",
+  "runs": [
+    {
+      "experiment": "baseline",
+      "view_coverage_fraction": 0.9736842105263158,
+      "accepted_landmark_ids": 4020,
+      "fitted_keyframes": 1822,
+      "reserved_pixel_observations": 9859,
+      "median_px": 0.28067136045692614,
+      "p90_px": 0.854659685868618,
+      "maximum_px": 264.9458448244183,
+      "observations_above_8px": 1,
+      "total_wall_s": 2109.0,
+      "estimated_travel_m": 31.921147590258983,
+      "reached_goals": 74,
+      "epipolar_pairs": 89,
+      "epipolar_block_pairs": 4,
+      "epipolar_median_m": 0.08104932265077634
+    },
+    {
+      "experiment": "guarded_trial",
+      "view_coverage_fraction": 0.975,
+      "accepted_landmark_ids": 4029,
+      "fitted_keyframes": 1948,
+      "reserved_pixel_observations": 8920,
+      "median_px": 0.23998359568419114,
+      "p90_px": 0.7478224091000927,
+      "maximum_px": 7.68852030060223,
+      "observations_above_8px": 0,
+      "total_wall_s": 1955.0,
+      "estimated_travel_m": 37.70185371324093,
+      "reached_goals": 99,
+      "epipolar_pairs": 52,
+      "epipolar_block_pairs": 1,
+      "epipolar_median_m": 0.05814518821767102
+    }
+  ]
+}
