@@ -1,0 +1,8 @@
+# Convenience list for offline analysis; NOT a tested exact environment lock.
+# ROS packages come from the original Jazzy installation, not pip.
+numpy
+scipy
+opencv-python
+matplotlib
+Pillow
+psutil
