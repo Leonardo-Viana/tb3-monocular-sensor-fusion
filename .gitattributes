@@ -1,0 +1,7 @@
+# Keep archived byte-level evidence and source hashes valid on all platforms.
+experiments/** -text
+runtime/** -text
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
