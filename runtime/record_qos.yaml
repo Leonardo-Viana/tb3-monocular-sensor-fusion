@@ -1,0 +1,24 @@
+/tf_static:
+  history: keep_all
+  reliability: reliable
+  durability: transient_local
+/camera/image_raw/compressed:
+  history: keep_last
+  depth: 4
+  reliability: best_effort
+  durability: volatile
+/scan:
+  history: keep_last
+  depth: 10
+  reliability: best_effort
+  durability: volatile
+/imu:
+  history: keep_last
+  depth: 30
+  reliability: best_effort
+  durability: volatile
+/odom:
+  history: keep_last
+  depth: 10
+  reliability: best_effort
+  durability: volatile

@@ -1,0 +1,85 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 220; 225; 230
+    Fixed Frame: mono_map
+    Frame Rate: 10
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Metric grid
+      Enabled: true
+      Cell Size: 0.5
+      Plane Cell Count: 16
+      Color: 160; 170; 180
+    - Class: rviz_default_plugins/PointCloud2
+      Name: RGB monocular - live reconstruction
+      Enabled: true
+      Topic:
+        Value: /mission/points
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+      Position Transformer: XYZ
+      Color Transformer: RGB8
+      Style: Flat Squares
+      Size (m): 0.025
+    - Class: rviz_default_plugins/PointCloud2
+      Name: LiDAR 2D occupied cells (z=0)
+      Enabled: true
+      Topic:
+        Value: /mission/lidar_outline
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+      Position Transformer: XYZ
+      Color Transformer: FlatColor
+      Color: 90; 125; 150
+      Style: Flat Squares
+      Size (m): 0.04
+      Alpha: 0.55
+    - Class: rviz_default_plugins/Marker
+      Name: Autonomous mission state
+      Enabled: true
+      Topic:
+        Value: /mission/state
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+    - Class: rviz_default_plugins/Path
+      Name: Planned autonomous path
+      Enabled: true
+      Topic:
+        Value: /mono/planned_path
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+      Color: 230; 135; 20
+      Line Width: 0.04
+    - Class: rviz_default_plugins/Axes
+      Name: Robot pose
+      Enabled: true
+      Reference Frame: mono_base
+      Length: 0.25
+      Radius: 0.02
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 8
+      Focal Point:
+        X: 2.0
+        Y: 0
+        Z: 0.3
+      Pitch: 0.7
+      Yaw: 0.8
+Window Geometry:
+  Width: 1100
+  Height: 800
