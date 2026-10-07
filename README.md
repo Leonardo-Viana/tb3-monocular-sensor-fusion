@@ -1,8 +1,8 @@
 # TurtleBot3 monocular sensor fusion
 
-Experimental sparse 3D mapping with a simulated TurtleBot3 Waffle on a CPU-only desktop. Three-dimensional landmarks come from monocular RGB triangulation. Wheel odometry, raw IMU measurements and planar LiDAR SLAM support camera pose and autonomous exploration.
+Experimental sparse 3D mapping with a simulated TurtleBot3 Waffle with CPU-based estimation on a desktop with integrated graphics for rendering. Three-dimensional landmarks come from monocular RGB triangulation. Wheel odometry, raw IMU measurements and planar LiDAR SLAM support camera pose and autonomous exploration.
 
-**Status:** experimental research software, with three archived development stages. The latest mission completed on 2 October 2026. Surface completeness, absolute accuracy and global consistency are not established. This repository migration does not constitute a new robot run.
+**Status:** experimental research software, with three archived development stages. The latest archived completed mission is from 2 October 2026. Surface completeness, absolute accuracy and global consistency are not established. The repository migration itself did not constitute a new robot run. A separate, bounded replication campaign began on the Dell on 7 October 2026 at 19:31 UTC; its results remain pending review. See the [prospective protocol](docs/PROTOCOL-2026-10-07.md) and [campaign runner](tools/campaign_runner.py). The runner schedules up to three sequential trials, records resource usage and stops after a failed trial. It does not establish publication readiness.
 
 ![Saved guarded-run map](paper/guarded-map.png)
 
