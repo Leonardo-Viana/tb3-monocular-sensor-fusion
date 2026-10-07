@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-10-07",
+  "upstream_tree_sha": "9be186fb03d84ed4f293e5c0db71d8c05bbc91f3",
+  "files": [
+    {
+      "file": "package.xml",
+      "source_url": "https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3_simulations/2.3.7/turtlebot3_gazebo/package.xml",
+      "sha256": "b1de707fe69153691d58cafaa94a3c6db47820ef4bbf74605907da7dc5471e48",
+      "upstream_sha256": "b1de707fe69153691d58cafaa94a3c6db47820ef4bbf74605907da7dc5471e48",
+      "byte_identical": true,
+      "newline_normalized_identical": true,
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "original.world",
+      "source_url": "https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3_simulations/2.3.7/turtlebot3_gazebo/worlds/turtlebot3_world.world",
+      "sha256": "c9366524b786938956219153997e8569835c8a7777ec5bf219e318fa137021e5",
+      "upstream_sha256": "c9366524b786938956219153997e8569835c8a7777ec5bf219e318fa137021e5",
+      "byte_identical": true,
+      "newline_normalized_identical": true,
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "robot.sdf",
+      "source_url": "https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3_simulations/2.3.7/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf",
+      "sha256": "accd90e78a5f8b77f0909cfd662be06a26c3eb96c6719c039f80392788470184",
+      "upstream_sha256": "accd90e78a5f8b77f0909cfd662be06a26c3eb96c6719c039f80392788470184",
+      "byte_identical": true,
+      "newline_normalized_identical": true,
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "world_model.sdf",
+      "source_url": "https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3_simulations/2.3.7/turtlebot3_gazebo/models/turtlebot3_world/model.sdf",
+      "sha256": "80d2cd15882457b35ed9bbe7fcf70153158bdae4260916c8227e2fe5c624239a",
+      "upstream_sha256": "80d2cd15882457b35ed9bbe7fcf70153158bdae4260916c8227e2fe5c624239a",
+      "byte_identical": true,
+      "newline_normalized_identical": true,
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "wall.dae",
+      "source_url": "https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3_simulations/2.3.7/turtlebot3_gazebo/models/turtlebot3_world/meshes/wall.dae",
+      "sha256": "da086329366d78b9ee73a8dc210232683bdfee93db66bf8ddd14b1bd545cf089",
+      "upstream_sha256": "da086329366d78b9ee73a8dc210232683bdfee93db66bf8ddd14b1bd545cf089",
+      "byte_identical": true,
+      "newline_normalized_identical": true,
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "hexagon.dae",
+      "source_url": "https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3_simulations/2.3.7/turtlebot3_gazebo/models/turtlebot3_world/meshes/hexagon.dae",
+      "sha256": "16b1756c50e90c2161f89e2ada1047b69d495889c53522197520116de23a4cda",
+      "upstream_sha256": "16b1756c50e90c2161f89e2ada1047b69d495889c53522197520116de23a4cda",
+      "byte_identical": true,
+      "newline_normalized_identical": true,
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "sun.sdf",
+      "source_url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun",
+      "fuel_version": 3,
+      "sha256": "b10a6631cfac7340ad09c2fdfeb6d950afd3ec4daf1e7d0262c14adcf612d15a",
+      "matches_installed_fuel_model": true,
+      "author": "Nate Koenig",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "ground.sdf",
+      "source_url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground%20Plane",
+      "fuel_version": 5,
+      "sha256": "73be59778d84e631dd0996a0adc461af5e4c8717b93da7ee9151b9ae43e3ca25",
+      "matches_installed_fuel_model": true,
+      "author": "Nate Koenig",
+      "license": "CC0-1.0"
+    }
+  ]
+}

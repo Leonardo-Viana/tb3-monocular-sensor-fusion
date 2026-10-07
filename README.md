@@ -57,7 +57,7 @@ The maps can be opened directly from each experiment's `output/stable/monocular_
 
 No RGB-D/depth, compass/magnetometer, `Imu.orientation`, simulator ground-truth pose or world geometry is used by the estimator/controller. Scene geometry is used only for simulator authoring. No LiDAR extrusion, learned monocular depth or dense completion is performed. The stable fitter uses a flat-floor pose prior; this is not a full visual-inertial SLAM implementation with IMU preintegration.
 
-The repository is intended to remain private during development. A project-wide public license, paper authorship and archival DOI have not been assigned. See [third-party notices](THIRD_PARTY_NOTICES.md). Record the Git commit together with an experiment ID when citing or comparing results.
+Original code is licensed under **Apache 2.0**; original reports, figures and datasets under **CC BY 4.0**. Upstream assets retain their own licenses. See [licensing scope](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Paper authorship and archival DOI remain pending. Record the Git commit together with an experiment ID when citing or comparing results.
 
 ## Preserved experiment archives and Git history
 
