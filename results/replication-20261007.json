@@ -1,0 +1,2791 @@
+{
+  "campaign": {
+    "started_utc": "2026-10-07T19:31:26Z",
+    "planned_runs": 3,
+    "status": "bounded_campaign_completed_pending_scientific_review",
+    "host": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "logical_cpus": 12,
+    "physical_cpus": 6,
+    "total_memory_bytes": 7995703296,
+    "runner_sha256": "c09d8c4d43a65f3c04f2fa7a95ad932c7d74fe2d5579991bcf3b2e48d9db48a6",
+    "protocol_sha256": "50a85e54dc92565333b5824b135b24a763c9a4416559571c35f6d95188bfb572",
+    "finished_utc": "2026-10-07T20:35:17Z"
+  },
+  "archive_sha256": "5ec6a3c494305eae9ca7e15ef5cbb438d0e0ad401ef62a5d7acb79bb8a81f2d5",
+  "archive_file_count_verified": 188,
+  "status": "Completed; technically feasible, global consistency remains variable; not sufficient for a broad SLAM accuracy claim.",
+  "runs": [
+    {
+      "run": "repeat_01",
+      "seed": 23,
+      "controller": {
+        "state": "stopped",
+        "reason": "reachable_view_coverage_complete",
+        "terminal_reason": "reachable_view_coverage_complete",
+        "elapsed_wall_s": 1292.9,
+        "travelled_m": 31.53812233068402,
+        "goals_reached": 86,
+        "failed_goals": 12,
+        "recoveries": 0,
+        "map_metrics": {
+          "frontier_groups": 0,
+          "frontier_cells": 0,
+          "view_goals_total": 144,
+          "view_goals_covered": 141,
+          "view_goals_blocked": 3,
+          "view_coverage": 0.9791666666666666,
+          "free_area_m2": 19.619199122953425,
+          "reachable_area_m2": 8.284799629640583,
+          "reason": "home_reached"
+        },
+        "current_position": [
+          0.09093885272310848,
+          -0.07330964281724117
+        ],
+        "accepted_landmarks": 3371,
+        "new_track_fractions": [
+          592.0,
+          1.239864864864865,
+          0.4766214177978884,
+          0.06435137895812053,
+          0.05758157389635317,
+          0.012250453720508167,
+          0.035410129986553115,
+          0.04242424242424243,
+          0.03612956810631229,
+          0.05531062124248497,
+          0.08659323965058868,
+          0.10415938483047886,
+          0.03767014878125989,
+          0.028981086028065893
+        ],
+        "checkpoints": [
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_001",
+            "accepted_landmarks": 592,
+            "test_pixels": {
+              "n": 1680,
+              "median": 0.32804880214685284,
+              "p90": 1.0066515625803762,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 105.31366407201858
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_002",
+            "accepted_landmarks": 1325,
+            "test_pixels": {
+              "n": 3331,
+              "median": 0.29067451649193077,
+              "p90": 0.8938045370514436,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 58.04159562999848
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_003",
+            "accepted_landmarks": 1957,
+            "test_pixels": {
+              "n": 4881,
+              "median": 0.2690886157681221,
+              "p90": 0.8470774169313499,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 44.20215498199104
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_004",
+            "accepted_landmarks": 2083,
+            "test_pixels": {
+              "n": 5066,
+              "median": 0.26274126220482774,
+              "p90": 0.8312358710378285,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 10.050449792004656
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_005",
+            "accepted_landmarks": 2203,
+            "test_pixels": {
+              "n": 5348,
+              "median": 0.2617066595425246,
+              "p90": 0.831061650913516,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 8.156698453007266
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_006",
+            "accepted_landmarks": 2230,
+            "test_pixels": {
+              "n": 5397,
+              "median": 0.26067740302143183,
+              "p90": 0.8271438474856028,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 11.144044198998017
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_007",
+            "accepted_landmarks": 2309,
+            "test_pixels": {
+              "n": 5508,
+              "median": 0.26200093931873863,
+              "p90": 0.8234251125758811,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 12.12014936999185
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_008",
+            "accepted_landmarks": 2407,
+            "test_pixels": {
+              "n": 5763,
+              "median": 0.25656940638203707,
+              "p90": 0.8028205887800096,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 6.721873039001366
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_009",
+            "accepted_landmarks": 2494,
+            "test_pixels": {
+              "n": 5930,
+              "median": 0.2555188091439874,
+              "p90": 0.7993471579207375,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 5.471222355001373
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_010",
+            "accepted_landmarks": 2632,
+            "test_pixels": {
+              "n": 6137,
+              "median": 0.25292063101062084,
+              "p90": 0.7927315317750135,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 10.2946182040032
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_011",
+            "accepted_landmarks": 2860,
+            "test_pixels": {
+              "n": 6620,
+              "median": 0.25533987823435345,
+              "p90": 0.8034586890373069,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 17.638382983015617
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_012",
+            "accepted_landmarks": 3157,
+            "test_pixels": {
+              "n": 7141,
+              "median": 0.24931874415383992,
+              "p90": 0.7956157688045811,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 24.29019453699584
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_013",
+            "accepted_landmarks": 3276,
+            "test_pixels": {
+              "n": 7377,
+              "median": 0.2453830315993202,
+              "p90": 0.7877387827546563,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 7.972625586990034
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_01/output/snapshots/async_27942_014",
+            "accepted_landmarks": 3371,
+            "test_pixels": {
+              "n": 7554,
+              "median": 0.24479399459945092,
+              "p90": 0.7855180331554936,
+              "max": 7.355136346727213
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 26.883671520015923
+          }
+        ],
+        "dense_3d_complete": false,
+        "limits": {
+          "wall_seconds": 2400.0,
+          "maximum_frames": 5500
+        },
+        "available_memory_mb": 3057
+      },
+      "validation": {
+        "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+        "accepted_landmarks": 3371,
+        "cached_blocks_reused": 31,
+        "input_tracks": 72922,
+        "frames": 2027,
+        "blocks": [
+          {
+            "block": 0,
+            "input": 2117,
+            "fit": 1652,
+            "frames": 91,
+            "accepted": 498,
+            "converged": true,
+            "nfev": 246,
+            "rejections": {
+              "pose_sensitivity": 251,
+              "parallax": 836,
+              "training_inliers": 28,
+              "reprojection": 17,
+              "baseline": 20,
+              "validation_pixels": 2
+            }
+          },
+          {
+            "block": 1,
+            "input": 1127,
+            "fit": 799,
+            "frames": 57,
+            "accepted": 287,
+            "converged": true,
+            "nfev": 43,
+            "rejections": {
+              "pose_sensitivity": 131,
+              "reprojection": 15,
+              "validation_pixels": 3,
+              "parallax": 345,
+              "training_inliers": 12,
+              "baseline": 6
+            }
+          },
+          {
+            "block": 2,
+            "input": 667,
+            "fit": 305,
+            "frames": 47,
+            "accepted": 168,
+            "converged": true,
+            "nfev": 114,
+            "rejections": {
+              "pose_sensitivity": 64,
+              "parallax": 71,
+              "reprojection": 2
+            }
+          },
+          {
+            "block": 3,
+            "input": 992,
+            "fit": 714,
+            "frames": 59,
+            "accepted": 192,
+            "converged": true,
+            "nfev": 88,
+            "rejections": {
+              "parallax": 196,
+              "baseline": 100,
+              "pose_sensitivity": 220,
+              "reprojection": 6
+            }
+          },
+          {
+            "block": 4,
+            "input": 1048,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 5,
+            "input": 1256,
+            "fit": 377,
+            "frames": 20,
+            "accepted": 103,
+            "converged": true,
+            "nfev": 25,
+            "rejections": {
+              "pose_sensitivity": 148,
+              "parallax": 114,
+              "reprojection": 1,
+              "baseline": 10,
+              "training_inliers": 1
+            }
+          },
+          {
+            "block": 6,
+            "input": 1556,
+            "fit": 326,
+            "frames": 20,
+            "accepted": 77,
+            "converged": true,
+            "nfev": 169,
+            "rejections": {
+              "pose_sensitivity": 174,
+              "parallax": 75
+            }
+          },
+          {
+            "block": 7,
+            "input": 740,
+            "fit": 313,
+            "frames": 20,
+            "accepted": 187,
+            "converged": true,
+            "nfev": 35,
+            "rejections": {
+              "pose_sensitivity": 91,
+              "parallax": 34,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 8,
+            "input": 1048,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 9,
+            "input": 1259,
+            "fit": 627,
+            "frames": 37,
+            "accepted": 274,
+            "converged": true,
+            "nfev": 231,
+            "rejections": {
+              "pose_sensitivity": 95,
+              "parallax": 120,
+              "reprojection": 5,
+              "baseline": 132,
+              "training_inliers": 1
+            }
+          },
+          {
+            "block": 10,
+            "input": 1618,
+            "fit": 502,
+            "frames": 35,
+            "accepted": 171,
+            "converged": true,
+            "nfev": 85,
+            "rejections": {
+              "pose_sensitivity": 61,
+              "parallax": 253,
+              "training_inliers": 7,
+              "baseline": 10
+            }
+          },
+          {
+            "block": 11,
+            "input": 1315,
+            "fit": 392,
+            "frames": 14,
+            "accepted": 88,
+            "converged": true,
+            "nfev": 31,
+            "rejections": {
+              "pose_sensitivity": 115,
+              "parallax": 187,
+              "reprojection": 2
+            }
+          },
+          {
+            "block": 12,
+            "input": 1249,
+            "fit": 12,
+            "frames": 9,
+            "accepted": 1,
+            "converged": true,
+            "nfev": 210,
+            "rejections": {
+              "parallax": 11
+            }
+          },
+          {
+            "block": 13,
+            "input": 1005,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 14,
+            "input": 958,
+            "fit": 75,
+            "frames": 11,
+            "accepted": 37,
+            "converged": true,
+            "nfev": 19,
+            "rejections": {
+              "pose_sensitivity": 9,
+              "parallax": 29
+            }
+          },
+          {
+            "block": 15,
+            "input": 1378,
+            "fit": 488,
+            "frames": 32,
+            "accepted": 120,
+            "converged": true,
+            "nfev": 45,
+            "rejections": {
+              "baseline": 72,
+              "training_inliers": 5,
+              "parallax": 185,
+              "pose_sensitivity": 102,
+              "reprojection": 4
+            }
+          },
+          {
+            "block": 16,
+            "input": 953,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 17,
+            "input": 1680,
+            "fit": 419,
+            "frames": 30,
+            "accepted": 27,
+            "converged": true,
+            "nfev": 104,
+            "rejections": {
+              "parallax": 189,
+              "pose_sensitivity": 57,
+              "reprojection": 3,
+              "training_inliers": 1,
+              "baseline": 142
+            }
+          },
+          {
+            "block": 18,
+            "input": 1495,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 19,
+            "input": 1280,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 20,
+            "input": 1172,
+            "fit": 298,
+            "frames": 28,
+            "accepted": 116,
+            "converged": true,
+            "nfev": 21,
+            "rejections": {
+              "reprojection": 5,
+              "pose_sensitivity": 28,
+              "parallax": 149
+            }
+          },
+          {
+            "block": 21,
+            "input": 860,
+            "fit": 144,
+            "frames": 15,
+            "accepted": 61,
+            "converged": true,
+            "nfev": 29,
+            "rejections": {
+              "parallax": 38,
+              "pose_sensitivity": 45
+            }
+          },
+          {
+            "block": 22,
+            "input": 651,
+            "fit": 102,
+            "frames": 16,
+            "accepted": 87,
+            "converged": true,
+            "nfev": 23,
+            "rejections": {
+              "pose_sensitivity": 5,
+              "parallax": 10
+            }
+          },
+          {
+            "block": 23,
+            "input": 1593,
+            "fit": 667,
+            "frames": 42,
+            "accepted": 236,
+            "converged": true,
+            "nfev": 47,
+            "rejections": {
+              "reprojection": 7,
+              "training_inliers": 4,
+              "parallax": 213,
+              "pose_sensitivity": 166,
+              "baseline": 41
+            }
+          },
+          {
+            "block": 24,
+            "input": 794,
+            "fit": 234,
+            "frames": 15,
+            "accepted": 61,
+            "converged": true,
+            "nfev": 60,
+            "rejections": {
+              "parallax": 149,
+              "training_inliers": 2,
+              "pose_sensitivity": 20,
+              "validation_pixels": 1,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 25,
+            "input": 1847,
+            "fit": 801,
+            "frames": 29,
+            "accepted": 203,
+            "converged": true,
+            "nfev": 35,
+            "rejections": {
+              "reprojection": 6,
+              "pose_sensitivity": 177,
+              "parallax": 395,
+              "training_inliers": 13,
+              "baseline": 7
+            }
+          },
+          {
+            "block": 26,
+            "input": 798,
+            "fit": 360,
+            "frames": 23,
+            "accepted": 163,
+            "converged": true,
+            "nfev": 144,
+            "rejections": {
+              "parallax": 87,
+              "pose_sensitivity": 103,
+              "baseline": 7
+            }
+          },
+          {
+            "block": 27,
+            "input": 279,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 28,
+            "input": 966,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 29,
+            "input": 1023,
+            "fit": 93,
+            "frames": 6,
+            "accepted": 0,
+            "converged": true,
+            "nfev": 26,
+            "rejections": {
+              "baseline": 93
+            }
+          },
+          {
+            "block": 30,
+            "input": 820,
+            "fit": 285,
+            "frames": 14,
+            "accepted": 119,
+            "converged": true,
+            "nfev": 22,
+            "rejections": {
+              "pose_sensitivity": 113,
+              "parallax": 47,
+              "baseline": 6
+            }
+          },
+          {
+            "block": 31,
+            "input": 926,
+            "fit": 549,
+            "frames": 26,
+            "accepted": 95,
+            "converged": true,
+            "nfev": 178,
+            "rejections": {
+              "pose_sensitivity": 118,
+              "parallax": 294,
+              "reprojection": 3,
+              "baseline": 39
+            }
+          }
+        ],
+        "test_pixels": {
+          "n": 7554,
+          "median": 0.24479399459945092,
+          "p90": 0.7855180331554936,
+          "max": 7.355136346727213
+        },
+        "test_scored_landmarks": 3371,
+        "test_unscored_landmarks": 0,
+        "test_landmark_medians_px": {
+          "n": 3371,
+          "median": 0.24409274997104227,
+          "p90": 0.6794182802348101,
+          "max": 5.156463079250541
+        },
+        "test_pixels_over_3px": 12,
+        "test_pixels_over_8px": 0,
+        "stress_p90_distribution_m": {
+          "n": 3371,
+          "median": 0.058657959697741596,
+          "p90": 0.09007549069441856,
+          "max": 0.09999540107616962
+        },
+        "test_never_used_for_landmark_acceptance": true,
+        "parameters_predeclared_before_test": true,
+        "duration_s": 26.883671520015923,
+        "metric_ground_truth_used": false,
+        "limitations": [
+          "Sparse landmarks only; no dense or complete 3D claim",
+          "Flat-floor motion prior",
+          "Pixel tests reserve observations within existing tracks, not independent journeys",
+          "No verified visual landmark association across separate revisits",
+          "Global submap placement uses approximate XY pose-graph alignment",
+          "Stress scenario is not calibrated posterior uncertainty",
+          "RGB colors inherited from first tracked pixel"
+        ],
+        "dataset_pixel_gate_pass": true
+      },
+      "resources": {
+        "samples": 271,
+        "minimum_available_mib": 2235.296875,
+        "maximum_swap_used_mib": 376.1875,
+        "minimum_disk_free_gib": 24.604610443115234,
+        "maximum_sampled_sum_pss_mib": 1873.8837890625,
+        "note": "Five-second samples, not continuous peaks; PSS includes only discovered descendants. RTF includes startup/paused intervals; filter by stage for interpretation.",
+        "active_sample_count": 268,
+        "navigation_sample_count": 238,
+        "navigation_observed_rtf": {
+          "n": 238,
+          "minimum": 0.8263118503718224,
+          "median": 0.9130601206913582,
+          "mean": 0.9096565540295947,
+          "p90": 0.9412221552736098,
+          "maximum": 0.9533994094650026
+        },
+        "navigation_system_cpu_percent": {
+          "n": 238,
+          "minimum": 43.1,
+          "median": 50.7,
+          "mean": 50.83739495798319,
+          "p90": 57.03,
+          "maximum": 60.6
+        },
+        "navigation_owned_cpu_percent_one_core": {
+          "n": 238,
+          "minimum": 461.514987647227,
+          "median": 522.0196551671545,
+          "mean": 532.9031083659705,
+          "p90": 585.8119330362014,
+          "maximum": 620.9331407752018
+        },
+        "phase_sample_counts": {
+          "unmatched": 4,
+          "unknown": 7,
+          "waiting_sensors": 1,
+          "frontier": 21,
+          "visual_view": 212,
+          "saving_and_refining": 20,
+          "returning": 5,
+          "stopped": 1
+        },
+        "first_swap_mib": 54.98046875,
+        "last_swap_mib": 375.984375,
+        "disk_free_decrease_gib": 4.799831390380859,
+        "maximum_rviz_instances": 1,
+        "viewer_last_seen_before_last_resource_sample_s": 0.0,
+        "note_phase": "Nearest earlier 1 Hz controller status within six seconds labels approximately 5 s resource intervals; intervals can span transitions. RTF is not per-image latency."
+      },
+      "checks": {
+        "source_hashes_match_launch": true,
+        "supervisor_stopped_exit_zero": true,
+        "simulation_pause_confirmed": true,
+        "final_observed_command_zero": true,
+        "counts_agree": true,
+        "ply_coordinates_match": true,
+        "ply_colors_match": true,
+        "finite_xyz": true,
+        "valid_colors": true,
+        "captured_frames_equal_final_fit": true,
+        "test_count_matches": true,
+        "test_median_matches": true,
+        "test_p90_matches": true,
+        "test_max_matches": true,
+        "scored_landmark_count_matches": true,
+        "unscored_landmark_count_matches": true,
+        "reserved_test_frames_disjoint": true,
+        "bag_counts_match_metadata": true,
+        "rgb_endpoints_decode": true
+      },
+      "estimated_home_distance_m": 0.11680829878303466,
+      "revisit": {
+        "candidate_image_pairs": 2912,
+        "selected_image_pairs": 56,
+        "raw_image_matches": 399,
+        "raw_unique": {
+          "landmark_pairs": 321,
+          "tested_unique_ids": 595,
+          "euclidean_m": {
+            "n": 321,
+            "median": 0.07283690045950221,
+            "p90": 0.30603586998672555,
+            "max": 1.4526430719143526
+          },
+          "vertical_m": {
+            "n": 321,
+            "median": 0.004968483414937497,
+            "p90": 0.024014758320501595,
+            "max": 0.0810789964231109
+          },
+          "block_pairs": [
+            [
+              0,
+              15
+            ],
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              20
+            ],
+            [
+              0,
+              21
+            ],
+            [
+              1,
+              20
+            ],
+            [
+              1,
+              21
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              23
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              15,
+              20
+            ],
+            [
+              20,
+              22
+            ],
+            [
+              21,
+              22
+            ],
+            [
+              30,
+              31
+            ]
+          ]
+        },
+        "epipolar_subset": {
+          "landmark_pairs": 211,
+          "tested_unique_ids": 420,
+          "euclidean_m": {
+            "n": 211,
+            "median": 0.06965345121641535,
+            "p90": 0.3228166156565893,
+            "max": 0.4013919625421368
+          },
+          "vertical_m": {
+            "n": 211,
+            "median": 0.004467918313065668,
+            "p90": 0.023773725294206183,
+            "max": 0.0757959915440134
+          },
+          "block_pairs": [
+            [
+              0,
+              15
+            ],
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              20
+            ],
+            [
+              0,
+              21
+            ],
+            [
+              1,
+              20
+            ],
+            [
+              1,
+              21
+            ],
+            [
+              3,
+              23
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              30,
+              31
+            ]
+          ]
+        },
+        "repeat_image_subset": {
+          "landmark_pairs": 44,
+          "tested_unique_ids": 88,
+          "euclidean_m": {
+            "n": 44,
+            "median": 0.07295738386688577,
+            "p90": 0.30851109713757596,
+            "max": 0.36994727314779713
+          },
+          "vertical_m": {
+            "n": 44,
+            "median": 0.004905771668720305,
+            "p90": 0.02171826522332753,
+            "max": 0.056836217932037414
+          },
+          "block_pairs": [
+            [
+              0,
+              15
+            ],
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              20
+            ],
+            [
+              1,
+              20
+            ],
+            [
+              3,
+              23
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              15,
+              17
+            ]
+          ]
+        },
+        "both_checks_subset": {
+          "landmark_pairs": 40,
+          "tested_unique_ids": 80,
+          "euclidean_m": {
+            "n": 40,
+            "median": 0.07963332813124924,
+            "p90": 0.3151063368018644,
+            "max": 0.36994727314779713
+          },
+          "vertical_m": {
+            "n": 40,
+            "median": 0.005509390363130082,
+            "p90": 0.02300596559857374,
+            "max": 0.056836217932037414
+          },
+          "block_pairs": [
+            [
+              0,
+              15
+            ],
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              20
+            ],
+            [
+              1,
+              20
+            ],
+            [
+              3,
+              23
+            ],
+            [
+              7,
+              9
+            ]
+          ]
+        },
+        "elapsed_s": 3.667416497017257,
+        "source_hashes": {
+          "keyframes.json": "d969714aa2f404d95be1826f22c7df6b7c8c834ad6a975195257f6dbc1a98d02",
+          "tracks.json": "8e6b89e5b22774e25a763ea5c10c8b763cfe6a0af74f8ab1ddbf60032056f3f8",
+          "stable/stable_landmarks.json": "a24a0532ec490a0960ee43c5f4bc01c9de55853f963db20e816512b00875ebf1"
+        },
+        "no_3d_registration_or_distance_gating": true,
+        "evaluation": "Exploratory consistency of RGB candidate associations, not ground truth or an independent journey."
+      },
+      "bag_messages": 2975809,
+      "bag_bytes": 4813746601,
+      "reported_transport_loss": 4,
+      "log_issues": {
+        "record.log": {
+          "matching_lines": 1,
+          "examples": [
+            "[WARN] [1791402823.862424123] [rosbag2_recorder]: Number of messages lost on the transport layer: 4"
+          ]
+        },
+        "viewer.log": {
+          "matching_lines": 2,
+          "examples": [
+            "Traceback (most recent call last):",
+            "rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333"
+          ]
+        },
+        "vision.log": {
+          "matching_lines": 1,
+          "examples": [
+            "Traceback (most recent call last):"
+          ]
+        }
+      }
+    },
+    {
+      "run": "repeat_02",
+      "seed": 24,
+      "controller": {
+        "state": "stopped",
+        "reason": "reachable_view_coverage_complete",
+        "terminal_reason": "reachable_view_coverage_complete",
+        "elapsed_wall_s": 1192.2,
+        "travelled_m": 33.36531167727245,
+        "goals_reached": 87,
+        "failed_goals": 6,
+        "recoveries": 0,
+        "map_metrics": {
+          "frontier_groups": 0,
+          "frontier_cells": 0,
+          "view_goals_total": 152,
+          "view_goals_covered": 150,
+          "view_goals_blocked": 1,
+          "view_coverage": 0.9868421052631579,
+          "free_area_m2": 19.54079912645818,
+          "reachable_area_m2": 8.193599633717541,
+          "reason": "home_reached"
+        },
+        "current_position": [
+          0.10638301501428854,
+          -0.08338353327977555
+        ],
+        "accepted_landmarks": 3592,
+        "new_track_fractions": [
+          618.0,
+          2.1715210355987056,
+          0.10714285714285714,
+          0.12396313364055299,
+          0.012300123001230012,
+          0.028351559335763468,
+          0.09019298936589208,
+          0.00939306358381503,
+          0.0,
+          0.07981388690050108,
+          0.0009943652635067948,
+          0.14370860927152318,
+          0.013028372900984365,
+          0.026579022577879394
+        ],
+        "checkpoints": [
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_001",
+            "accepted_landmarks": 618,
+            "test_pixels": {
+              "n": 1613,
+              "median": 0.30877986004568575,
+              "p90": 0.8788040334549138,
+              "max": 3.7189747847373154
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 48.21237052700599
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_002",
+            "accepted_landmarks": 1960,
+            "test_pixels": {
+              "n": 5095,
+              "median": 0.24733660203124627,
+              "p90": 0.7489977052234907,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 98.43978205200983
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_003",
+            "accepted_landmarks": 2170,
+            "test_pixels": {
+              "n": 5513,
+              "median": 0.24643200173294713,
+              "p90": 0.7420162963463465,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 30.355996332975337
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_004",
+            "accepted_landmarks": 2439,
+            "test_pixels": {
+              "n": 6137,
+              "median": 0.2448901203064974,
+              "p90": 0.7359731637400102,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 13.51840706099756
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_005",
+            "accepted_landmarks": 2469,
+            "test_pixels": {
+              "n": 6176,
+              "median": 0.24404130966970408,
+              "p90": 0.7349110306056272,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 3.326068516005762
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_006",
+            "accepted_landmarks": 2539,
+            "test_pixels": {
+              "n": 6261,
+              "median": 0.2437547535258859,
+              "p90": 0.734684489183447,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 4.578933463024441
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_007",
+            "accepted_landmarks": 2768,
+            "test_pixels": {
+              "n": 6776,
+              "median": 0.23985055629173557,
+              "p90": 0.7279494582961765,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 17.46777964802459
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_008",
+            "accepted_landmarks": 2794,
+            "test_pixels": {
+              "n": 6822,
+              "median": 0.23901981500259623,
+              "p90": 0.7264796506848165,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 7.648066591995303
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_009",
+            "accepted_landmarks": 2794,
+            "test_pixels": {
+              "n": 6822,
+              "median": 0.23901981500259623,
+              "p90": 0.7264796506848165,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 4.237766656005988
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_010",
+            "accepted_landmarks": 3017,
+            "test_pixels": {
+              "n": 7261,
+              "median": 0.2361479038503884,
+              "p90": 0.7115692957974102,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 7.590360845002579
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_011",
+            "accepted_landmarks": 3020,
+            "test_pixels": {
+              "n": 7263,
+              "median": 0.2362205886929053,
+              "p90": 0.7115419350637311,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 6.812977705994854
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_012",
+            "accepted_landmarks": 3454,
+            "test_pixels": {
+              "n": 8104,
+              "median": 0.23029107729634368,
+              "p90": 0.6976412542566209,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 31.48875627797679
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_013",
+            "accepted_landmarks": 3499,
+            "test_pixels": {
+              "n": 8173,
+              "median": 0.22888545441932504,
+              "p90": 0.6958600924479722,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 41.22858854997321
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_02/output/snapshots/async_28527_014",
+            "accepted_landmarks": 3592,
+            "test_pixels": {
+              "n": 8333,
+              "median": 0.22824315965377426,
+              "p90": 0.6933550495442132,
+              "max": 5.265943354250605
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 26.441829451010562
+          }
+        ],
+        "dense_3d_complete": false,
+        "limits": {
+          "wall_seconds": 2400.0,
+          "maximum_frames": 5500
+        },
+        "available_memory_mb": 3061
+      },
+      "validation": {
+        "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+        "accepted_landmarks": 3592,
+        "cached_blocks_reused": 27,
+        "input_tracks": 61952,
+        "frames": 1868,
+        "blocks": [
+          {
+            "block": 0,
+            "input": 1777,
+            "fit": 719,
+            "frames": 60,
+            "accepted": 217,
+            "converged": true,
+            "nfev": 157,
+            "rejections": {
+              "pose_sensitivity": 65,
+              "training_inliers": 14,
+              "parallax": 408,
+              "reprojection": 9,
+              "baseline": 6
+            }
+          },
+          {
+            "block": 1,
+            "input": 1479,
+            "fit": 1017,
+            "frames": 57,
+            "accepted": 401,
+            "converged": true,
+            "nfev": 44,
+            "rejections": {
+              "parallax": 276,
+              "pose_sensitivity": 302,
+              "training_inliers": 19,
+              "reprojection": 10,
+              "baseline": 6,
+              "validation_pixels": 3
+            }
+          },
+          {
+            "block": 2,
+            "input": 1305,
+            "fit": 884,
+            "frames": 63,
+            "accepted": 325,
+            "converged": true,
+            "nfev": 104,
+            "rejections": {
+              "pose_sensitivity": 258,
+              "parallax": 281,
+              "baseline": 16,
+              "reprojection": 3,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 3,
+            "input": 888,
+            "fit": 775,
+            "frames": 71,
+            "accepted": 349,
+            "converged": true,
+            "nfev": 120,
+            "rejections": {
+              "pose_sensitivity": 83,
+              "parallax": 313,
+              "reprojection": 7,
+              "baseline": 23
+            }
+          },
+          {
+            "block": 4,
+            "input": 1359,
+            "fit": 1171,
+            "frames": 65,
+            "accepted": 667,
+            "converged": true,
+            "nfev": 32,
+            "rejections": {
+              "parallax": 208,
+              "pose_sensitivity": 267,
+              "reprojection": 11,
+              "training_inliers": 17,
+              "baseline": 1
+            }
+          },
+          {
+            "block": 5,
+            "input": 1346,
+            "fit": 159,
+            "frames": 13,
+            "accepted": 1,
+            "converged": true,
+            "nfev": 50,
+            "rejections": {
+              "parallax": 136,
+              "pose_sensitivity": 13,
+              "training_inliers": 2,
+              "baseline": 7
+            }
+          },
+          {
+            "block": 6,
+            "input": 1296,
+            "fit": 58,
+            "frames": 15,
+            "accepted": 3,
+            "converged": true,
+            "nfev": 38,
+            "rejections": {
+              "training_inliers": 4,
+              "parallax": 33,
+              "pose_sensitivity": 16,
+              "reprojection": 1,
+              "baseline": 1
+            }
+          },
+          {
+            "block": 7,
+            "input": 1411,
+            "fit": 105,
+            "frames": 14,
+            "accepted": 32,
+            "converged": true,
+            "nfev": 292,
+            "rejections": {
+              "pose_sensitivity": 19,
+              "baseline": 37,
+              "parallax": 15,
+              "reprojection": 1,
+              "training_inliers": 1
+            }
+          },
+          {
+            "block": 8,
+            "input": 1721,
+            "fit": 631,
+            "frames": 37,
+            "accepted": 166,
+            "converged": true,
+            "nfev": 41,
+            "rejections": {
+              "parallax": 266,
+              "pose_sensitivity": 163,
+              "reprojection": 14,
+              "training_inliers": 5,
+              "baseline": 15,
+              "validation_pixels": 2
+            }
+          },
+          {
+            "block": 9,
+            "input": 1147,
+            "fit": 75,
+            "frames": 9,
+            "accepted": 9,
+            "converged": true,
+            "nfev": 30,
+            "rejections": {
+              "parallax": 54,
+              "pose_sensitivity": 8,
+              "baseline": 3,
+              "training_inliers": 1
+            }
+          },
+          {
+            "block": 10,
+            "input": 1064,
+            "fit": 427,
+            "frames": 36,
+            "accepted": 82,
+            "converged": true,
+            "nfev": 81,
+            "rejections": {
+              "parallax": 194,
+              "pose_sensitivity": 150,
+              "baseline": 1
+            }
+          },
+          {
+            "block": 11,
+            "input": 670,
+            "fit": 221,
+            "frames": 15,
+            "accepted": 187,
+            "converged": true,
+            "nfev": 32,
+            "rejections": {
+              "pose_sensitivity": 20,
+              "reprojection": 3,
+              "parallax": 11
+            }
+          },
+          {
+            "block": 12,
+            "input": 1058,
+            "fit": 212,
+            "frames": 15,
+            "accepted": 30,
+            "converged": true,
+            "nfev": 14,
+            "rejections": {
+              "parallax": 146,
+              "pose_sensitivity": 36
+            }
+          },
+          {
+            "block": 13,
+            "input": 1245,
+            "fit": 323,
+            "frames": 17,
+            "accepted": 70,
+            "converged": true,
+            "nfev": 20,
+            "rejections": {
+              "parallax": 141,
+              "pose_sensitivity": 112
+            }
+          },
+          {
+            "block": 14,
+            "input": 1202,
+            "fit": 47,
+            "frames": 12,
+            "accepted": 23,
+            "converged": true,
+            "nfev": 27,
+            "rejections": {
+              "pose_sensitivity": 14,
+              "parallax": 10
+            }
+          },
+          {
+            "block": 15,
+            "input": 924,
+            "fit": 620,
+            "frames": 40,
+            "accepted": 206,
+            "converged": true,
+            "nfev": 83,
+            "rejections": {
+              "pose_sensitivity": 133,
+              "parallax": 275,
+              "reprojection": 1,
+              "baseline": 5
+            }
+          },
+          {
+            "block": 16,
+            "input": 644,
+            "fit": 325,
+            "frames": 27,
+            "accepted": 11,
+            "converged": true,
+            "nfev": 43,
+            "rejections": {
+              "pose_sensitivity": 19,
+              "parallax": 223,
+              "baseline": 71,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 17,
+            "input": 479,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 18,
+            "input": 330,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 19,
+            "input": 912,
+            "fit": 288,
+            "frames": 12,
+            "accepted": 15,
+            "converged": true,
+            "nfev": 7,
+            "rejections": {
+              "pose_sensitivity": 166,
+              "parallax": 107
+            }
+          },
+          {
+            "block": 20,
+            "input": 1526,
+            "fit": 377,
+            "frames": 15,
+            "accepted": 108,
+            "converged": true,
+            "nfev": 8,
+            "rejections": {
+              "parallax": 179,
+              "baseline": 4,
+              "pose_sensitivity": 75,
+              "training_inliers": 7,
+              "reprojection": 4
+            }
+          },
+          {
+            "block": 21,
+            "input": 1061,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 22,
+            "input": 830,
+            "fit": 178,
+            "frames": 26,
+            "accepted": 115,
+            "converged": true,
+            "nfev": 35,
+            "rejections": {
+              "parallax": 33,
+              "pose_sensitivity": 24,
+              "baseline": 6
+            }
+          },
+          {
+            "block": 23,
+            "input": 557,
+            "fit": 18,
+            "frames": 9,
+            "accepted": 3,
+            "converged": true,
+            "nfev": 61,
+            "rejections": {
+              "pose_sensitivity": 7,
+              "parallax": 8
+            }
+          },
+          {
+            "block": 24,
+            "input": 1352,
+            "fit": 738,
+            "frames": 24,
+            "accepted": 207,
+            "converged": true,
+            "nfev": 26,
+            "rejections": {
+              "pose_sensitivity": 181,
+              "reprojection": 8,
+              "parallax": 338,
+              "training_inliers": 4
+            }
+          },
+          {
+            "block": 25,
+            "input": 1313,
+            "fit": 857,
+            "frames": 39,
+            "accepted": 243,
+            "converged": true,
+            "nfev": 171,
+            "rejections": {
+              "pose_sensitivity": 193,
+              "parallax": 415,
+              "baseline": 1,
+              "reprojection": 2,
+              "training_inliers": 3
+            }
+          },
+          {
+            "block": 26,
+            "input": 682,
+            "fit": 29,
+            "frames": 9,
+            "accepted": 0,
+            "converged": true,
+            "nfev": 50,
+            "rejections": {
+              "pose_sensitivity": 12,
+              "parallax": 17
+            }
+          },
+          {
+            "block": 27,
+            "input": 859,
+            "fit": 216,
+            "frames": 13,
+            "accepted": 29,
+            "converged": true,
+            "nfev": 40,
+            "rejections": {
+              "baseline": 32,
+              "parallax": 147,
+              "pose_sensitivity": 8
+            }
+          },
+          {
+            "block": 28,
+            "input": 864,
+            "fit": 283,
+            "frames": 26,
+            "accepted": 69,
+            "converged": true,
+            "nfev": 157,
+            "rejections": {
+              "pose_sensitivity": 65,
+              "baseline": 45,
+              "parallax": 103,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 29,
+            "input": 246,
+            "fit": 229,
+            "frames": 11,
+            "accepted": 24,
+            "converged": true,
+            "nfev": 229,
+            "rejections": {
+              "parallax": 162,
+              "pose_sensitivity": 43
+            }
+          }
+        ],
+        "test_pixels": {
+          "n": 8333,
+          "median": 0.22824315965377426,
+          "p90": 0.6933550495442132,
+          "max": 5.265943354250605
+        },
+        "test_scored_landmarks": 3591,
+        "test_unscored_landmarks": 1,
+        "test_landmark_medians_px": {
+          "n": 3591,
+          "median": 0.23154917451582213,
+          "p90": 0.6186183903613252,
+          "max": 3.954162501813677
+        },
+        "test_pixels_over_3px": 12,
+        "test_pixels_over_8px": 0,
+        "stress_p90_distribution_m": {
+          "n": 3592,
+          "median": 0.060600949532697054,
+          "p90": 0.0902925599903903,
+          "max": 0.09999566817989425
+        },
+        "test_never_used_for_landmark_acceptance": true,
+        "parameters_predeclared_before_test": true,
+        "duration_s": 26.441829451010562,
+        "metric_ground_truth_used": false,
+        "limitations": [
+          "Sparse landmarks only; no dense or complete 3D claim",
+          "Flat-floor motion prior",
+          "Pixel tests reserve observations within existing tracks, not independent journeys",
+          "No verified visual landmark association across separate revisits",
+          "Global submap placement uses approximate XY pose-graph alignment",
+          "Stress scenario is not calibrated posterior uncertainty",
+          "RGB colors inherited from first tracked pixel"
+        ],
+        "dataset_pixel_gate_pass": true
+      },
+      "resources": {
+        "samples": 251,
+        "minimum_available_mib": 2644.890625,
+        "maximum_swap_used_mib": 376.4453125,
+        "minimum_disk_free_gib": 20.29250717163086,
+        "maximum_sampled_sum_pss_mib": 1789.517578125,
+        "note": "Five-second samples, not continuous peaks; PSS includes only discovered descendants. RTF includes startup/paused intervals; filter by stage for interpretation.",
+        "active_sample_count": 248,
+        "navigation_sample_count": 221,
+        "navigation_observed_rtf": {
+          "n": 221,
+          "minimum": 0.8913235611898357,
+          "median": 0.9294452152151723,
+          "mean": 0.9298025417259788,
+          "p90": 0.9431649861332053,
+          "maximum": 0.9512501166512101
+        },
+        "navigation_system_cpu_percent": {
+          "n": 221,
+          "minimum": 43.4,
+          "median": 48.5,
+          "mean": 49.16470588235294,
+          "p90": 53.9,
+          "maximum": 57.6
+        },
+        "navigation_owned_cpu_percent_one_core": {
+          "n": 221,
+          "minimum": 475.3905667293578,
+          "median": 528.963220023595,
+          "mean": 539.0503829131443,
+          "p90": 600.368821763994,
+          "maximum": 626.6733305181801
+        },
+        "phase_sample_counts": {
+          "unmatched": 4,
+          "unknown": 7,
+          "waiting_sensors": 1,
+          "frontier": 27,
+          "visual_view": 188,
+          "saving_and_refining": 16,
+          "returning": 6,
+          "stopped": 2
+        },
+        "first_swap_mib": 375.984375,
+        "last_swap_mib": 376.44140625,
+        "disk_free_decrease_gib": 4.311866760253906,
+        "maximum_rviz_instances": 1,
+        "viewer_last_seen_before_last_resource_sample_s": 0.0,
+        "note_phase": "Nearest earlier 1 Hz controller status within six seconds labels approximately 5 s resource intervals; intervals can span transitions. RTF is not per-image latency."
+      },
+      "checks": {
+        "source_hashes_match_launch": true,
+        "supervisor_stopped_exit_zero": true,
+        "simulation_pause_confirmed": true,
+        "final_observed_command_zero": true,
+        "counts_agree": true,
+        "ply_coordinates_match": true,
+        "ply_colors_match": true,
+        "finite_xyz": true,
+        "valid_colors": true,
+        "captured_frames_equal_final_fit": true,
+        "test_count_matches": true,
+        "test_median_matches": true,
+        "test_p90_matches": true,
+        "test_max_matches": true,
+        "scored_landmark_count_matches": true,
+        "unscored_landmark_count_matches": true,
+        "reserved_test_frames_disjoint": true,
+        "bag_counts_match_metadata": true,
+        "rgb_endpoints_decode": true
+      },
+      "estimated_home_distance_m": 0.13516715394558612,
+      "revisit": {
+        "candidate_image_pairs": 1525,
+        "selected_image_pairs": 37,
+        "raw_image_matches": 818,
+        "raw_unique": {
+          "landmark_pairs": 441,
+          "tested_unique_ids": 774,
+          "euclidean_m": {
+            "n": 441,
+            "median": 0.02930697087321389,
+            "p90": 0.05588215273478048,
+            "max": 0.14498599344603075
+          },
+          "vertical_m": {
+            "n": 441,
+            "median": 0.0022838901343235074,
+            "p90": 0.007094202180923881,
+            "max": 0.02562201964886429
+          },
+          "block_pairs": [
+            [
+              2,
+              19
+            ],
+            [
+              3,
+              19
+            ],
+            [
+              4,
+              24
+            ],
+            [
+              4,
+              25
+            ],
+            [
+              13,
+              15
+            ]
+          ]
+        },
+        "epipolar_subset": {
+          "landmark_pairs": 387,
+          "tested_unique_ids": 698,
+          "euclidean_m": {
+            "n": 387,
+            "median": 0.027470591494773273,
+            "p90": 0.052240266320371,
+            "max": 0.14498599344603075
+          },
+          "vertical_m": {
+            "n": 387,
+            "median": 0.0021626344869483116,
+            "p90": 0.005401605180848635,
+            "max": 0.023940623525832302
+          },
+          "block_pairs": [
+            [
+              4,
+              24
+            ],
+            [
+              4,
+              25
+            ]
+          ]
+        },
+        "repeat_image_subset": {
+          "landmark_pairs": 207,
+          "tested_unique_ids": 405,
+          "euclidean_m": {
+            "n": 207,
+            "median": 0.03071493221908815,
+            "p90": 0.05314524580753453,
+            "max": 0.14498599344603075
+          },
+          "vertical_m": {
+            "n": 207,
+            "median": 0.001848952758423339,
+            "p90": 0.005319643153159404,
+            "max": 0.018175279815936862
+          },
+          "block_pairs": [
+            [
+              2,
+              19
+            ],
+            [
+              4,
+              24
+            ],
+            [
+              4,
+              25
+            ]
+          ]
+        },
+        "both_checks_subset": {
+          "landmark_pairs": 195,
+          "tested_unique_ids": 382,
+          "euclidean_m": {
+            "n": 195,
+            "median": 0.02997425950937732,
+            "p90": 0.04947322028470943,
+            "max": 0.14498599344603075
+          },
+          "vertical_m": {
+            "n": 195,
+            "median": 0.0017974512070065632,
+            "p90": 0.004909211888297648,
+            "max": 0.014087847927635011
+          },
+          "block_pairs": [
+            [
+              4,
+              24
+            ],
+            [
+              4,
+              25
+            ]
+          ]
+        },
+        "elapsed_s": 3.220058245002292,
+        "source_hashes": {
+          "keyframes.json": "85d812ae450a3b00c56d848064af27107f35a8a2467779c6afe476984d6c151e",
+          "tracks.json": "5731bddd5e5bad1426250cc32cef9a4811d650c50b1557bd6475a88dc66184e9",
+          "stable/stable_landmarks.json": "240d6bb2c8b91e737f477e634f48e7a50b8080fd6757504e5263bb388000ac5b"
+        },
+        "no_3d_registration_or_distance_gating": true,
+        "evaluation": "Exploratory consistency of RGB candidate associations, not ground truth or an independent journey."
+      },
+      "bag_messages": 2802047,
+      "bag_bytes": 4341369814,
+      "reported_transport_loss": null,
+      "log_issues": {
+        "viewer.log": {
+          "matching_lines": 4,
+          "examples": [
+            "Traceback (most recent call last):",
+            "RuntimeError: Unable to convert call argument '0' to Python object (#define PYBIND11_DETAILED_ERROR_MESSAGES or compile in debug mode for details)",
+            "rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333"
+          ]
+        },
+        "vision.log": {
+          "matching_lines": 1,
+          "examples": [
+            "Traceback (most recent call last):"
+          ]
+        }
+      }
+    },
+    {
+      "run": "repeat_03",
+      "seed": 25,
+      "controller": {
+        "state": "stopped",
+        "reason": "reachable_view_coverage_complete",
+        "terminal_reason": "reachable_view_coverage_complete",
+        "elapsed_wall_s": 1208.1,
+        "travelled_m": 34.4007308266031,
+        "goals_reached": 72,
+        "failed_goals": 11,
+        "recoveries": 0,
+        "map_metrics": {
+          "frontier_groups": 0,
+          "frontier_cells": 0,
+          "view_goals_total": 144,
+          "view_goals_covered": 140,
+          "view_goals_blocked": 4,
+          "view_coverage": 0.9722222222222222,
+          "free_area_m2": 19.53119912688733,
+          "reachable_area_m2": 8.207999633073811,
+          "reason": "home_reached"
+        },
+        "current_position": [
+          0.07271871404241464,
+          0.11214312583520199
+        ],
+        "accepted_landmarks": 3751,
+        "new_track_fractions": [
+          1061.0,
+          0.25070688030160226,
+          0.23360964581763377,
+          0.1777642028100183,
+          0.05912863070539419,
+          0.05337904015670911,
+          0.04834960483496048,
+          0.19201773835920177,
+          0.07775297619047619,
+          0.10976872626855368,
+          0.16702954898911354
+        ],
+        "checkpoints": [
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_001",
+            "accepted_landmarks": 1061,
+            "test_pixels": {
+              "n": 2303,
+              "median": 0.2853244070631866,
+              "p90": 0.7872723346311283,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 95.26480176500627
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_002",
+            "accepted_landmarks": 1327,
+            "test_pixels": {
+              "n": 3078,
+              "median": 0.2552090905714829,
+              "p90": 0.7472786220534329,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 9.154354293976212
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_003",
+            "accepted_landmarks": 1637,
+            "test_pixels": {
+              "n": 3866,
+              "median": 0.2535272213932056,
+              "p90": 0.7303949711004434,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 54.18119901002501
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_004",
+            "accepted_landmarks": 1928,
+            "test_pixels": {
+              "n": 4469,
+              "median": 0.24408222948834263,
+              "p90": 0.7040464451107741,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 61.640129003004404
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_005",
+            "accepted_landmarks": 2042,
+            "test_pixels": {
+              "n": 4647,
+              "median": 0.24144814762246833,
+              "p90": 0.7013424713158304,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 7.721364216005895
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_006",
+            "accepted_landmarks": 2151,
+            "test_pixels": {
+              "n": 4815,
+              "median": 0.24212436882499452,
+              "p90": 0.7004582914690604,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 7.6817685599962715
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_007",
+            "accepted_landmarks": 2255,
+            "test_pixels": {
+              "n": 4949,
+              "median": 0.23819558140052194,
+              "p90": 0.6976748907133612,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 6.557420285011176
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_008",
+            "accepted_landmarks": 2688,
+            "test_pixels": {
+              "n": 5828,
+              "median": 0.23801610761047415,
+              "p90": 0.6945918529558078,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 24.862241810013074
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_009",
+            "accepted_landmarks": 2896,
+            "test_pixels": {
+              "n": 6300,
+              "median": 0.23493190804548386,
+              "p90": 0.6891328653719621,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 14.887998015998164
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_010",
+            "accepted_landmarks": 3214,
+            "test_pixels": {
+              "n": 6789,
+              "median": 0.23243269500759148,
+              "p90": 0.6978312086021597,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 22.053613136988133
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_publication_campaign_20261007/repeat_03/output/snapshots/async_29022_011",
+            "accepted_landmarks": 3751,
+            "test_pixels": {
+              "n": 7736,
+              "median": 0.22581191050554805,
+              "p90": 0.684744507653804,
+              "max": 5.13893489889012
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 38.77861620200565
+          }
+        ],
+        "dense_3d_complete": false,
+        "limits": {
+          "wall_seconds": 2400.0,
+          "maximum_frames": 5500
+        },
+        "available_memory_mb": 2957
+      },
+      "validation": {
+        "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+        "accepted_landmarks": 3751,
+        "cached_blocks_reused": 28,
+        "input_tracks": 71666,
+        "frames": 1956,
+        "blocks": [
+          {
+            "block": 0,
+            "input": 1730,
+            "fit": 1314,
+            "frames": 76,
+            "accepted": 389,
+            "converged": true,
+            "nfev": 83,
+            "rejections": {
+              "baseline": 15,
+              "pose_sensitivity": 182,
+              "parallax": 683,
+              "training_inliers": 28,
+              "reprojection": 17
+            }
+          },
+          {
+            "block": 1,
+            "input": 1618,
+            "fit": 1420,
+            "frames": 78,
+            "accepted": 355,
+            "converged": true,
+            "nfev": 62,
+            "rejections": {
+              "baseline": 49,
+              "parallax": 716,
+              "training_inliers": 20,
+              "pose_sensitivity": 258,
+              "reprojection": 20,
+              "validation_pixels": 2
+            }
+          },
+          {
+            "block": 2,
+            "input": 1019,
+            "fit": 728,
+            "frames": 66,
+            "accepted": 317,
+            "converged": true,
+            "nfev": 83,
+            "rejections": {
+              "pose_sensitivity": 217,
+              "parallax": 182,
+              "training_inliers": 6,
+              "baseline": 3,
+              "reprojection": 3
+            }
+          },
+          {
+            "block": 3,
+            "input": 1202,
+            "fit": 155,
+            "frames": 32,
+            "accepted": 10,
+            "converged": true,
+            "nfev": 76,
+            "rejections": {
+              "parallax": 46,
+              "baseline": 84,
+              "training_inliers": 2,
+              "pose_sensitivity": 13
+            }
+          },
+          {
+            "block": 4,
+            "input": 786,
+            "fit": 360,
+            "frames": 20,
+            "accepted": 256,
+            "converged": true,
+            "nfev": 41,
+            "rejections": {
+              "training_inliers": 1,
+              "pose_sensitivity": 77,
+              "parallax": 23,
+              "reprojection": 3
+            }
+          },
+          {
+            "block": 5,
+            "input": 1522,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 6,
+            "input": 1316,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 7,
+            "input": 822,
+            "fit": 603,
+            "frames": 52,
+            "accepted": 298,
+            "converged": true,
+            "nfev": 309,
+            "rejections": {
+              "pose_sensitivity": 88,
+              "parallax": 156,
+              "baseline": 56,
+              "reprojection": 4,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 8,
+            "input": 1145,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 9,
+            "input": 1481,
+            "fit": 287,
+            "frames": 25,
+            "accepted": 12,
+            "converged": true,
+            "nfev": 106,
+            "rejections": {
+              "pose_sensitivity": 21,
+              "baseline": 95,
+              "parallax": 158,
+              "training_inliers": 1
+            }
+          },
+          {
+            "block": 10,
+            "input": 1174,
+            "fit": 262,
+            "frames": 17,
+            "accepted": 114,
+            "converged": true,
+            "nfev": 193,
+            "rejections": {
+              "pose_sensitivity": 129,
+              "parallax": 7,
+              "baseline": 10,
+              "training_inliers": 1,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 11,
+            "input": 1373,
+            "fit": 203,
+            "frames": 25,
+            "accepted": 29,
+            "converged": true,
+            "nfev": 29,
+            "rejections": {
+              "pose_sensitivity": 113,
+              "parallax": 57,
+              "baseline": 4
+            }
+          },
+          {
+            "block": 12,
+            "input": 1281,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 13,
+            "input": 1437,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 14,
+            "input": 1463,
+            "fit": 792,
+            "frames": 46,
+            "accepted": 148,
+            "converged": true,
+            "nfev": 275,
+            "rejections": {
+              "baseline": 148,
+              "pose_sensitivity": 198,
+              "parallax": 297,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 15,
+            "input": 1003,
+            "fit": 292,
+            "frames": 14,
+            "accepted": 61,
+            "converged": true,
+            "nfev": 30,
+            "rejections": {
+              "pose_sensitivity": 35,
+              "parallax": 175,
+              "baseline": 19,
+              "reprojection": 2
+            }
+          },
+          {
+            "block": 16,
+            "input": 1256,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 17,
+            "input": 1007,
+            "fit": 445,
+            "frames": 25,
+            "accepted": 87,
+            "converged": true,
+            "nfev": 36,
+            "rejections": {
+              "pose_sensitivity": 59,
+              "parallax": 293,
+              "baseline": 2,
+              "training_inliers": 4
+            }
+          },
+          {
+            "block": 18,
+            "input": 1192,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 19,
+            "input": 1172,
+            "fit": 318,
+            "frames": 12,
+            "accepted": 75,
+            "converged": true,
+            "nfev": 9,
+            "rejections": {
+              "parallax": 171,
+              "pose_sensitivity": 68,
+              "training_inliers": 3,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 20,
+            "input": 1643,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 21,
+            "input": 1415,
+            "fit": 348,
+            "frames": 11,
+            "accepted": 104,
+            "converged": true,
+            "nfev": 22,
+            "rejections": {
+              "pose_sensitivity": 80,
+              "parallax": 160,
+              "reprojection": 3,
+              "training_inliers": 1
+            }
+          },
+          {
+            "block": 22,
+            "input": 1479,
+            "fit": 320,
+            "frames": 15,
+            "accepted": 124,
+            "converged": true,
+            "nfev": 18,
+            "rejections": {
+              "training_inliers": 4,
+              "pose_sensitivity": 86,
+              "parallax": 104,
+              "validation_pixels": 1,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 23,
+            "input": 602,
+            "fit": 379,
+            "frames": 32,
+            "accepted": 243,
+            "converged": true,
+            "nfev": 164,
+            "rejections": {
+              "baseline": 6,
+              "pose_sensitivity": 53,
+              "parallax": 74,
+              "training_inliers": 2,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 24,
+            "input": 628,
+            "fit": 0,
+            "accepted": 0
+          },
+          {
+            "block": 25,
+            "input": 1336,
+            "fit": 527,
+            "frames": 30,
+            "accepted": 193,
+            "converged": true,
+            "nfev": 38,
+            "rejections": {
+              "parallax": 180,
+              "training_inliers": 7,
+              "pose_sensitivity": 141,
+              "reprojection": 5,
+              "baseline": 1
+            }
+          },
+          {
+            "block": 26,
+            "input": 915,
+            "fit": 292,
+            "frames": 24,
+            "accepted": 81,
+            "converged": true,
+            "nfev": 57,
+            "rejections": {
+              "training_inliers": 1,
+              "pose_sensitivity": 113,
+              "parallax": 86,
+              "baseline": 10,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 27,
+            "input": 1879,
+            "fit": 1079,
+            "frames": 36,
+            "accepted": 222,
+            "converged": true,
+            "nfev": 71,
+            "rejections": {
+              "pose_sensitivity": 196,
+              "parallax": 619,
+              "training_inliers": 9,
+              "reprojection": 4,
+              "baseline": 28,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 28,
+            "input": 1002,
+            "fit": 622,
+            "frames": 50,
+            "accepted": 156,
+            "converged": true,
+            "nfev": 139,
+            "rejections": {
+              "parallax": 295,
+              "training_inliers": 5,
+              "pose_sensitivity": 163,
+              "reprojection": 1,
+              "validation_pixels": 1,
+              "baseline": 1
+            }
+          },
+          {
+            "block": 29,
+            "input": 1519,
+            "fit": 807,
+            "frames": 35,
+            "accepted": 212,
+            "converged": true,
+            "nfev": 38,
+            "rejections": {
+              "pose_sensitivity": 172,
+              "parallax": 383,
+              "training_inliers": 8,
+              "reprojection": 5,
+              "baseline": 26,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 30,
+            "input": 915,
+            "fit": 528,
+            "frames": 25,
+            "accepted": 265,
+            "converged": true,
+            "nfev": 70,
+            "rejections": {
+              "pose_sensitivity": 143,
+              "parallax": 119,
+              "baseline": 1
+            }
+          }
+        ],
+        "test_pixels": {
+          "n": 7736,
+          "median": 0.22581191050554805,
+          "p90": 0.684744507653804,
+          "max": 5.13893489889012
+        },
+        "test_scored_landmarks": 3751,
+        "test_unscored_landmarks": 0,
+        "test_landmark_medians_px": {
+          "n": 3751,
+          "median": 0.23165858931524844,
+          "p90": 0.6129436108975265,
+          "max": 3.329385186400616
+        },
+        "test_pixels_over_3px": 12,
+        "test_pixels_over_8px": 0,
+        "stress_p90_distribution_m": {
+          "n": 3751,
+          "median": 0.06084955536031677,
+          "p90": 0.09162057402356474,
+          "max": 0.09999142424432982
+        },
+        "test_never_used_for_landmark_acceptance": true,
+        "parameters_predeclared_before_test": true,
+        "duration_s": 38.77861620200565,
+        "metric_ground_truth_used": false,
+        "limitations": [
+          "Sparse landmarks only; no dense or complete 3D claim",
+          "Flat-floor motion prior",
+          "Pixel tests reserve observations within existing tracks, not independent journeys",
+          "No verified visual landmark association across separate revisits",
+          "Global submap placement uses approximate XY pose-graph alignment",
+          "Stress scenario is not calibrated posterior uncertainty",
+          "RGB colors inherited from first tracked pixel"
+        ],
+        "dataset_pixel_gate_pass": true
+      },
+      "resources": {
+        "samples": 254,
+        "minimum_available_mib": 2492.87890625,
+        "maximum_swap_used_mib": 376.44140625,
+        "minimum_disk_free_gib": 15.681522369384766,
+        "maximum_sampled_sum_pss_mib": 1814.87109375,
+        "note": "Five-second samples, not continuous peaks; PSS includes only discovered descendants. RTF includes startup/paused intervals; filter by stage for interpretation.",
+        "active_sample_count": 251,
+        "navigation_sample_count": 225,
+        "navigation_observed_rtf": {
+          "n": 225,
+          "minimum": 0.8900504369040111,
+          "median": 0.9279106139977902,
+          "mean": 0.9276181800853065,
+          "p90": 0.9416223980340757,
+          "maximum": 0.9527732242120449
+        },
+        "navigation_system_cpu_percent": {
+          "n": 225,
+          "minimum": 45.0,
+          "median": 48.1,
+          "mean": 48.95333333333333,
+          "p90": 53.9,
+          "maximum": 56.1
+        },
+        "navigation_owned_cpu_percent_one_core": {
+          "n": 225,
+          "minimum": 472.96049824487676,
+          "median": 527.101743173136,
+          "mean": 538.2864867802349,
+          "p90": 596.0301726465856,
+          "maximum": 629.169441868148
+        },
+        "phase_sample_counts": {
+          "unmatched": 3,
+          "unknown": 8,
+          "frontier": 16,
+          "saving_and_refining": 16,
+          "visual_view": 197,
+          "returning": 12,
+          "stopped": 2
+        },
+        "first_swap_mib": 376.44140625,
+        "last_swap_mib": 375.85546875,
+        "disk_free_decrease_gib": 4.610748291015625,
+        "maximum_rviz_instances": 1,
+        "viewer_last_seen_before_last_resource_sample_s": 0.0,
+        "note_phase": "Nearest earlier 1 Hz controller status within six seconds labels approximately 5 s resource intervals; intervals can span transitions. RTF is not per-image latency."
+      },
+      "checks": {
+        "source_hashes_match_launch": true,
+        "supervisor_stopped_exit_zero": true,
+        "simulation_pause_confirmed": true,
+        "final_observed_command_zero": true,
+        "counts_agree": true,
+        "ply_coordinates_match": true,
+        "ply_colors_match": true,
+        "finite_xyz": true,
+        "valid_colors": true,
+        "captured_frames_equal_final_fit": true,
+        "test_count_matches": true,
+        "test_median_matches": true,
+        "test_p90_matches": true,
+        "test_max_matches": true,
+        "scored_landmark_count_matches": true,
+        "unscored_landmark_count_matches": true,
+        "reserved_test_frames_disjoint": true,
+        "bag_counts_match_metadata": true,
+        "rgb_endpoints_decode": true
+      },
+      "estimated_home_distance_m": 0.13365661990366365,
+      "revisit": {
+        "candidate_image_pairs": 911,
+        "selected_image_pairs": 24,
+        "raw_image_matches": 148,
+        "raw_unique": {
+          "landmark_pairs": 120,
+          "tested_unique_ids": 221,
+          "euclidean_m": {
+            "n": 120,
+            "median": 0.11578360440000282,
+            "p90": 0.16753046659501905,
+            "max": 1.1399942915412549
+          },
+          "vertical_m": {
+            "n": 120,
+            "median": 0.004102050447672983,
+            "p90": 0.01857592640538522,
+            "max": 0.0798256526776239
+          },
+          "block_pairs": [
+            [
+              1,
+              21
+            ],
+            [
+              1,
+              22
+            ],
+            [
+              2,
+              22
+            ],
+            [
+              2,
+              23
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              15,
+              30
+            ],
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              30
+            ]
+          ]
+        },
+        "epipolar_subset": {
+          "landmark_pairs": 82,
+          "tested_unique_ids": 159,
+          "euclidean_m": {
+            "n": 82,
+            "median": 0.11481521455655619,
+            "p90": 0.13167678110065212,
+            "max": 0.15206165232247806
+          },
+          "vertical_m": {
+            "n": 82,
+            "median": 0.003316794612594459,
+            "p90": 0.01431447306649614,
+            "max": 0.02103460609667136
+          },
+          "block_pairs": [
+            [
+              1,
+              22
+            ],
+            [
+              15,
+              30
+            ],
+            [
+              17,
+              30
+            ]
+          ]
+        },
+        "repeat_image_subset": {
+          "landmark_pairs": 22,
+          "tested_unique_ids": 44,
+          "euclidean_m": {
+            "n": 22,
+            "median": 0.12139344520920993,
+            "p90": 0.14398393168335427,
+            "max": 1.1399942915412549
+          },
+          "vertical_m": {
+            "n": 22,
+            "median": 0.004265801789469462,
+            "p90": 0.014324265400924616,
+            "max": 0.01854634770395941
+          },
+          "block_pairs": [
+            [
+              1,
+              22
+            ],
+            [
+              17,
+              19
+            ]
+          ]
+        },
+        "both_checks_subset": {
+          "landmark_pairs": 20,
+          "tested_unique_ids": 40,
+          "euclidean_m": {
+            "n": 20,
+            "median": 0.12060678167822192,
+            "p90": 0.13658742806237253,
+            "max": 0.15206165232247806
+          },
+          "vertical_m": {
+            "n": 20,
+            "median": 0.00360725614311741,
+            "p90": 0.007382421900042222,
+            "max": 0.01854634770395941
+          },
+          "block_pairs": [
+            [
+              1,
+              22
+            ]
+          ]
+        },
+        "elapsed_s": 2.43150287802564,
+        "source_hashes": {
+          "keyframes.json": "92d13ecdc71e6f9155e208e94d8ba683a4721c0d69722ca6ab8c0ddf95f6a1a6",
+          "tracks.json": "b6def345a9d2ee7d236f8fdc540951c78c27547ecfc6a4ea4f9a29887bf72245",
+          "stable/stable_landmarks.json": "cab013f22e12500c4d38cada2eb313307ac4e38d828d3165a4182db70480fa16"
+        },
+        "no_3d_registration_or_distance_gating": true,
+        "evaluation": "Exploratory consistency of RGB candidate associations, not ground truth or an independent journey."
+      },
+      "bag_messages": 2835874,
+      "bag_bytes": 4673661698,
+      "reported_transport_loss": 2,
+      "log_issues": {
+        "record.log": {
+          "matching_lines": 1,
+          "examples": [
+            "[WARN] [1791405313.564800211] [rosbag2_recorder]: Number of messages lost on the transport layer: 2"
+          ]
+        },
+        "viewer.log": {
+          "matching_lines": 2,
+          "examples": [
+            "Traceback (most recent call last):",
+            "rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333"
+          ]
+        },
+        "vision.log": {
+          "matching_lines": 1,
+          "examples": [
+            "Traceback (most recent call last):"
+          ]
+        }
+      }
+    }
+  ]
+}

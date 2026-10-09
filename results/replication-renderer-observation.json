@@ -1,0 +1,10 @@
+{
+  "observed_on": "2026-10-08",
+  "source_on_dell": "/home/lpviana/.gz/rendering/ogre2.log",
+  "lines": [
+    "17:14:28: GL_VERSION = 4.6 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2",
+    "17:14:28: GL_VENDOR = Intel",
+    "17:14:28: GL_RENDERER = Mesa Intel(R) UHD Graphics 730 (ADL-S GT1)"
+  ],
+  "scope": "Available final rendering log, whose local timestamp coincides with seed-25 startup. Not independently archived per trial; GPU utilization and GPU memory were not measured."
+}
