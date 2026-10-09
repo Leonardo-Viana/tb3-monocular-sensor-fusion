@@ -2,7 +2,7 @@
 
 Experimental sparse 3D mapping with a simulated TurtleBot3 Waffle with CPU-based estimation on a desktop with integrated graphics for rendering. Three-dimensional landmarks come from monocular RGB triangulation. Wheel odometry, raw IMU measurements and planar LiDAR SLAM support camera pose and autonomous exploration.
 
-**Status:** experimental research software, with three archived development stages. The latest archived completed mission is from 2 October 2026. Surface completeness, absolute accuracy and global consistency are not established. The repository migration itself did not constitute a new robot run. A separate, bounded replication campaign began on the Dell on 7 October 2026 at 19:31 UTC; its results remain pending review. See the [prospective protocol](docs/PROTOCOL-2026-10-07.md) and [campaign runner](tools/campaign_runner.py). The runner schedules up to three sequential trials, records resource usage and stops after a failed trial. It does not establish publication readiness.
+**Status:** the three-run replication campaign completed on 7 October 2026 and was audited on 8 October. All trials reached the reachable-view criterion and returned near the estimated start. Each reconstructed 3,371–3,751 sparse landmark IDs; local pixel errors were small, but cross-revisit consistency varied. Hardware limits did not stop these trials. Complete 3D surfaces and absolute accuracy remain unestablished. See the [new English report](paper/replication-report-20261007.md), [replication metrics](results/replication-20261007.md) and [compact evidence](data/publication-evidence-20261007.zip).
 
 ![Saved guarded-run map](paper/guarded-map.png)
 
@@ -10,14 +10,17 @@ The ground-plane outline is a planar LiDAR occupancy reference. Only the sparse 
 
 ## Start here
 
-- [English experimental report](paper/guarded-repeat-report.md)
-- [Automatically extracted metrics](results/summary.md)
+- [Latest English replication report](paper/replication-report-20261007.md)
+- [Latest replication metrics](results/replication-20261007.md)
+- [Replication evidence and reproduction](data/replication-20261007-README.md)
+- [Earlier guarded-run report](paper/guarded-repeat-report.md)
+- [Earlier development-stage metrics](results/summary.md)
 - [Sensor roles and limitations](docs/method.md)
 - [Reproduction and dependency notes](docs/reproduction.md)
 - [Data inventory and provenance](data/README.md)
 - [Article material index](paper/README.md)
 
-## Latest results
+## Earlier guarded-run results (2 October 2026)
 
 The guarded mission covered 156/160 planned reachable views (97.5%), returned home and stopped. It accepted 4,029 sparse landmark IDs and scored 8,920 reserved pixel observations: median 0.240 px, p90 0.748 px, maximum 7.689 px. These errors use 960 × 540 working images. View coverage is not surface coverage; landmark IDs can duplicate physical features.
 
