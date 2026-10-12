@@ -11,6 +11,7 @@ The ground-plane outline is a planar LiDAR occupancy reference. Only the sparse 
 ## Start here
 
 - [Latest English replication report](paper/replication-report-20261007.md)
+- [Shutdown validation and submap diagnosis (12 October)](paper/followup-report-20261012.md)
 - [Latest replication metrics](results/replication-20261007.md)
 - [Replication evidence and reproduction](data/replication-20261007-README.md)
 - [Earlier guarded-run report](paper/guarded-repeat-report.md)
@@ -32,7 +33,7 @@ The `experiments/` entries below are restored locally from the ZIP archives; the
 
 | Directory | Contents |
 | --- | --- |
-| `runtime/` | Byte-identical guarded-run Python code and ROS/RViz configuration, without recorded output |
+| `runtime/` | Working Python code and ROS/RViz configuration, including documented shutdown fixes; archived versions remain unchanged |
 | `experiments/2026-09-30-texture-pilot/` | Uniform/textured pilot, scene authoring, upstream asset copies, reports and selected evidence |
 | `experiments/2026-10-01-baseline/` | Original autonomous mission, preserved timeout/resume history and revisit audit |
 | `experiments/2026-10-02-guarded/` | Prospective guarded-tracker repeat, maps, metrics and verification |
