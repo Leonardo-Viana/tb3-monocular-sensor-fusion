@@ -1,7 +1,7 @@
 """Single shutdown owner for a fresh mission in a paused Gazebo simulation.
 No scene geometry is used by exploration, pose fusion or reconstruction.
 """
-import os,sys,json,time,signal,subprocess,hashlib,fcntl,shutil
+import os,sys,json,time,signal,subprocess,hashlib,fcntl,shutil,math
 from pathlib import Path
 from lifecycle import ProcessStopper,StopRequest
 ROOT=Path(__file__).resolve().parent;OUT=ROOT/'output'
@@ -12,9 +12,11 @@ def pause(value):
  if r.returncode or 'true' not in r.stdout:raise RuntimeError('Simulation control failed: '+r.stdout+r.stderr)
 def main(stop_request):
  if os.environ.get('ROS_DISTRO')!='jazzy':raise SystemExit('Source ROS Jazzy first')
+ seconds=float(os.environ.get('TB3_MISSION_SECONDS','2400'))
+ if not math.isfinite(seconds) or not 1<=seconds<=2400:raise SystemExit('TB3_MISSION_SECONDS must be between 1 and 2400')
  OUT.mkdir(exist_ok=True);lock=open(OUT/'supervisor.lock','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  if (OUT/'run_started.json').exists():raise SystemExit('Existing run preserved; choose a fresh project/run for a new mission')
- manifest={'started_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'mission_wall_budget_s':2400,'ros_domain':int(ENV['ROS_DOMAIN_ID']),'gz_partition':ENV['GZ_PARTITION'],'sensor_policy':'RGB rays only for 3D; raw gyro/accel, wheel velocity and planar lidar for pose; no depth/compass/simulator pose','source_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in ROOT.iterdir() if p.suffix in ['.py','.yaml','.rviz']},'stage':'starting'}
+ manifest={'started_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'mission_wall_budget_s':seconds,'ros_domain':int(ENV['ROS_DOMAIN_ID']),'gz_partition':ENV['GZ_PARTITION'],'sensor_policy':'RGB rays only for 3D; raw gyro/accel, wheel velocity and planar lidar for pose; no depth/compass/simulator pose','source_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in ROOT.iterdir() if p.suffix in ['.py','.yaml','.rviz']},'stage':'starting'}
  (OUT/'run_started.json').write_text(json.dumps(manifest,indent=2));procs={};pids={};normal=False;stopper=ProcessStopper()
  def check_stop():
   if stop_request.requested:raise InterruptedError("Supervisor stop requested")
@@ -55,8 +57,8 @@ def main(stop_request):
   d=json.loads(r.stdout.strip().splitlines()[-1]);needed=['/scan','/odom','/imu','/camera/image_raw/compressed','/mono/map']
   if any(d.get('counts',{}).get(t,0)<1 for t in needed) or 'pose' not in d:raise RuntimeError('Required sensors/pose missing')
   if d.get('publishers',{}).get('/cmd_vel'):raise RuntimeError('Another velocity publisher exists')
-  p=launch('autonomy',['python3',str(ROOT/'autonomy_async.py'),'--seconds','2400',*args]);manifest['stage']='exploring';(OUT/'supervisor_status.json').write_text(json.dumps(manifest,indent=2));print('AUTONOMY_STARTED',p.pid,flush=True)
-  deadline=time.monotonic()+4080
+  p=launch('autonomy',['python3',str(ROOT/'autonomy_async.py'),'--seconds',str(seconds),*args]);manifest['stage']='exploring';(OUT/'supervisor_status.json').write_text(json.dumps(manifest,indent=2));print('AUTONOMY_STARTED',p.pid,flush=True)
+  deadline=time.monotonic()+seconds+1680
   while p.poll() is None and time.monotonic()<deadline:
    check_stop()
    for name in ['record','vision','odometry','slam','bridge','image','viewer']:

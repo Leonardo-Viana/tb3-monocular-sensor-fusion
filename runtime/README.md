@@ -1,5 +1,10 @@
 # Runtime
 
+The revised shutdown path subsequently passed a short live Gazebo integration
+on 12 October; see the [integration report](../paper/integration-report-20261012.md).
+`TB3_MISSION_SECONDS` permits a shorter navigation budget (1–2400 seconds;
+default 2400), followed by final reconstruction and cleanup.
+
 Part of the TurtleBot3 monocular sensor-fusion research project. See the [main README](../README.md) for scope, usage and limitations.
 
 As of 12 October 2026, this directory includes cooperative shutdown fixes. It is
@@ -16,6 +21,6 @@ its historical defaults remain 74 and tb3_texture_pilot_20260929. Always use an
 isolated simulation environment and a fresh directory prepared with
 tools/prepare_run.py. Never execute inside an archived experiment.
 
-See the [follow-up report](../paper/followup-report-20261012.md) for regression
-evidence and remaining validation limits. No complete Gazebo mission has yet
-been rerun with this revision.
+See the [follow-up report](../paper/followup-report-20261012.md) for isolated
+regression evidence and the integration report above for the subsequent live
+test. The full three-run mapping campaign has not been repeated with this revision.
