@@ -1,0 +1,176 @@
+{
+  "date_utc": "2026-10-12T03:26:08Z",
+  "platform": "Dell Vostro 3710; ROS 2 Jazzy",
+  "scope": "Isolated ROS_DOMAIN_ID=176; no Gazebo, no controller or nonzero commands",
+  "seconds": 18.994944310048595,
+  "cases": [
+    {
+      "case": "original_vision_double_signal",
+      "original_expected_failure": true,
+      "exit_code": -2,
+      "traceback": true,
+      "double_shutdown": false,
+      "interrupted_save": true,
+      "pass": true,
+      "wall_seconds": 1.8462188430130482
+    },
+    {
+      "case": "original_viewer_shutdown",
+      "original_expected_failure": true,
+      "exit_code": 1,
+      "traceback": true,
+      "double_shutdown": true,
+      "interrupted_save": false,
+      "pass": true,
+      "wall_seconds": 0.6676421639276668
+    },
+    {
+      "case": "patched_vision_run_01",
+      "original_expected_failure": false,
+      "exit_code": 0,
+      "traceback": false,
+      "double_shutdown": false,
+      "interrupted_save": false,
+      "keyframes_equal": true,
+      "tracks_equal": true,
+      "save_complete": {
+        "frames": 2027,
+        "tracks": 72922,
+        "finished_wall": 1791775556.3429391
+      },
+      "temporary_files": [],
+      "pass": true,
+      "wall_seconds": 3.852729476056993
+    },
+    {
+      "case": "patched_vision_run_02",
+      "original_expected_failure": false,
+      "exit_code": 0,
+      "traceback": false,
+      "double_shutdown": false,
+      "interrupted_save": false,
+      "keyframes_equal": true,
+      "tracks_equal": true,
+      "save_complete": {
+        "frames": 1868,
+        "tracks": 61952,
+        "finished_wall": 1791775560.304201
+      },
+      "temporary_files": [],
+      "pass": true,
+      "wall_seconds": 3.4509212559787557
+    },
+    {
+      "case": "patched_vision_run_03",
+      "original_expected_failure": false,
+      "exit_code": 0,
+      "traceback": false,
+      "double_shutdown": false,
+      "interrupted_save": false,
+      "keyframes_equal": true,
+      "tracks_equal": true,
+      "save_complete": {
+        "frames": 1956,
+        "tracks": 71666,
+        "finished_wall": 1791775564.445414
+      },
+      "temporary_files": [],
+      "pass": true,
+      "wall_seconds": 3.8250688750995323
+    },
+    {
+      "case": "patched_viewer_00",
+      "original_expected_failure": false,
+      "exit_code": 0,
+      "traceback": false,
+      "double_shutdown": false,
+      "interrupted_save": false,
+      "pass": true,
+      "wall_seconds": 0.6680037010228261
+    },
+    {
+      "case": "patched_viewer_01",
+      "original_expected_failure": false,
+      "exit_code": 0,
+      "traceback": false,
+      "double_shutdown": false,
+      "interrupted_save": false,
+      "pass": true,
+      "wall_seconds": 0.6880136100808159
+    },
+    {
+      "case": "patched_viewer_02",
+      "original_expected_failure": false,
+      "exit_code": 0,
+      "traceback": false,
+      "double_shutdown": false,
+      "interrupted_save": false,
+      "pass": true,
+      "wall_seconds": 0.6877786080585793
+    },
+    {
+      "case": "patched_odometry",
+      "original_expected_failure": false,
+      "exit_code": 0,
+      "traceback": false,
+      "double_shutdown": false,
+      "interrupted_save": false,
+      "pass": true,
+      "wall_seconds": 0.7282485080650076
+    },
+    {
+      "case": "owned_child_cooperative",
+      "result": {
+        "pid": 59340,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.1140255460049957
+      },
+      "pass": true
+    },
+    {
+      "case": "owned_child_ignore",
+      "result": {
+        "pid": 59341,
+        "signals": [
+          "SIGINT",
+          "SIGTERM",
+          "SIGKILL"
+        ],
+        "escalated": true,
+        "exit_code": -9,
+        "elapsed_s": 0.7038860780885443
+      },
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "code_sha256": {
+    "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+    "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+    "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+    "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+    "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+    "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+    "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+    "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+    "monocular.py": "3078858dc539d501e30dcc65abcb908680e953aa27e4adb5597de8c47b41ca72",
+    "launch_mission.py": "7d0dbf4646fde4f713e8d5d580c102ffa0491d2f0b2ccf450712e78657fa5cfd",
+    "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+    "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+    "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+    "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+    "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+    "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+    "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+    "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+    "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+    "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+    "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+    "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+    "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+  }
+}

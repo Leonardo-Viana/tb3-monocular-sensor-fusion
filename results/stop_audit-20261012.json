@@ -1,0 +1,30 @@
+{
+  "guard": {
+    "pid": 59401,
+    "signals": [
+      "SIGINT"
+    ],
+    "escalated": false,
+    "exit_code": 0,
+    "elapsed_s": 0.36568719591014087
+  },
+  "audit": {
+    "pid": 59400,
+    "signals": [
+      "SIGINT"
+    ],
+    "escalated": false,
+    "exit_code": 0,
+    "elapsed_s": 0.21478155499789864
+  },
+  "zero_messages_before_stop": 13,
+  "received_messages": 16,
+  "only_zero_commands": true,
+  "audit_finished": true,
+  "audit_last_command": [
+    0,
+    0
+  ],
+  "scope": "ROS domain 176; no simulator; no nonzero command producer",
+  "all_pass": true
+}

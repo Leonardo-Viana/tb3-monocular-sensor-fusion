@@ -1,0 +1,96 @@
+{
+  "logs": {
+    "shutdown/patched_odometry/process.log": "[WARN] [1791775567.586696224] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775567.586712459] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n",
+    "shutdown/patched_vision_run_03/process.log": "[WARN] [1791775561.795276441] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775561.795290644] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n[INFO] [1791775562.839343776] [monocular_reconstruction]: Resumed 1956 frames and 71666 tracks; first new image starts fresh temporal tracks.\n[INFO] [1791775562.853543771] [monocular_reconstruction]: MONOCULAR ONLY. 3D from RGB triangulation; no depth or compass subscriptions.\n",
+    "shutdown/original_viewer_shutdown/process.log": "[WARN] [1791775552.441013404] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775552.441029776] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\nTraceback (most recent call last):\n  File \"<string>\", line 15, in <module>\n  File \"/home/lpviana/tb3_followup_20261012/results/shutdown/original_viewer_shutdown/live_view.py\", line 60, in main\n    finally:n.destroy_node();rclpy.shutdown()\n                             ^^^^^^^^^^^^^^^^\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py\", line 134, in shutdown\n    _shutdown(context=context)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py\", line 82, in shutdown\n    context.shutdown()\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py\", line 129, in shutdown\n    self.__context.shutdown()\nrclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333\n",
+    "shutdown/patched_vision_run_02/process.log": "[WARN] [1791775557.938186937] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775557.938201511] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n[INFO] [1791775558.836437215] [monocular_reconstruction]: Resumed 1868 frames and 61952 tracks; first new image starts fresh temporal tracks.\n[INFO] [1791775558.850648181] [monocular_reconstruction]: MONOCULAR ONLY. 3D from RGB triangulation; no depth or compass subscriptions.\n",
+    "shutdown/patched_viewer_01/process.log": "[WARN] [1791775566.133137442] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775566.133153634] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n",
+    "shutdown/patched_vision_run_01/process.log": "[WARN] [1791775553.699708486] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775553.699723560] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n[INFO] [1791775554.738708731] [monocular_reconstruction]: Resumed 2027 frames and 72922 tracks; first new image starts fresh temporal tracks.\n[INFO] [1791775554.753762384] [monocular_reconstruction]: MONOCULAR ONLY. 3D from RGB triangulation; no depth or compass subscriptions.\n",
+    "shutdown/patched_viewer_00/process.log": "[WARN] [1791775565.449479247] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775565.449493397] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n",
+    "shutdown/original_vision_double_signal/process.log": "[WARN] [1791775550.810226185] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775550.810240640] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n[INFO] [1791775551.854958035] [monocular_reconstruction]: Resumed 2027 frames and 72922 tracks; first new image starts fresh temporal tracks.\n[INFO] [1791775551.869919004] [monocular_reconstruction]: MONOCULAR ONLY. 3D from RGB triangulation; no depth or compass subscriptions.\nTraceback (most recent call last):\n  File \"<string>\", line 15, in <module>\n  File \"/home/lpviana/tb3_followup_20261012/results/shutdown/original_vision_double_signal/monocular.py\", line 207, in main\n    n.save();n.destroy_node()\n    ^^^^^^^^\n  File \"<string>\", line 13, in wrapped\nKeyboardInterrupt\n",
+    "shutdown/patched_viewer_02/process.log": "[WARN] [1791775566.818497358] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775566.818512983] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n",
+    "stop_audit/command_guard.py.log": "[WARN] [1791775726.997173782] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775726.997193295] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n",
+    "stop_audit/audit_mission.py.log": "[WARN] [1791775727.026805702] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1791775727.026825632] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\n"
+  },
+  "examples": [
+    {
+      "frame_a": 483,
+      "frame_b": 609,
+      "track_a": 38429,
+      "track_b": 54995,
+      "uv_a": [
+        173.10653686523438,
+        227.47889709472656
+      ],
+      "uv_b": [
+        262.96856689453125,
+        217.86102294921875
+      ],
+      "delta_m": [
+        0.3038602022413372,
+        0.2106108601975718,
+        -0.013154009661823202
+      ],
+      "distance_m": 0.36994727314779713,
+      "z_difference_m": 0.013154009661823202,
+      "epipolar_supported": true,
+      "block_a": 7,
+      "block_b": 9,
+      "image_pair_support": 2,
+      "repeat_support": true
+    },
+    {
+      "frame_a": 113,
+      "frame_b": 1440,
+      "track_a": 9001,
+      "track_b": 151513,
+      "uv_a": [
+        758.7434692382812,
+        316.3456726074219
+      ],
+      "uv_b": [
+        730.666015625,
+        319.8875732421875
+      ],
+      "delta_m": [
+        -0.04626969298651451,
+        0.11178850967642101,
+        -0.0007055552379939753
+      ],
+      "distance_m": 0.12098782249852852,
+      "z_difference_m": 0.0007055552379939753,
+      "epipolar_supported": true,
+      "block_a": 1,
+      "block_b": 22,
+      "image_pair_support": 2,
+      "repeat_support": true
+    },
+    {
+      "frame_a": 319,
+      "frame_b": 1619,
+      "track_a": 20291,
+      "track_b": 160610,
+      "uv_a": [
+        733.3558349609375,
+        254.50860595703125
+      ],
+      "uv_b": [
+        797.90234375,
+        253.74102783203125
+      ],
+      "delta_m": [
+        0.07599725251641853,
+        0.12346743989935804,
+        0.0010710696460071167
+      ],
+      "distance_m": 0.14498599344603075,
+      "z_difference_m": 0.0010710696460071167,
+      "epipolar_supported": true,
+      "block_a": 4,
+      "block_b": 25,
+      "image_pair_support": 2,
+      "repeat_support": true
+    }
+  ],
+  "active_test_processes": []
+}
