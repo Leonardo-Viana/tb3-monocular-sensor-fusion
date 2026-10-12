@@ -1,0 +1,1205 @@
+{
+  "created_utc": "2026-10-12T13:19:57Z",
+  "execution": {
+    "started_utc": "2026-10-12T13:14:42Z",
+    "status": "execution_finished_pending_audit",
+    "navigation_budget_s": 180,
+    "outer_mission_deadline_s": 1200,
+    "ros_domain": 76,
+    "gz_partition": "tb3_integration_20261012",
+    "host": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "total_memory_bytes": 7995703296,
+    "runner_sha256": "436248bf9d83b58e1582cc5699b38304d72a96788d7a3cad71a7f14b032307fe",
+    "protocol_sha256": "456c580972404620dacbbe6a98f1832dbbf56265cf89f98dfcfe916088f5f4d3",
+    "run": {
+      "run": "repeat_01",
+      "seed": 23,
+      "started_utc": "2026-10-12T13:14:42Z",
+      "condition": "textured",
+      "stage": "completed",
+      "source_sha256": {
+        "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+        "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+        "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+        "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+        "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+        "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+        "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+        "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+        "monocular.py": "3078858dc539d501e30dcc65abcb908680e953aa27e4adb5597de8c47b41ca72",
+        "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+        "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+        "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+        "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+        "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+        "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+        "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+        "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+        "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+        "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+        "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+        "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+        "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+        "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+        "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+        "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+        "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+      },
+      "gazebo_pid": 61830,
+      "mission_pid": 61846,
+      "mission_exit_code": 0,
+      "supervisor_status.json": {
+        "started_utc": "2026-10-12T13:14:43Z",
+        "mission_wall_budget_s": 180,
+        "ros_domain": 76,
+        "gz_partition": "tb3_integration_20261012",
+        "sensor_policy": "RGB rays only for 3D; raw gyro/accel, wheel velocity and planar lidar for pose; no depth/compass/simulator pose",
+        "source_hashes": {
+          "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+          "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+          "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+          "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+          "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+          "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+          "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+          "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+          "monocular.py": "3078858dc539d501e30dcc65abcb908680e953aa27e4adb5597de8c47b41ca72",
+          "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+          "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+          "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+          "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+          "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+          "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+          "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+          "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+          "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+          "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+          "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+          "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+          "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+          "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+          "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+          "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+          "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+        },
+        "stage": "stopped",
+        "controller_exit": 0,
+        "result": {
+          "state": "stopped",
+          "reason": "time_budget_reached_incomplete",
+          "terminal_reason": "resource_budget_reached_incomplete",
+          "elapsed_wall_s": 219.7,
+          "travelled_m": 9.353242516612632,
+          "goals_reached": 14,
+          "failed_goals": 0,
+          "recoveries": 0,
+          "map_metrics": {
+            "frontier_groups": 0,
+            "frontier_cells": 0,
+            "view_goals_total": 152,
+            "view_goals_covered": 25,
+            "view_goals_blocked": 0,
+            "view_coverage": 0.16447368421052633,
+            "free_area_m2": 19.798399114942562,
+            "reachable_area_m2": 8.444799622488025,
+            "reason": "return_home"
+          },
+          "current_position": [
+            1.5534390165067706,
+            -0.03198724566644418
+          ],
+          "accepted_landmarks": 1713,
+          "new_track_fractions": [
+            522,
+            0.8295019157088123,
+            0.7947643979057591
+          ],
+          "checkpoints": [
+            {
+              "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_001",
+              "accepted_landmarks": 522,
+              "test_pixels": {
+                "n": 1384,
+                "median": 0.32471660842117467,
+                "p90": 0.9293135361772691,
+                "max": 3.6207192299685356
+              },
+              "dataset_pixel_gate_pass": true,
+              "fit_seconds": 43.75034391193185
+            },
+            {
+              "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_002",
+              "accepted_landmarks": 954,
+              "test_pixels": {
+                "n": 2171,
+                "median": 0.3025347070868784,
+                "p90": 0.9110626304633577,
+                "max": 176.88365042489016
+              },
+              "dataset_pixel_gate_pass": true,
+              "fit_seconds": 42.69856560905464
+            },
+            {
+              "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_003",
+              "accepted_landmarks": 1713,
+              "test_pixels": {
+                "n": 4108,
+                "median": 0.2781896996057758,
+                "p90": 0.8470996497658325,
+                "max": 176.88365042489016
+              },
+              "dataset_pixel_gate_pass": true,
+              "fit_seconds": 36.52610845200252
+            }
+          ],
+          "dense_3d_complete": false,
+          "limits": {
+            "wall_seconds": 180,
+            "maximum_frames": 5500
+          },
+          "available_memory_mb": 3114
+        },
+        "cleanup": {
+          "autonomy": {
+            "pid": 62180,
+            "signals": [],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.000011610100045800209
+          },
+          "vision": {
+            "pid": 62043,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.46424712100997567
+          },
+          "record": {
+            "pid": 62044,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.21386897400952876
+          },
+          "viewer": {
+            "pid": 62045,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.2138062040321529
+          },
+          "rviz": {
+            "pid": 62046,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.2640130239306018
+          },
+          "odometry": {
+            "pid": 61857,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.16380696301348507
+          },
+          "slam": {
+            "pid": 61858,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.21398640994448215
+          },
+          "image": {
+            "pid": 61856,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.21389601298142225
+          },
+          "bridge": {
+            "pid": 61855,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.2139350950019434
+          },
+          "audit": {
+            "pid": 62047,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.1638165069743991
+          }
+        },
+        "cleanup_errors": [],
+        "cleanup_escalated": false,
+        "stop_signals_received": [],
+        "finished_utc": "2026-10-12T13:19:10Z"
+      },
+      "autonomy_status.json": {
+        "state": "stopped",
+        "reason": "time_budget_reached_incomplete",
+        "terminal_reason": "resource_budget_reached_incomplete",
+        "elapsed_wall_s": 219.7,
+        "travelled_m": 9.353242516612632,
+        "goals_reached": 14,
+        "failed_goals": 0,
+        "recoveries": 0,
+        "map_metrics": {
+          "frontier_groups": 0,
+          "frontier_cells": 0,
+          "view_goals_total": 152,
+          "view_goals_covered": 25,
+          "view_goals_blocked": 0,
+          "view_coverage": 0.16447368421052633,
+          "free_area_m2": 19.798399114942562,
+          "reachable_area_m2": 8.444799622488025,
+          "reason": "return_home"
+        },
+        "current_position": [
+          1.5534390165067706,
+          -0.03198724566644418
+        ],
+        "accepted_landmarks": 1713,
+        "new_track_fractions": [
+          522,
+          0.8295019157088123,
+          0.7947643979057591
+        ],
+        "checkpoints": [
+          {
+            "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_001",
+            "accepted_landmarks": 522,
+            "test_pixels": {
+              "n": 1384,
+              "median": 0.32471660842117467,
+              "p90": 0.9293135361772691,
+              "max": 3.6207192299685356
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 43.75034391193185
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_002",
+            "accepted_landmarks": 954,
+            "test_pixels": {
+              "n": 2171,
+              "median": 0.3025347070868784,
+              "p90": 0.9110626304633577,
+              "max": 176.88365042489016
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 42.69856560905464
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_003",
+            "accepted_landmarks": 1713,
+            "test_pixels": {
+              "n": 4108,
+              "median": 0.2781896996057758,
+              "p90": 0.8470996497658325,
+              "max": 176.88365042489016
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 36.52610845200252
+          }
+        ],
+        "dense_3d_complete": false,
+        "limits": {
+          "wall_seconds": 180,
+          "maximum_frames": 5500
+        },
+        "available_memory_mb": 3114
+      },
+      "stable/validation.json": {
+        "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+        "accepted_landmarks": 1713,
+        "cached_blocks_reused": 4,
+        "input_tracks": 12685,
+        "frames": 395,
+        "blocks": [
+          {
+            "block": 0,
+            "input": 1326,
+            "fit": 1069,
+            "frames": 63,
+            "accepted": 307,
+            "converged": true,
+            "nfev": 104,
+            "rejections": {
+              "parallax": 524,
+              "reprojection": 16,
+              "training_inliers": 14,
+              "pose_sensitivity": 206,
+              "validation_pixels": 2
+            }
+          },
+          {
+            "block": 1,
+            "input": 1532,
+            "fit": 1119,
+            "frames": 57,
+            "accepted": 359,
+            "converged": true,
+            "nfev": 56,
+            "rejections": {
+              "training_inliers": 16,
+              "pose_sensitivity": 265,
+              "parallax": 451,
+              "reprojection": 21,
+              "validation_pixels": 2,
+              "baseline": 5
+            }
+          },
+          {
+            "block": 2,
+            "input": 986,
+            "fit": 613,
+            "frames": 42,
+            "accepted": 196,
+            "converged": true,
+            "nfev": 329,
+            "rejections": {
+              "pose_sensitivity": 121,
+              "training_inliers": 3,
+              "parallax": 267,
+              "reprojection": 5,
+              "baseline": 21
+            }
+          },
+          {
+            "block": 3,
+            "input": 869,
+            "fit": 264,
+            "frames": 16,
+            "accepted": 92,
+            "converged": true,
+            "nfev": 46,
+            "rejections": {
+              "pose_sensitivity": 152,
+              "parallax": 19,
+              "reprojection": 1
+            }
+          },
+          {
+            "block": 4,
+            "input": 1157,
+            "fit": 658,
+            "frames": 28,
+            "accepted": 284,
+            "converged": true,
+            "nfev": 50,
+            "rejections": {
+              "pose_sensitivity": 129,
+              "parallax": 187,
+              "baseline": 40,
+              "training_inliers": 8,
+              "reprojection": 9,
+              "validation_pixels": 1
+            }
+          },
+          {
+            "block": 5,
+            "input": 1714,
+            "fit": 1201,
+            "frames": 59,
+            "accepted": 463,
+            "converged": true,
+            "nfev": 66,
+            "rejections": {
+              "pose_sensitivity": 425,
+              "training_inliers": 31,
+              "parallax": 240,
+              "reprojection": 22,
+              "baseline": 16,
+              "validation_pixels": 4
+            }
+          },
+          {
+            "block": 6,
+            "input": 97,
+            "fit": 80,
+            "frames": 10,
+            "accepted": 12,
+            "converged": true,
+            "nfev": 35,
+            "rejections": {
+              "parallax": 54,
+              "pose_sensitivity": 14
+            }
+          }
+        ],
+        "test_pixels": {
+          "n": 4108,
+          "median": 0.2781896996057758,
+          "p90": 0.8470996497658325,
+          "max": 176.88365042489016
+        },
+        "test_scored_landmarks": 1713,
+        "test_unscored_landmarks": 0,
+        "test_landmark_medians_px": {
+          "n": 1713,
+          "median": 0.2716919210618586,
+          "p90": 0.7296315838449278,
+          "max": 62.93163128485375
+        },
+        "test_pixels_over_3px": 10,
+        "test_pixels_over_8px": 2,
+        "stress_p90_distribution_m": {
+          "n": 1713,
+          "median": 0.054915109310195775,
+          "p90": 0.09062446507616873,
+          "max": 0.09999253737655817
+        },
+        "test_never_used_for_landmark_acceptance": true,
+        "parameters_predeclared_before_test": true,
+        "duration_s": 36.52610845200252,
+        "metric_ground_truth_used": false,
+        "limitations": [
+          "Sparse landmarks only; no dense or complete 3D claim",
+          "Flat-floor motion prior",
+          "Pixel tests reserve observations within existing tracks, not independent journeys",
+          "No verified visual landmark association across separate revisits",
+          "Global submap placement uses approximate XY pose-graph alignment",
+          "Stress scenario is not calibrated posterior uncertainty",
+          "RGB colors inherited from first tracked pixel"
+        ],
+        "dataset_pixel_gate_pass": true
+      },
+      "paused_before_cleanup": true,
+      "finished_utc": "2026-10-12T13:19:11Z",
+      "resources": {
+        "samples": 57,
+        "minimum_available_mib": 2796.84375,
+        "maximum_swap_used_mib": 477.51171875,
+        "minimum_disk_free_gib": 14.622695922851562,
+        "maximum_sampled_sum_pss_mib": 1533.1884765625,
+        "note": "Five-second samples, not continuous peaks; PSS includes only discovered descendants. RTF includes startup/paused intervals; filter by stage for interpretation."
+      }
+    },
+    "finished_utc": "2026-10-12T13:19:11Z"
+  },
+  "audit": {
+    "run": "repeat_01",
+    "seed": 23,
+    "checks": {
+      "source_hashes_match_launch": true,
+      "supervisor_stopped_exit_zero": true,
+      "simulation_pause_confirmed": true,
+      "final_observed_command_zero": true,
+      "counts_agree": true,
+      "ply_coordinates_match": true,
+      "ply_colors_match": true,
+      "finite_xyz": true,
+      "valid_colors": true,
+      "captured_frames_equal_final_fit": true,
+      "test_count_matches": true,
+      "test_median_matches": true,
+      "test_p90_matches": true,
+      "test_max_matches": true,
+      "scored_landmark_count_matches": true,
+      "unscored_landmark_count_matches": true,
+      "reserved_test_frames_disjoint": true,
+      "bag_counts_match_metadata": true,
+      "rgb_endpoints_decode": true
+    },
+    "checks_pass": true,
+    "controller": {
+      "state": "stopped",
+      "reason": "time_budget_reached_incomplete",
+      "terminal_reason": "resource_budget_reached_incomplete",
+      "elapsed_wall_s": 219.7,
+      "travelled_m": 9.353242516612632,
+      "goals_reached": 14,
+      "failed_goals": 0,
+      "recoveries": 0,
+      "map_metrics": {
+        "frontier_groups": 0,
+        "frontier_cells": 0,
+        "view_goals_total": 152,
+        "view_goals_covered": 25,
+        "view_goals_blocked": 0,
+        "view_coverage": 0.16447368421052633,
+        "free_area_m2": 19.798399114942562,
+        "reachable_area_m2": 8.444799622488025,
+        "reason": "return_home"
+      },
+      "current_position": [
+        1.5534390165067706,
+        -0.03198724566644418
+      ],
+      "accepted_landmarks": 1713,
+      "new_track_fractions": [
+        522,
+        0.8295019157088123,
+        0.7947643979057591
+      ],
+      "checkpoints": [
+        {
+          "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_001",
+          "accepted_landmarks": 522,
+          "test_pixels": {
+            "n": 1384,
+            "median": 0.32471660842117467,
+            "p90": 0.9293135361772691,
+            "max": 3.6207192299685356
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 43.75034391193185
+        },
+        {
+          "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_002",
+          "accepted_landmarks": 954,
+          "test_pixels": {
+            "n": 2171,
+            "median": 0.3025347070868784,
+            "p90": 0.9110626304633577,
+            "max": 176.88365042489016
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 42.69856560905464
+        },
+        {
+          "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_003",
+          "accepted_landmarks": 1713,
+          "test_pixels": {
+            "n": 4108,
+            "median": 0.2781896996057758,
+            "p90": 0.8470996497658325,
+            "max": 176.88365042489016
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 36.52610845200252
+        }
+      ],
+      "dense_3d_complete": false,
+      "limits": {
+        "wall_seconds": 180,
+        "maximum_frames": 5500
+      },
+      "available_memory_mb": 3114
+    },
+    "validation": {
+      "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+      "accepted_landmarks": 1713,
+      "cached_blocks_reused": 4,
+      "input_tracks": 12685,
+      "frames": 395,
+      "blocks": [
+        {
+          "block": 0,
+          "input": 1326,
+          "fit": 1069,
+          "frames": 63,
+          "accepted": 307,
+          "converged": true,
+          "nfev": 104,
+          "rejections": {
+            "parallax": 524,
+            "reprojection": 16,
+            "training_inliers": 14,
+            "pose_sensitivity": 206,
+            "validation_pixels": 2
+          }
+        },
+        {
+          "block": 1,
+          "input": 1532,
+          "fit": 1119,
+          "frames": 57,
+          "accepted": 359,
+          "converged": true,
+          "nfev": 56,
+          "rejections": {
+            "training_inliers": 16,
+            "pose_sensitivity": 265,
+            "parallax": 451,
+            "reprojection": 21,
+            "validation_pixels": 2,
+            "baseline": 5
+          }
+        },
+        {
+          "block": 2,
+          "input": 986,
+          "fit": 613,
+          "frames": 42,
+          "accepted": 196,
+          "converged": true,
+          "nfev": 329,
+          "rejections": {
+            "pose_sensitivity": 121,
+            "training_inliers": 3,
+            "parallax": 267,
+            "reprojection": 5,
+            "baseline": 21
+          }
+        },
+        {
+          "block": 3,
+          "input": 869,
+          "fit": 264,
+          "frames": 16,
+          "accepted": 92,
+          "converged": true,
+          "nfev": 46,
+          "rejections": {
+            "pose_sensitivity": 152,
+            "parallax": 19,
+            "reprojection": 1
+          }
+        },
+        {
+          "block": 4,
+          "input": 1157,
+          "fit": 658,
+          "frames": 28,
+          "accepted": 284,
+          "converged": true,
+          "nfev": 50,
+          "rejections": {
+            "pose_sensitivity": 129,
+            "parallax": 187,
+            "baseline": 40,
+            "training_inliers": 8,
+            "reprojection": 9,
+            "validation_pixels": 1
+          }
+        },
+        {
+          "block": 5,
+          "input": 1714,
+          "fit": 1201,
+          "frames": 59,
+          "accepted": 463,
+          "converged": true,
+          "nfev": 66,
+          "rejections": {
+            "pose_sensitivity": 425,
+            "training_inliers": 31,
+            "parallax": 240,
+            "reprojection": 22,
+            "baseline": 16,
+            "validation_pixels": 4
+          }
+        },
+        {
+          "block": 6,
+          "input": 97,
+          "fit": 80,
+          "frames": 10,
+          "accepted": 12,
+          "converged": true,
+          "nfev": 35,
+          "rejections": {
+            "parallax": 54,
+            "pose_sensitivity": 14
+          }
+        }
+      ],
+      "test_pixels": {
+        "n": 4108,
+        "median": 0.2781896996057758,
+        "p90": 0.8470996497658325,
+        "max": 176.88365042489016
+      },
+      "test_scored_landmarks": 1713,
+      "test_unscored_landmarks": 0,
+      "test_landmark_medians_px": {
+        "n": 1713,
+        "median": 0.2716919210618586,
+        "p90": 0.7296315838449278,
+        "max": 62.93163128485375
+      },
+      "test_pixels_over_3px": 10,
+      "test_pixels_over_8px": 2,
+      "stress_p90_distribution_m": {
+        "n": 1713,
+        "median": 0.054915109310195775,
+        "p90": 0.09062446507616873,
+        "max": 0.09999253737655817
+      },
+      "test_never_used_for_landmark_acceptance": true,
+      "parameters_predeclared_before_test": true,
+      "duration_s": 36.52610845200252,
+      "metric_ground_truth_used": false,
+      "limitations": [
+        "Sparse landmarks only; no dense or complete 3D claim",
+        "Flat-floor motion prior",
+        "Pixel tests reserve observations within existing tracks, not independent journeys",
+        "No verified visual landmark association across separate revisits",
+        "Global submap placement uses approximate XY pose-graph alignment",
+        "Stress scenario is not calibrated posterior uncertainty",
+        "RGB colors inherited from first tracked pixel"
+      ],
+      "dataset_pixel_gate_pass": true
+    },
+    "vision": {
+      "source": "original monocular RGB only; triangulated image tracks",
+      "pose_sources": [
+        "wheel velocity",
+        "raw gyro",
+        "raw accelerometer",
+        "2D lidar SLAM"
+      ],
+      "forbidden_inputs_used": [],
+      "frames": 395,
+      "active_tracks": 344,
+      "visual_landmarks": 243,
+      "non_ground_landmarks": 140,
+      "height_range_m": [
+        -0.02346418657830226,
+        0.6613929877666405
+      ],
+      "median_reprojection_px": 1.0001532631111516,
+      "median_parallax_deg": 2.2783184171265414,
+      "graph_nodes": 198,
+      "graph_revisions": 0,
+      "loop_edge_marker_count": 0,
+      "rejected_tracks": {
+        "parallax": 1670,
+        "reprojection": 4429,
+        "cheirality_or_range": 81,
+        "baseline": 5918,
+        "short_track": 344
+      },
+      "counts": {
+        "rgb_messages": 6354,
+        "tf_wait": 45,
+        "processed_frames": 395,
+        "features_started": 33802,
+        "tracking_reset_image_gap": 24,
+        "tracked_observations": 100179,
+        "tracking_reset_camera_rotation": 1
+      }
+    },
+    "recording": {
+      "messages": {
+        "/camera/camera_info": 6878,
+        "/imu": 45379,
+        "/odom": 11337,
+        "/clock": 227134,
+        "/joint_states": 227131,
+        "/tf": 27761,
+        "/tf_static": 1,
+        "/camera/image_raw/compressed": 6861,
+        "/scan": 2266,
+        "/cmd_vel": 3533
+      },
+      "expected_messages": {
+        "/cmd_vel": 3533,
+        "/scan": 2266,
+        "/joint_states": 227131,
+        "/tf": 27761,
+        "/clock": 227134,
+        "/tf_static": 1,
+        "/camera/image_raw/compressed": 6861,
+        "/odom": 11337,
+        "/imu": 45379,
+        "/camera/camera_info": 6878
+      },
+      "matches_metadata": true,
+      "endpoint_rgb_shapes": [
+        [
+          1080,
+          1920,
+          3
+        ],
+        [
+          1080,
+          1920,
+          3
+        ]
+      ],
+      "duration_sim_s": 226.96,
+      "bytes": 949535332,
+      "files_sha256": {
+        "metadata.yaml": "8108e2e22c925f07fcd7beb19f285f76fe52f86919aeb6a37025667cd4d76807",
+        "raw_0.mcap": "d2cedfa1dc9233f0b0f95c50aee95f773c089fad3da7105e371d14ef4dd22a6a"
+      },
+      "limits": "Traversal and metadata agreement do not establish zero acquisition loss."
+    },
+    "recorder_transport_lost_messages_reported": 6,
+    "transport_loss_reporting_note": "None means no explicit count found, not a measured zero.",
+    "unconverged_blocks": [],
+    "source_sha256": {
+      "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+      "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+      "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+      "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+      "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+      "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+      "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+      "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+      "monocular.py": "3078858dc539d501e30dcc65abcb908680e953aa27e4adb5597de8c47b41ca72",
+      "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+      "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+      "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+      "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+      "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+      "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+      "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+      "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+      "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+      "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+      "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+      "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+      "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+      "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+      "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+      "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+      "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+    },
+    "estimated_home_distance_m": 1.5537683102351034,
+    "resources": {
+      "samples": 57,
+      "minimum_available_mib": 2796.84375,
+      "maximum_swap_used_mib": 477.51171875,
+      "minimum_disk_free_gib": 14.622695922851562,
+      "maximum_sampled_sum_pss_mib": 1533.1884765625,
+      "note": "Five-second samples, not continuous peaks; PSS includes only discovered descendants. RTF includes startup/paused intervals; filter by stage for interpretation.",
+      "active_sample_count": 54,
+      "navigation_sample_count": 36,
+      "navigation_observed_rtf": {
+        "n": 36,
+        "minimum": 0.8494817278450773,
+        "median": 0.8902344139480523,
+        "mean": 0.8879969855128335,
+        "p90": 0.9082472668307209,
+        "maximum": 0.9142638394270484
+      },
+      "navigation_system_cpu_percent": {
+        "n": 36,
+        "minimum": 49.6,
+        "median": 52.3,
+        "mean": 53.50833333333333,
+        "p90": 57.4,
+        "maximum": 58
+      },
+      "navigation_owned_cpu_percent_one_core": {
+        "n": 36,
+        "minimum": 487.82341777711736,
+        "median": 528.6217557924626,
+        "mean": 546.3220718145893,
+        "p90": 588.4407363601018,
+        "maximum": 595.4857788020013
+      },
+      "phase_sample_counts": {
+        "unmatched": 4,
+        "unknown": 8,
+        "frontier": 16,
+        "visual_view": 13,
+        "returning": 7,
+        "saving_and_refining": 7,
+        "stopped": 2
+      },
+      "first_swap_mib": 477.51171875,
+      "last_swap_mib": 477.51171875,
+      "disk_free_decrease_gib": 0.9151611328125,
+      "maximum_rviz_instances": 1,
+      "viewer_last_seen_before_last_resource_sample_s": 3.018952150014229,
+      "note_phase": "Nearest earlier 1 Hz controller status within six seconds labels approximately 5 s resource intervals; intervals can span transitions. RTF is not per-image latency."
+    },
+    "geometry_diagnostics": {
+      "xyz_min_m": [
+        -0.9529342753095817,
+        -2.0689551922300566,
+        -0.016457253908181053
+      ],
+      "xyz_max_m": [
+        4.458616477104725,
+        3.082028934538755,
+        0.9242198326045062
+      ],
+      "non_ground_ids_z_above_0_08_m": 1369,
+      "occupied_voxels_0_05_m": 1195,
+      "note": "Distribution diagnostics only; duplicate feature IDs are not merged and there is no surface ground truth."
+    },
+    "command_audit": {
+      "final": {
+        "finished": true,
+        "commands_total": 3535,
+        "last_command": [
+          0,
+          0
+        ],
+        "elapsed_wall_s": 259.3532797609223
+      },
+      "recorded_commands": 3535,
+      "publishers_frame_ids": [
+        "mono_autonomy",
+        "mono_autonomy_guard"
+      ],
+      "maximum_abs_linear_m_s": 0.08499999984261956,
+      "maximum_abs_angular_rad_s": 0.32
+    },
+    "log_issues": {
+      "record.log": {
+        "matching_lines": 1,
+        "examples": [
+          "[WARN] [1791811149.253127100] [rosbag2_recorder]: Number of messages lost on the transport layer: 6"
+        ]
+      }
+    },
+    "analysis_seconds": 1.9188592589925975
+  },
+  "integration_checks": {
+    "campaign_completed": true,
+    "supervisor_cleanup_without_escalation": true,
+    "supervisor_cleanup_without_errors": true,
+    "controller_cleanup_without_escalation": true,
+    "saved_frame_count_matches_marker": true,
+    "saved_track_count_matches_marker": true,
+    "autonomous_motion_observed": true,
+    "expected_short_budget_stop": true,
+    "required_topics_recorded": true,
+    "no_runtime_exception_markers": true,
+    "no_observed_owned_process_survives": true,
+    "one_rviz_at_most": true
+  },
+  "integration_pass": true,
+  "supervisor": {
+    "started_utc": "2026-10-12T13:14:43Z",
+    "mission_wall_budget_s": 180,
+    "ros_domain": 76,
+    "gz_partition": "tb3_integration_20261012",
+    "sensor_policy": "RGB rays only for 3D; raw gyro/accel, wheel velocity and planar lidar for pose; no depth/compass/simulator pose",
+    "source_hashes": {
+      "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+      "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+      "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+      "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+      "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+      "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+      "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+      "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+      "monocular.py": "3078858dc539d501e30dcc65abcb908680e953aa27e4adb5597de8c47b41ca72",
+      "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+      "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+      "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+      "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+      "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+      "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+      "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+      "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+      "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+      "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+      "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+      "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+      "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+      "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+      "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+      "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+      "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+    },
+    "stage": "stopped",
+    "controller_exit": 0,
+    "result": {
+      "state": "stopped",
+      "reason": "time_budget_reached_incomplete",
+      "terminal_reason": "resource_budget_reached_incomplete",
+      "elapsed_wall_s": 219.7,
+      "travelled_m": 9.353242516612632,
+      "goals_reached": 14,
+      "failed_goals": 0,
+      "recoveries": 0,
+      "map_metrics": {
+        "frontier_groups": 0,
+        "frontier_cells": 0,
+        "view_goals_total": 152,
+        "view_goals_covered": 25,
+        "view_goals_blocked": 0,
+        "view_coverage": 0.16447368421052633,
+        "free_area_m2": 19.798399114942562,
+        "reachable_area_m2": 8.444799622488025,
+        "reason": "return_home"
+      },
+      "current_position": [
+        1.5534390165067706,
+        -0.03198724566644418
+      ],
+      "accepted_landmarks": 1713,
+      "new_track_fractions": [
+        522,
+        0.8295019157088123,
+        0.7947643979057591
+      ],
+      "checkpoints": [
+        {
+          "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_001",
+          "accepted_landmarks": 522,
+          "test_pixels": {
+            "n": 1384,
+            "median": 0.32471660842117467,
+            "p90": 0.9293135361772691,
+            "max": 3.6207192299685356
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 43.75034391193185
+        },
+        {
+          "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_002",
+          "accepted_landmarks": 954,
+          "test_pixels": {
+            "n": 2171,
+            "median": 0.3025347070868784,
+            "p90": 0.9110626304633577,
+            "max": 176.88365042489016
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 42.69856560905464
+        },
+        {
+          "snapshot": "/home/lpviana/tb3_integration_20261012/repeat_01/output/snapshots/async_62180_003",
+          "accepted_landmarks": 1713,
+          "test_pixels": {
+            "n": 4108,
+            "median": 0.2781896996057758,
+            "p90": 0.8470996497658325,
+            "max": 176.88365042489016
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 36.52610845200252
+        }
+      ],
+      "dense_3d_complete": false,
+      "limits": {
+        "wall_seconds": 180,
+        "maximum_frames": 5500
+      },
+      "available_memory_mb": 3114
+    },
+    "cleanup": {
+      "autonomy": {
+        "pid": 62180,
+        "signals": [],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.000011610100045800209
+      },
+      "vision": {
+        "pid": 62043,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.46424712100997567
+      },
+      "record": {
+        "pid": 62044,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.21386897400952876
+      },
+      "viewer": {
+        "pid": 62045,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.2138062040321529
+      },
+      "rviz": {
+        "pid": 62046,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.2640130239306018
+      },
+      "odometry": {
+        "pid": 61857,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.16380696301348507
+      },
+      "slam": {
+        "pid": 61858,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.21398640994448215
+      },
+      "image": {
+        "pid": 61856,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.21389601298142225
+      },
+      "bridge": {
+        "pid": 61855,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.2139350950019434
+      },
+      "audit": {
+        "pid": 62047,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.1638165069743991
+      }
+    },
+    "cleanup_errors": [],
+    "cleanup_escalated": false,
+    "stop_signals_received": [],
+    "finished_utc": "2026-10-12T13:19:10Z"
+  },
+  "controller_cleanup": [
+    {
+      "pid": 62195,
+      "signals": [
+        "SIGINT"
+      ],
+      "escalated": false,
+      "exit_code": 0,
+      "elapsed_s": 0.21403691999148577
+    }
+  ],
+  "save_marker": {
+    "frames": 395,
+    "tracks": 12685,
+    "finished_wall": 1791811148.996336
+  },
+  "remaining_owned_processes": [],
+  "exception_markers": {},
+  "audit_sha256": "96711ce8004ee75995c30a7c8148140164f1b97ed0469b23518b826850a0212d",
+  "scope": "Short engineering integration validation. No complete-map, ground-truth accuracy, sensor-ablation or publication-readiness claim."
+}
