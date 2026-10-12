@@ -10,6 +10,8 @@ The ground-plane outline is a planar LiDAR occupancy reference. Only the sparse 
 
 ## Start here
 
+- [Short live Gazebo integration and retained limitations (12 October)](paper/integration-report-20261012.md)
+
 - [Latest English replication report](paper/replication-report-20261007.md)
 - [Shutdown validation and submap diagnosis (12 October)](paper/followup-report-20261012.md)
 - [Latest replication metrics](results/replication-20261007.md)
