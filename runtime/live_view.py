@@ -9,6 +9,7 @@ from nav_msgs.msg import OccupancyGrid
 from visualization_msgs.msg import Marker,MarkerArray
 from std_msgs.msg import Header,String
 from geometry import graph_warp
+from lifecycle import run_node
 ROOT=Path(__file__).resolve().parent;OUT=ROOT/'output'
 class View(Node):
  def __init__(self):
@@ -54,8 +55,5 @@ class View(Node):
   if s.get('state')=='stopped':label.text+='\n'+s.get('reason','')
   self.labels.publish(label)
 def main():
- rclpy.init();n=View()
- try:rclpy.spin(n)
- except KeyboardInterrupt:pass
- finally:n.destroy_node();rclpy.shutdown()
+ run_node(View)
 if __name__=='__main__':main()

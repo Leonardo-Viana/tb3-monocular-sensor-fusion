@@ -12,6 +12,8 @@ from std_srvs.srv import Trigger
 from rclpy.qos import qos_profile_sensor_data
 from explore import Explorer,wrap
 from active_plan import choose,completion
+from lifecycle import ProcessStopper
+from rclpy.signals import SignalHandlerOptions
 
 ROOT=Path(__file__).resolve().parent
 
@@ -209,22 +211,23 @@ class Autonomous(Explorer):
             for script in []:
                 try:subprocess.run(['python3',str(ROOT/script)],env=os.environ,stdout=open(self.out/(script+'.log'),'w'),stderr=subprocess.STDOUT,timeout=30)
                 except Exception:pass
-            pid=self.owned.get('vision')
-            if pid:
-                try:os.killpg(pid,signal.SIGINT)
-                except ProcessLookupError:pass
+            # Sensor processes belong to the mission supervisor. Final snapshot
+            # service completion is not permission to signal the vision process.
             print(json.dumps({'state':'stopped','reason':self.reason,'goals':len(self.goals),'zero_sent':True}),flush=True)
 
 def main():
     lock=open(ROOT/'output/controller.lock','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    ap=argparse.ArgumentParser();ap.add_argument('--seconds',type=float,default=3600);args,rosargs=ap.parse_known_args();rclpy.init(args=rosargs);n=Autonomous(args.seconds)
+    ap=argparse.ArgumentParser();ap.add_argument('--seconds',type=float,default=3600);args,rosargs=ap.parse_known_args();rclpy.init(args=rosargs,signal_handler_options=SignalHandlerOptions.NO);n=Autonomous(args.seconds)
     def stop(*unused):n.stopped=True
     signal.signal(signal.SIGINT,stop);signal.signal(signal.SIGTERM,stop)
     try:n.run()
     finally:
-        if n.child is not None:
-            try:os.killpg(n.child.pid,signal.SIGTERM)
-            except ProcessLookupError:pass
-        n.send();n.destroy_node()
-        if rclpy.ok():rclpy.shutdown()
+        stopper=ProcessStopper()
+        try:
+            n.send()
+            if n.child is not None:stopper.stop(n.child,wait=5)
+            stopper.stop(n.guard,wait=5)
+            atomic(n.out/'controller_cleanup.json',list(stopper.results.values()))
+        finally:
+            n.send();n.destroy_node();rclpy.try_shutdown()
 if __name__=='__main__':main()

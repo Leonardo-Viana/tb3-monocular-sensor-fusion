@@ -74,10 +74,6 @@ class WheelIMU(Node):
             m.header.frame_id='mono_laser';self.scan_pub.publish(m)
 
 def main():
-    rclpy.init();n=WheelIMU()
-    try:rclpy.spin(n)
-    except KeyboardInterrupt:pass
-    finally:
-        n.destroy_node()
-        if rclpy.ok():rclpy.shutdown()
+    from lifecycle import run_node
+    run_node(WheelIMU)
 if __name__=='__main__':main()

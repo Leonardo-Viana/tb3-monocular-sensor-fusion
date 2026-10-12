@@ -19,6 +19,7 @@ from scipy.spatial.transform import Rotation
 from tf2_ros import Buffer,TransformListener
 from geometry import OPTICAL_TO_BASE,triangulate,graph_warp
 from tracking_policy import transition_allowed
+from lifecycle import atomic_text,run_node
 
 def sec(m):return m.header.stamp.sec+m.header.stamp.nanosec*1e-9
 
@@ -186,24 +187,22 @@ class Monocular(Node):
                 'rejected_tracks':dict(self.reject),'counts':dict(self.count)}
 
     def save(self):
-        (self.out/'vision_status.json').write_text(json.dumps(self.status(),indent=2))
+        atomic_text(self.out/'vision_status.json',json.dumps(self.status(),indent=2))
         serial=[]
         for f in self.frames:serial.append({'T':f['T'].tolist(),'stamp':f['stamp'],'anchors':{str(k):v.tolist() for k,v in f['anchors'].items()}})
-        (self.out/'keyframes.json').write_text(json.dumps({'K':self.K.tolist() if self.K is not None else None,'frames':serial,'graph':{str(k):v.tolist() for k,v in self.nodes.items()}}))
+        atomic_text(self.out/'keyframes.json',json.dumps({'K':self.K.tolist() if self.K is not None else None,'frames':serial,'graph':{str(k):v.tolist() for k,v in self.nodes.items()}}))
         tracks={str(k):{'obs':[(f,p.tolist()) for f,p in t['obs']],'rgb':t['rgb'].tolist()} for k,t in self.tracks.items()}
-        (self.out/'tracks.json').write_text(json.dumps(tracks))
-        with (self.out/'monocular_points.ply').open('w') as f:
+        atomic_text(self.out/'tracks.json',json.dumps(tracks))
+        import io
+        with io.StringIO() as f:
             f.write('ply\nformat ascii 1.0\nelement vertex '+str(len(self.landmarks))+'\nproperty float x\nproperty float y\nproperty float z\nproperty uchar red\nproperty uchar green\nproperty uchar blue\nend_header\n')
             for p in self.landmarks:f.write(' '.join(map(str,[*p['xyz'],*p['rgb']]))+'\n')
-        (self.out/'landmark_evidence.json').write_text(json.dumps([{k:v.tolist() if isinstance(v,np.ndarray) else v for k,v in p.items()} for p in self.landmarks],indent=2))
+            atomic_text(self.out/'monocular_points.ply',f.getvalue())
+        atomic_text(self.out/'landmark_evidence.json',json.dumps([{k:v.tolist() if isinstance(v,np.ndarray) else v for k,v in p.items()} for p in self.landmarks],indent=2))
+        atomic_text(self.out/'save_complete.json',json.dumps({'frames':len(self.frames),'tracks':len(self.tracks),'finished_wall':time.time()}))
 
     def save_cb(self,req,res):self.rebuild();self.save();res.success=True;res.message=str(self.out);return res
 
 def main():
-    rclpy.init();n=Monocular()
-    try:rclpy.spin(n)
-    except KeyboardInterrupt:pass
-    finally:
-        n.save();n.destroy_node()
-        if rclpy.ok():rclpy.shutdown()
+    run_node(Monocular,lambda n:n.save())
 if __name__=='__main__':main()

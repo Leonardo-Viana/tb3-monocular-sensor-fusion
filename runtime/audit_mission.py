@@ -4,7 +4,9 @@ from pathlib import Path
 import psutil,rclpy
 from geometry_msgs.msg import TwistStamped
 from std_msgs.msg import String
-root=Path(__file__).resolve().parent;out=root/'output';owner=int(sys.argv[1]);rclpy.init();n=rclpy.create_node('mono_mission_audit');commands=[];last=None;count=0;status={};began=time.monotonic();previous=began
+from lifecycle import StopRequest
+from rclpy.signals import SignalHandlerOptions
+root=Path(__file__).resolve().parent;out=root/'output';owner=int(sys.argv[1]);rclpy.init(signal_handler_options=SignalHandlerOptions.NO);n=rclpy.create_node('mono_mission_audit');commands=[];last=None;count=0;status={};began=time.monotonic();previous=began
 f=(out/'mission_audit.jsonl').open('a',buffering=1)
 def command(m):
  global last,count
@@ -14,8 +16,14 @@ def state(m):
  try:status=json.loads(m.data)
  except ValueError:pass
 n.create_subscription(TwistStamped,'/cmd_vel',command,100);n.create_subscription(String,'/mono/autonomy_status',state,10)
-while Path(f'/proc/{owner}').exists() and psutil.Process(owner).status()!='zombie':
- rclpy.spin_once(n,timeout_sec=.025);now=time.monotonic()
- if now-previous<1:continue
- mem=psutil.virtual_memory();f.write(json.dumps({'monotonic':now,'wall_time':time.time(),'dt':now-previous,'commands':commands,'command_total':count,'last_command':last,'available_mib':mem.available/2**20,'swap_used_mib':psutil.swap_memory().used/2**20,'disk_free_gib':psutil.disk_usage(str(out)).free/2**30,'status':status})+'\n');commands=[];previous=now
-f.write(json.dumps({'finished':True,'commands_total':count,'last_command':last,'elapsed_wall_s':time.monotonic()-began})+'\n');f.close();n.destroy_node();rclpy.shutdown()
+with StopRequest() as stop_request:
+ try:
+  while not stop_request.requested and Path(f'/proc/{owner}').exists():
+   try:
+    if psutil.Process(owner).status()=='zombie':break
+   except psutil.NoSuchProcess:break
+   rclpy.spin_once(n,timeout_sec=.025);now=time.monotonic()
+   if now-previous<1:continue
+   mem=psutil.virtual_memory();f.write(json.dumps({'monotonic':now,'wall_time':time.time(),'dt':now-previous,'commands':commands,'command_total':count,'last_command':last,'available_mib':mem.available/2**20,'swap_used_mib':psutil.swap_memory().used/2**20,'disk_free_gib':psutil.disk_usage(str(out)).free/2**30,'status':status})+'\n');commands=[];previous=now
+ finally:
+  f.write(json.dumps({'finished':True,'commands_total':count,'last_command':last,'elapsed_wall_s':time.monotonic()-began})+'\n');f.close();n.destroy_node();rclpy.try_shutdown()
