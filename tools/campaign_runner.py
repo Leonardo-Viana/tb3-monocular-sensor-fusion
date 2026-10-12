@@ -149,7 +149,7 @@ def launch(command, log, env):
                                 stderr=subprocess.STDOUT, start_new_session=True)
 
 
-def one(root, number, env):
+def one(root, number, env, wall_deadline_s=4500):
     run = root / ('repeat_%02d' % number)
     if number != 1:
         run.mkdir(exist_ok=False)
@@ -205,7 +205,7 @@ def one(root, number, env):
                 reason = 'hardware_low_available_memory'
             elif row['disk_free_gib'] < 6:
                 reason = 'hardware_disk_reserve_reached'
-            elif now - began > 4500:
+            elif now - began > wall_deadline_s:
                 reason = 'campaign_wall_deadline'
             elif server.poll() is not None:
                 reason = 'gazebo_exited_during_mission'
