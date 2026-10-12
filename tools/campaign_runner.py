@@ -104,12 +104,20 @@ class Monitor:
     def tick(self):
         rclpy.spin_once(self.node, timeout_sec=0.1)
 
-    def cleanup(self):
+    def cleanup(self, mission=None):
+        # Let the mission supervisor finish its owned children first. Avoid a
+        # second SIGINT while vision is serializing its final snapshot.
+        if mission is not None and mission.poll() is None:
+            mission.send_signal(signal.SIGINT)
+            try:
+                mission.wait(timeout=90)
+            except subprocess.TimeoutExpired:
+                pass
         # psutil Process objects retain creation identity, protecting against PID reuse.
         targets = [p for p in self.owned.values() if alive(p)]
         for p in targets:
             try:
-                p.send_signal(signal.SIGINT)
+                p.terminate()
             except psutil.NoSuchProcess:
                 pass
         _, remaining = psutil.wait_procs(targets, timeout=20)
@@ -224,7 +232,7 @@ def one(root, number, env):
         except Exception as error:
             state['pause_error'] = repr(error)
         monitor.sample(run, 'cleanup')
-        monitor.cleanup()
+        monitor.cleanup(mission)
         if mission is not None:
             mission.poll()
         monitor.node.destroy_node()
@@ -284,7 +292,7 @@ def main():
     finally:
         report['finished_utc'] = utc()
         atomic(root / 'campaign.json', report)
-        rclpy.shutdown()
+        rclpy.try_shutdown()
     print(json.dumps({'campaign_status': report['status'], 'runs': len(report['runs'])}), flush=True)
 
 
