@@ -4,6 +4,10 @@ Executed on the Dell Vostro 3710 on 12 October 2026. This follow-up completes th
 shutdown regression and fixed-data diagnosis phase. It does not complete the
 paper, introduce a corrected global map, or constitute a new autonomous mission.
 
+Subsequent update: the [short live Gazebo integration](integration-report-20261012.md)
+was completed later on 12 October. The pending-integration statements below
+describe the status at the end of the isolated-test phase.
+
 ## Software correction and direct evidence
 
 The old controller and supervisor both signaled the vision process. A second
