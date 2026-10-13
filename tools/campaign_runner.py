@@ -149,7 +149,7 @@ def launch(command, log, env):
                                 stderr=subprocess.STDOUT, start_new_session=True)
 
 
-def one(root, number, env, wall_deadline_s=4500):
+def one(root, number, env, wall_deadline_s=4500, seed=None):
     run = root / ('repeat_%02d' % number)
     if number != 1:
         run.mkdir(exist_ok=False)
@@ -158,7 +158,7 @@ def one(root, number, env, wall_deadline_s=4500):
                 shutil.copy2(source, run / source.name)
     if (run / 'output').exists() or (run / 'campaign_run.json').exists():
         raise RuntimeError('Refusing to reuse existing run output: ' + str(run))
-    state = {'run': run.name, 'seed': 22 + number, 'started_utc': utc(),
+    state = {'run': run.name, 'seed': 22 + number if seed is None else int(seed), 'started_utc': utc(),
              'condition': 'textured', 'stage': 'preflight',
              'source_sha256': {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
                                for p in run.iterdir() if p.suffix in ('.py', '.yaml', '.rviz')}}
