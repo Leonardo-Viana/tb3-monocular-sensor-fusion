@@ -1,0 +1,654 @@
+{
+  "created_utc": "2026-10-13T14:47:48Z",
+  "scope": "Development regression plus one fresh short execution in the same scene; no absolute 3D accuracy or sensor-ablation claim.",
+  "geometry_tests": {
+    "run": 7,
+    "passed": true,
+    "log": "test_camera_facing_away_has_no_positive_depth_segment (ray_tests.RayGateTests.test_camera_facing_away_has_no_positive_depth_segment) ... ok\ntest_depth_clipping_in_second_camera (ray_tests.RayGateTests.test_depth_clipping_in_second_camera) ... ok\ntest_identical_pose_accepts_same_ray_rejects_large_shift (ray_tests.RayGateTests.test_identical_pose_accepts_same_ray_rejects_large_shift) ... ok\ntest_known_valid_random_scene_and_world_frame_invariance (ray_tests.RayGateTests.test_known_valid_random_scene_and_world_frame_invariance) ... ok\ntest_nonfinite_and_singular_inputs_fail_closed (ray_tests.RayGateTests.test_nonfinite_and_singular_inputs_fail_closed) ... ok\ntest_rotating_camera_predicts_motion_and_rejects_zero_flow (ray_tests.RayGateTests.test_rotating_camera_predicts_motion_and_rejects_zero_flow) ... ok\ntest_transverse_translation_rejects_opposite_parallax (ray_tests.RayGateTests.test_transverse_translation_rejects_opposite_parallax) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.013s\n\nOK\n"
+  },
+  "historical_failure_fixtures": [
+    {
+      "track_id": 7759,
+      "frame_a": 113,
+      "frame_b": 114,
+      "K": [
+        [
+          848.4013938903809,
+          0,
+          480
+        ],
+        [
+          0,
+          848.4013366699219,
+          270
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "previous_T": [
+        [
+          -0.19716417620276816,
+          -0.00015822676394517378,
+          0.9803704721107094,
+          2.2297953200856764
+        ],
+        [
+          -0.9803704280320023,
+          -0.0003087236426565505,
+          -0.1971642171644271,
+          0.9522019559280742
+        ],
+        [
+          0.00033386019935065106,
+          -0.9999999398270001,
+          -0.00009425159761635205,
+          0.1168528437162181
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "current_T": [
+        [
+          -0.3094795197281304,
+          -0.0008086627750163184,
+          0.9509057644863459,
+          2.251649200925592
+        ],
+        [
+          -0.9509040056489575,
+          -0.0018397848456213962,
+          -0.30948051187835574,
+          0.9383008282037537
+        ],
+        [
+          0.0019997273846650296,
+          -0.9999979806260801,
+          -0.00019958494155621667,
+          0.116746937284779
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "previous_uv": [
+        32.21178436279297,
+        64.19364929199219
+      ],
+      "current_uv": [
+        62.43981170654297,
+        64.26547241210938
+      ],
+      "forward_segment_distance_px": 169.27329068489237,
+      "reverse_segment_distance_px": 149.2286325172891,
+      "rejected": true
+    },
+    {
+      "track_id": 18191,
+      "frame_a": 209,
+      "frame_b": 210,
+      "K": [
+        [
+          848.4013938903809,
+          0,
+          480
+        ],
+        [
+          0,
+          848.4013366699219,
+          270
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "previous_T": [
+        [
+          0.9728612353091507,
+          -0.0030659153551755563,
+          0.2313690061261202,
+          3.686580160072627
+        ],
+        [
+          -0.2313767894626496,
+          -0.0024842515715930297,
+          0.9728610434137478,
+          0.7803876072222597
+        ],
+        [
+          -0.0024079307943675908,
+          -0.9999922142982736,
+          -0.003126213704403453,
+          0.11626658024909084
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "current_T": [
+        [
+          0.9914064654514126,
+          -0.003470932582324075,
+          0.13077145287923558,
+          3.686157456840351
+        ],
+        [
+          -0.1307823764679757,
+          -0.003131866126465791,
+          0.991406153612108,
+          0.813062077597343
+        ],
+        [
+          -0.0030315452373076575,
+          -0.9999890719610766,
+          -0.003558889138382926,
+          0.11601327089643457
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "previous_uv": [
+        665,
+        360
+      ],
+      "current_uv": [
+        636.7969970703125,
+        352.09002685546875
+      ],
+      "forward_segment_distance_px": 124.23236969623801,
+      "reverse_segment_distance_px": 118.45632692143003,
+      "rejected": true
+    }
+  ],
+  "submap_support": {
+    "selected_pairs": [
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38296,
+        "track_b": 55115,
+        "uv_a": [
+          332.419921875,
+          205.75437927246094
+        ],
+        "uv_b": [
+          448.7118835449219,
+          184.2411651611328
+        ],
+        "delta_m": [
+          0.2655943652184648,
+          0.11659436765404019,
+          -0.018176538125540792
+        ],
+        "distance_m": 0.29062862891097635,
+        "z_difference_m": 0.018176538125540792,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      },
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38322,
+        "track_b": 55206,
+        "uv_a": [
+          259.5386962890625,
+          194.28262329101562
+        ],
+        "uv_b": [
+          358.980224609375,
+          174.43667602539062
+        ],
+        "delta_m": [
+          0.25642293321339654,
+          0.14429868365446952,
+          -0.02284013363632087
+        ],
+        "distance_m": 0.2951211657721277,
+        "z_difference_m": 0.02284013363632087,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      },
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38429,
+        "track_b": 54995,
+        "uv_a": [
+          173.10653686523438,
+          227.47889709472656
+        ],
+        "uv_b": [
+          262.96856689453125,
+          217.86102294921875
+        ],
+        "delta_m": [
+          0.3038602022413372,
+          0.2106108601975718,
+          -0.013154009661823202
+        ],
+        "distance_m": 0.36994727314779713,
+        "z_difference_m": 0.013154009661823202,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      },
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38447,
+        "track_b": 55010,
+        "uv_a": [
+          182.5882110595703,
+          206.9871368408203
+        ],
+        "uv_b": [
+          273.19158935546875,
+          192.21728515625
+        ],
+        "delta_m": [
+          0.28508909207986205,
+          0.19529943951462925,
+          -0.019100572259676374
+        ],
+        "distance_m": 0.3460960753292292,
+        "z_difference_m": 0.019100572259676374,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      },
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38481,
+        "track_b": 55129,
+        "uv_a": [
+          205.9469757080078,
+          239.2454376220703
+        ],
+        "uv_b": [
+          297.2126159667969,
+          231.13311767578125
+        ],
+        "delta_m": [
+          0.2639728281145466,
+          0.17039649414687985,
+          -0.006018015155135004
+        ],
+        "distance_m": 0.3142496391513394,
+        "z_difference_m": 0.006018015155135004,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      },
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38482,
+        "track_b": 55117,
+        "uv_a": [
+          237.8128662109375,
+          135.3380889892578
+        ],
+        "uv_b": [
+          334.396484375,
+          99.54243469238281
+        ],
+        "delta_m": [
+          0.28648850146827126,
+          0.16783315983039881,
+          -0.04662655165153318
+        ],
+        "distance_m": 0.33528743837356173,
+        "z_difference_m": 0.04662655165153318,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      },
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38523,
+        "track_b": 55592,
+        "uv_a": [
+          224.7368621826172,
+          101.55300903320312
+        ],
+        "uv_b": [
+          319.6464538574219,
+          60.11863708496094
+        ],
+        "delta_m": [
+          0.2706482574050916,
+          0.1665224682700306,
+          -0.056836217932037414
+        ],
+        "distance_m": 0.3228166156565893,
+        "z_difference_m": 0.056836217932037414,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      },
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "track_a": 38546,
+        "track_b": 55623,
+        "uv_a": [
+          198.2515411376953,
+          93.8521957397461
+        ],
+        "uv_b": [
+          290.77447509765625,
+          56.118507385253906
+        ],
+        "delta_m": [
+          0.22645021885052913,
+          0.15956956293168023,
+          -0.05353121014222667
+        ],
+        "distance_m": 0.2821484316648796,
+        "z_difference_m": 0.05353121014222667,
+        "epipolar_supported": true,
+        "block_a": 7,
+        "block_b": 9,
+        "image_pair_support": 2,
+        "repeat_support": true
+      }
+    ],
+    "image_pairs": [
+      {
+        "frame_a": 483,
+        "frame_b": 609,
+        "gap_sim_s": 54.94399999999999,
+        "camera_distance_m": 0.38011257481190197,
+        "direction_degrees": 6.516702569715214,
+        "available_a": 153,
+        "available_b": 188,
+        "mutual_ratio_matches": 33,
+        "epipolar_inliers": 29,
+        "image_spread_pass": true,
+        "residuals_m": {
+          "n": 33,
+          "median": 0.3449848377761448,
+          "p90": 0.3990397119366221,
+          "max": 0.4264711544967013
+        },
+        "epipolar_test_status": "estimated"
+      },
+      {
+        "frame_a": 474,
+        "frame_b": 605,
+        "gap_sim_s": 56.79299999999998,
+        "camera_distance_m": 0.5537705764098739,
+        "direction_degrees": 29.590034114156722,
+        "available_a": 103,
+        "available_b": 153,
+        "mutual_ratio_matches": 10,
+        "epipolar_inliers": 0,
+        "image_spread_pass": false,
+        "residuals_m": {
+          "n": 10,
+          "median": 0.31853312740396433,
+          "p90": 0.35243353263330734,
+          "max": 0.36994727314779713
+        },
+        "epipolar_test_status": "not_tested_insufficient_matches_or_spread"
+      }
+    ],
+    "interpretation": "The second image pair had only ten descriptor matches; no fundamental matrix was fitted. Its false support flag is not a failed geometric test. The approximately 32 cm discrepancy remains unresolved."
+  },
+  "candidate_sources_match_frozen_live_sources": true,
+  "live_integration_pass": true,
+  "predeclared_visual_tail_checks": {
+    "at_least_30_scored_observations": true,
+    "all_accepted_landmarks_scored": true,
+    "no_residual_above_8px": true
+  },
+  "predeclared_visual_tail_pass": true,
+  "live_validation": {
+    "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+    "accepted_landmarks": 1681,
+    "cached_blocks_reused": 2,
+    "input_tracks": 13724,
+    "frames": 397,
+    "blocks": [
+      {
+        "block": 0,
+        "input": 1672,
+        "fit": 1382,
+        "frames": 71,
+        "accepted": 441,
+        "converged": true,
+        "nfev": 109,
+        "rejections": {
+          "pose_sensitivity": 230,
+          "parallax": 611,
+          "baseline": 39,
+          "training_inliers": 28,
+          "validation_pixels": 3,
+          "reprojection": 30
+        }
+      },
+      {
+        "block": 1,
+        "input": 1387,
+        "fit": 1127,
+        "frames": 75,
+        "accepted": 326,
+        "converged": true,
+        "nfev": 222,
+        "rejections": {
+          "validation_pixels": 4,
+          "pose_sensitivity": 341,
+          "parallax": 351,
+          "training_inliers": 16,
+          "baseline": 76,
+          "reprojection": 13
+        }
+      },
+      {
+        "block": 2,
+        "input": 941,
+        "fit": 529,
+        "frames": 62,
+        "accepted": 230,
+        "converged": true,
+        "nfev": 215,
+        "rejections": {
+          "baseline": 70,
+          "parallax": 130,
+          "pose_sensitivity": 93,
+          "reprojection": 4,
+          "training_inliers": 2
+        }
+      },
+      {
+        "block": 3,
+        "input": 1042,
+        "fit": 232,
+        "frames": 33,
+        "accepted": 18,
+        "converged": true,
+        "nfev": 142,
+        "rejections": {
+          "parallax": 74,
+          "baseline": 107,
+          "pose_sensitivity": 31,
+          "training_inliers": 2
+        }
+      },
+      {
+        "block": 4,
+        "input": 819,
+        "fit": 597,
+        "frames": 34,
+        "accepted": 198,
+        "converged": true,
+        "nfev": 156,
+        "rejections": {
+          "pose_sensitivity": 224,
+          "parallax": 173,
+          "reprojection": 2
+        }
+      },
+      {
+        "block": 5,
+        "input": 2120,
+        "fit": 1325,
+        "frames": 64,
+        "accepted": 462,
+        "converged": true,
+        "nfev": 79,
+        "rejections": {
+          "baseline": 49,
+          "training_inliers": 23,
+          "pose_sensitivity": 395,
+          "parallax": 355,
+          "reprojection": 33,
+          "validation_pixels": 8
+        }
+      },
+      {
+        "block": 6,
+        "input": 118,
+        "fit": 75,
+        "frames": 13,
+        "accepted": 6,
+        "converged": true,
+        "nfev": 116,
+        "rejections": {
+          "pose_sensitivity": 26,
+          "validation_pixels": 1,
+          "parallax": 42
+        }
+      }
+    ],
+    "test_pixels": {
+      "n": 3947,
+      "median": 0.2650894256391705,
+      "p90": 0.8160356793324953,
+      "max": 5.379033342564062
+    },
+    "test_scored_landmarks": 1681,
+    "test_unscored_landmarks": 0,
+    "test_landmark_medians_px": {
+      "n": 1681,
+      "median": 0.26165235759714367,
+      "p90": 0.7177546465687211,
+      "max": 4.865377210385752
+    },
+    "test_pixels_over_3px": 12,
+    "test_pixels_over_8px": 0,
+    "stress_p90_distribution_m": {
+      "n": 1681,
+      "median": 0.05631676500100646,
+      "p90": 0.0896817048886223,
+      "max": 0.09999691765393015
+    },
+    "test_never_used_for_landmark_acceptance": true,
+    "parameters_predeclared_before_test": true,
+    "duration_s": 96.95285607094411,
+    "metric_ground_truth_used": false,
+    "limitations": [
+      "Sparse landmarks only; no dense or complete 3D claim",
+      "Flat-floor motion prior",
+      "Pixel tests reserve observations within existing tracks, not independent journeys",
+      "No verified visual landmark association across separate revisits",
+      "Global submap placement uses approximate XY pose-graph alignment",
+      "Stress scenario is not calibrated posterior uncertainty",
+      "RGB colors inherited from first tracked pixel"
+    ],
+    "dataset_pixel_gate_pass": true
+  },
+  "live_vision_status": {
+    "source": "original monocular RGB only; triangulated image tracks",
+    "pose_sources": [
+      "wheel velocity",
+      "raw gyro",
+      "raw accelerometer",
+      "2D lidar SLAM"
+    ],
+    "forbidden_inputs_used": [],
+    "frames": 397,
+    "active_tracks": 446,
+    "visual_landmarks": 318,
+    "non_ground_landmarks": 231,
+    "height_range_m": [
+      -0.027831540259717905,
+      1.0407068330567193
+    ],
+    "median_reprojection_px": 1.0178700267364165,
+    "median_parallax_deg": 3.0420878472525144,
+    "graph_nodes": 199,
+    "graph_revisions": 0,
+    "loop_edge_marker_count": 0,
+    "rejected_tracks": {
+      "baseline": 6398,
+      "reprojection": 4643,
+      "parallax": 2336,
+      "cheirality_or_range": 15,
+      "short_track": 14
+    },
+    "counts": {
+      "rgb_messages": 8295,
+      "tf_wait": 48,
+      "processed_frames": 397,
+      "features_started": 35484,
+      "tracking_reset_image_gap": 22,
+      "tracking_ray_rejections": 1607,
+      "tracked_observations": 102343,
+      "tracking_reset_camera_rotation": 1
+    }
+  },
+  "live_launch_environment_note": {
+    "initial_wrapper_failure": "systemctl --user: Failed to connect to bus: No medium found",
+    "mission_started_on_that_attempt": false,
+    "correction": "Set this UID runtime directory and session bus address before reading user-manager display environment."
+  },
+  "source_sha256": {
+    "/home/lpviana/tb3_integration_20261012/repeat_01/output/keyframes.json": "cc4541d9235c158f38a794fdb84208df85e39e2a5b8f893c17c1e959f99b0b82",
+    "/home/lpviana/tb3_integration_20261012/repeat_01/output/tracks.json": "2f03672333522c0488124f964b8a3b98262d4392454579a0423b742a2f83a40b",
+    "/home/lpviana/tb3_publication_campaign_20261007/analysis_20261008/repeat_01_revisit/revisit_matches.json": "5ffcaf6f3e8203012695679351be98bed9f44fa0698d17576f4d51b09bd1924d",
+    "/home/lpviana/tb3_publication_campaign_20261007/analysis_20261008/repeat_01_revisit/revisit_pairs.json": "3f6e6627825cb9a58506db7d8c26fdbcde242b18bbb6e40572535024210c79b4",
+    "/home/lpviana/tb3_ray_gate_live_20261013/PROTOCOL.md": "b1c565b0f070cef9e28d71def861f125bbbdd72f6ea06977695aea93e729eaad",
+    "/home/lpviana/tb3_ray_gate_live_20261013/analysis/INTEGRATION_AUDIT.json": "1d50176035263ab219bfc157d79c82d4c0e6eae0e2d7ee60f083d60bf86b922c",
+    "/home/lpviana/tb3_tracking_followup_20261013/runtime/ray_gate.py": "4a3d7841ada7582d14798c8061e2d48f31ecfe89fa34c0674f9b8f4954388d44",
+    "/home/lpviana/tb3_tracking_followup_20261013/runtime/monocular.py": "5ca6b3294795d1ae13324f5df596ba4c9b99e90949a5f1da39b5e9c5235f2310",
+    "/home/lpviana/tb3_tracking_followup_20261013/tools/test_ray_gate.py": "9147ce0b853cdda9d38f83ee8d8b2debe14a22b3e685851e0e1e5387135446f0"
+  },
+  "opencv_version": "4.6.0"
+}

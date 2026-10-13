@@ -1,0 +1,687 @@
+{
+  "exploratory_development_diagnosis": true,
+  "baseline_modified": false,
+  "duration_s": 16.91925356304273,
+  "raw_frames_requested": [
+    113,
+    114,
+    209,
+    210
+  ],
+  "raw_frames_decoded": [
+    113,
+    114,
+    209,
+    210
+  ],
+  "findings": [
+    {
+      "track_id": 7759,
+      "block": 1,
+      "observations": [
+        {
+          "frame": 100,
+          "category": "train",
+          "uv": [
+            655,
+            111
+          ],
+          "optimized_prediction_uv": [
+            655.0193038924535,
+            110.76465236163001
+          ],
+          "prior_prediction_uv": [
+            657.8844763149646,
+            109.74705941639333
+          ],
+          "error_px": 0.23613799175521902,
+          "depth_m": 2.558911816574212,
+          "training_pose_support": 89
+        },
+        {
+          "frame": 101,
+          "category": "validation",
+          "uv": [
+            553.1675415039062,
+            111.93209838867188
+          ],
+          "optimized_prediction_uv": [
+            553.3133256678277,
+            111.79519003998526
+          ],
+          "prior_prediction_uv": [
+            555.7837863519082,
+            110.98181296413968
+          ],
+          "error_px": 0.19999229582755468,
+          "depth_m": 2.57483145047965,
+          "training_pose_support": 140
+        },
+        {
+          "frame": 102,
+          "category": "test",
+          "uv": [
+            471.8626708984375,
+            110.84846496582031
+          ],
+          "optimized_prediction_uv": [
+            471.953448853898,
+            110.81752841928977
+          ],
+          "prior_prediction_uv": [
+            460.3045481879319,
+            110.1746936419643
+          ],
+          "error_px": 0.09590467719995005,
+          "depth_m": 2.5590791507098714,
+          "training_pose_support": 140
+        },
+        {
+          "frame": 103,
+          "category": "train",
+          "uv": [
+            407.23541259765625,
+            108.37779998779297
+          ],
+          "optimized_prediction_uv": [
+            407.2636334737631,
+            108.39765555551983
+          ],
+          "prior_prediction_uv": [
+            394.72457584678745,
+            107.70678817788767
+          ],
+          "error_px": 0.03450596206445912,
+          "depth_m": 2.5216223128048236,
+          "training_pose_support": 168
+        },
+        {
+          "frame": 104,
+          "category": "train",
+          "uv": [
+            349.6803894042969,
+            104.92635345458984
+          ],
+          "optimized_prediction_uv": [
+            349.7260813375402,
+            105.01056019575398
+          ],
+          "prior_prediction_uv": [
+            345.6861689617124,
+            104.53681611417396
+          ],
+          "error_px": 0.09580463465302,
+          "depth_m": 2.4707286667060537,
+          "training_pose_support": 185
+        },
+        {
+          "frame": 105,
+          "category": "train",
+          "uv": [
+            313.850830078125,
+            101.89686584472656
+          ],
+          "optimized_prediction_uv": [
+            313.83704531480737,
+            101.98581257789078
+          ],
+          "prior_prediction_uv": [
+            309.0626907045429,
+            101.59293562662151
+          ],
+          "error_px": 0.09000856092789287,
+          "depth_m": 2.4273265111876583,
+          "training_pose_support": 195
+        },
+        {
+          "frame": 106,
+          "category": "validation",
+          "uv": [
+            285.7010192871094,
+            98.6451416015625
+          ],
+          "optimized_prediction_uv": [
+            285.638463659179,
+            98.74474882662602
+          ],
+          "prior_prediction_uv": [
+            280.26418757470407,
+            98.42805575376045
+          ],
+          "error_px": 0.11762145157502386,
+          "depth_m": 2.3822490389463336,
+          "training_pose_support": 213
+        },
+        {
+          "frame": 107,
+          "category": "train",
+          "uv": [
+            244.33236694335938,
+            94.51961517333984
+          ],
+          "optimized_prediction_uv": [
+            244.2703181264687,
+            94.65111034091726
+          ],
+          "prior_prediction_uv": [
+            242.87990377389457,
+            94.46946776437626
+          ],
+          "error_px": 0.14539956937261958,
+          "depth_m": 2.3276818368730794,
+          "training_pose_support": 176
+        },
+        {
+          "frame": 108,
+          "category": "validation",
+          "uv": [
+            215.2386474609375,
+            90.67910766601562
+          ],
+          "optimized_prediction_uv": [
+            215.1078066794489,
+            90.76828370851175
+          ],
+          "prior_prediction_uv": [
+            213.19607727776216,
+            90.7351477872095
+          ],
+          "error_px": 0.1583403822649611,
+          "depth_m": 2.278822557374123,
+          "training_pose_support": 181
+        },
+        {
+          "frame": 109,
+          "category": "train",
+          "uv": [
+            202.14993286132812,
+            87.56135559082031
+          ],
+          "optimized_prediction_uv": [
+            201.98535629998375,
+            87.70566004290518
+          ],
+          "prior_prediction_uv": [
+            199.3683717301571,
+            87.68932787366494
+          ],
+          "error_px": 0.21888174760690493,
+          "depth_m": 2.240946534696321,
+          "training_pose_support": 170
+        },
+        {
+          "frame": 110,
+          "category": "test",
+          "uv": [
+            208.83871459960938,
+            85.55070495605469
+          ],
+          "optimized_prediction_uv": [
+            208.85848017112025,
+            85.62056816656093
+          ],
+          "prior_prediction_uv": [
+            192.7872482110591,
+            84.42365877546605
+          ],
+          "error_px": 0.07260541301714966,
+          "depth_m": 2.2174644221248068,
+          "training_pose_support": 190
+        },
+        {
+          "frame": 111,
+          "category": "train",
+          "uv": [
+            165.9480438232422,
+            80.32958221435547
+          ],
+          "optimized_prediction_uv": [
+            165.99640094095517,
+            80.32606757302624
+          ],
+          "prior_prediction_uv": [
+            153.46505531498403,
+            79.48437460759055
+          ],
+          "error_px": 0.04848467321927957,
+          "depth_m": 2.157792753440397,
+          "training_pose_support": 169
+        },
+        {
+          "frame": 112,
+          "category": "train",
+          "uv": [
+            94.75333404541016,
+            72.37722778320312
+          ],
+          "optimized_prediction_uv": [
+            94.77602898466199,
+            72.34413254332853
+          ],
+          "prior_prediction_uv": [
+            80.30748758755558,
+            71.42104138890002
+          ],
+          "error_px": 0.04012923086730732,
+          "depth_m": 2.0730425434223267,
+          "training_pose_support": 161
+        },
+        {
+          "frame": 113,
+          "category": "train",
+          "uv": [
+            32.21178436279297,
+            64.19364929199219
+          ],
+          "optimized_prediction_uv": [
+            32.27847054840773,
+            63.980237081802166
+          ],
+          "prior_prediction_uv": [
+            26.38198926539191,
+            64.09290481706454
+          ],
+          "error_px": 0.22358850330470192,
+          "depth_m": 1.9913527489894511,
+          "training_pose_support": 186
+        },
+        {
+          "frame": 114,
+          "category": "test",
+          "uv": [
+            62.43981170654297,
+            64.26547241210938
+          ],
+          "optimized_prediction_uv": [
+            -113.44653014195357,
+            45.50859263991496
+          ],
+          "prior_prediction_uv": [
+            -120.51893136671337,
+            45.85845689432801
+          ],
+          "error_px": 176.88365042489016,
+          "depth_m": 1.8303235382122254,
+          "training_pose_support": 101
+        }
+      ],
+      "reproduced_test_frames": [
+        102,
+        110,
+        114
+      ],
+      "reproduced_test_errors_px": [
+        0.09590467719995005,
+        0.07260541301714966,
+        176.88365042489016
+      ],
+      "max_difference_from_original_test_errors_px": 0,
+      "pair_probes": [
+        {
+          "frames": [
+            113,
+            114
+          ],
+          "observed_uv": [
+            [
+              32.21178436279297,
+              64.19364929199219
+            ],
+            [
+              62.43981170654297,
+              64.26547241210938
+            ]
+          ],
+          "rotation_only_prediction": [
+            -102.35150787858792,
+            48.09910045289693
+          ],
+          "nearest_sampled_depth_prediction_px": 169.27329068489237,
+          "relative_translation_m": 0.025900669411143135,
+          "baseline": {
+            "uv": [
+              62.43981170654297,
+              64.26547241210938
+            ],
+            "forward_status": 1,
+            "backward_status": 1,
+            "photometric_error": 1.8559999465942383,
+            "forward_backward_px": 0.5486977100372314,
+            "difference_from_saved_uv_px": 0
+          },
+          "rotation_initialized": {
+            "uv": [
+              -132.85507202148438,
+              49.20619201660156
+            ],
+            "forward_status": 0,
+            "backward_status": 0,
+            "photometric_error": null,
+            "forward_backward_px": 252.16488647460938,
+            "difference_from_saved_uv_px": 195.87463729736487
+          },
+          "raw_images_available": true
+        }
+      ],
+      "other_accepted_tracks_at_bad_frame": [
+        {
+          "frame": 114,
+          "errors_px": {
+            "n": 62,
+            "median": 0.1767790941814799,
+            "p90": 0.44268516946838815,
+            "max": 0.8554346783974915
+          }
+        }
+      ]
+    },
+    {
+      "track_id": 18191,
+      "block": 3,
+      "observations": [
+        {
+          "frame": 209,
+          "category": "test",
+          "uv": [
+            665,
+            360
+          ],
+          "optimized_prediction_uv": [
+            539.9645335903248,
+            349.1353236105199
+          ],
+          "prior_prediction_uv": [
+            534.9872761038636,
+            350.3822201095194
+          ],
+          "error_px": 125.50660960018459,
+          "depth_m": 1.164915357508486,
+          "training_pose_support": 44
+        },
+        {
+          "frame": 210,
+          "category": "train",
+          "uv": [
+            636.7969970703125,
+            352.09002685546875
+          ],
+          "optimized_prediction_uv": [
+            637.0897522869473,
+            352.4210688308303
+          ],
+          "prior_prediction_uv": [
+            630.7537932619401,
+            353.6955729099496
+          ],
+          "error_px": 0.4419212671032345,
+          "depth_m": 1.1183006222332519,
+          "training_pose_support": 103
+        },
+        {
+          "frame": 211,
+          "category": "train",
+          "uv": [
+            712.43359375,
+            355.95050048828125
+          ],
+          "optimized_prediction_uv": [
+            712.507776701675,
+            356.08746991362403
+          ],
+          "prior_prediction_uv": [
+            701.3218547507607,
+            357.12151918336804
+          ],
+          "error_px": 0.15576820534994748,
+          "depth_m": 1.0685606627904132,
+          "training_pose_support": 169
+        },
+        {
+          "frame": 212,
+          "category": "train",
+          "uv": [
+            766.5418090820312,
+            359.82666015625
+          ],
+          "optimized_prediction_uv": [
+            766.3312026740394,
+            359.85801798360524
+          ],
+          "prior_prediction_uv": [
+            760.0758162636827,
+            361.7604432994573
+          ],
+          "error_px": 0.21292809214298405,
+          "depth_m": 1.0215920525872517,
+          "training_pose_support": 171
+        },
+        {
+          "frame": 213,
+          "category": "validation",
+          "uv": [
+            801.06982421875,
+            363.4110412597656
+          ],
+          "optimized_prediction_uv": [
+            800.6268460555551,
+            363.3302443096861
+          ],
+          "prior_prediction_uv": [
+            798.4439537685316,
+            366.04111930404156
+          ],
+          "error_px": 0.4502863535681037,
+          "depth_m": 0.9821132830642652,
+          "training_pose_support": 178
+        },
+        {
+          "frame": 214,
+          "category": "test",
+          "uv": [
+            823.7186889648438,
+            366.7602844238281
+          ],
+          "optimized_prediction_uv": [
+            823.3822120229731,
+            366.64202788803027
+          ],
+          "prior_prediction_uv": [
+            821.9068352737768,
+            369.7228869772147
+          ],
+          "error_px": 0.35665296952291065,
+          "depth_m": 0.947212202096489,
+          "training_pose_support": 172
+        },
+        {
+          "frame": 215,
+          "category": "train",
+          "uv": [
+            838.3170776367188,
+            369.72479248046875
+          ],
+          "optimized_prediction_uv": [
+            837.9666251207673,
+            369.63485820615125
+          ],
+          "prior_prediction_uv": [
+            837.4432127775664,
+            373.0032461064838
+          ],
+          "error_px": 0.36180815307802777,
+          "depth_m": 0.9181321778389873,
+          "training_pose_support": 168
+        },
+        {
+          "frame": 216,
+          "category": "train",
+          "uv": [
+            854.0034790039062,
+            373.17828369140625
+          ],
+          "optimized_prediction_uv": [
+            853.6841343169032,
+            372.9610167876324
+          ],
+          "prior_prediction_uv": [
+            841.4566871534507,
+            375.2298878888017
+          ],
+          "error_px": 0.3862459534967017,
+          "depth_m": 0.8870694966790617,
+          "training_pose_support": 172
+        },
+        {
+          "frame": 217,
+          "category": "validation",
+          "uv": [
+            867.2669677734375,
+            376.671142578125
+          ],
+          "optimized_prediction_uv": [
+            867.1014070444744,
+            376.52204809922677
+          ],
+          "prior_prediction_uv": [
+            854.9755855475103,
+            379.0320150771294
+          ],
+          "error_px": 0.22279927875271374,
+          "depth_m": 0.8565609665365447,
+          "training_pose_support": 170
+        },
+        {
+          "frame": 218,
+          "category": "train",
+          "uv": [
+            878.3292236328125,
+            380.2790832519531
+          ],
+          "optimized_prediction_uv": [
+            878.3019083197504,
+            380.15367405828954
+          ],
+          "prior_prediction_uv": [
+            866.3935771125813,
+            382.94555137182414
+          ],
+          "error_px": 0.12834949233647772,
+          "depth_m": 0.8276922879313677,
+          "training_pose_support": 178
+        },
+        {
+          "frame": 219,
+          "category": "train",
+          "uv": [
+            889.3897705078125,
+            384.07720947265625
+          ],
+          "optimized_prediction_uv": [
+            889.5956892753404,
+            383.9473401458658
+          ],
+          "prior_prediction_uv": [
+            873.3457672807519,
+            386.9051980486058
+          ],
+          "error_px": 0.24345139322096096,
+          "depth_m": 0.7996335806824411,
+          "training_pose_support": 163
+        },
+        {
+          "frame": 220,
+          "category": "train",
+          "uv": [
+            910.2177124023438,
+            388.6335754394531
+          ],
+          "optimized_prediction_uv": [
+            910.597984479144,
+            388.5484528207488
+          ],
+          "prior_prediction_uv": [
+            893.097610304523,
+            391.82230848529025
+          ],
+          "error_px": 0.38968283591792213,
+          "depth_m": 0.7678344857266854,
+          "training_pose_support": 168
+        }
+      ],
+      "reproduced_test_frames": [
+        209,
+        214
+      ],
+      "reproduced_test_errors_px": [
+        125.50660960018459,
+        0.35665296952291065
+      ],
+      "max_difference_from_original_test_errors_px": 0,
+      "pair_probes": [
+        {
+          "frames": [
+            209,
+            210
+          ],
+          "observed_uv": [
+            [
+              665,
+              360
+            ],
+            [
+              636.7969970703125,
+              352.09002685546875
+            ]
+          ],
+          "rotation_only_prediction": [
+            758.3677371431091,
+            361.86091047898805
+          ],
+          "nearest_sampled_depth_prediction_px": 124.23236969623801,
+          "relative_translation_m": 0.032678186270705255,
+          "baseline": {
+            "uv": [
+              636.7969970703125,
+              352.09002685546875
+            ],
+            "forward_status": 1,
+            "backward_status": 1,
+            "photometric_error": 7.605249881744385,
+            "forward_backward_px": 0.289745569229126,
+            "difference_from_saved_uv_px": 0
+          },
+          "rotation_initialized": {
+            "uv": [
+              773.0965576171875,
+              365.69970703125
+            ],
+            "forward_status": 1,
+            "backward_status": 1,
+            "photometric_error": 0.9697999954223633,
+            "forward_backward_px": 152.2407684326172,
+            "difference_from_saved_uv_px": 136.97734703139164
+          },
+          "raw_images_available": true
+        }
+      ],
+      "other_accepted_tracks_at_bad_frame": [
+        {
+          "frame": 209,
+          "errors_px": {
+            "n": 27,
+            "median": 0.32885963575135607,
+            "p90": 0.8128765400300029,
+            "max": 1.186601492926874
+          }
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "/home/lpviana/tb3_integration_20261012/repeat_01/output/keyframes.json": "cc4541d9235c158f38a794fdb84208df85e39e2a5b8f893c17c1e959f99b0b82",
+    "/home/lpviana/tb3_integration_20261012/repeat_01/output/tracks.json": "2f03672333522c0488124f964b8a3b98262d4392454579a0423b742a2f83a40b",
+    "/home/lpviana/tb3_integration_20261012/repeat_01/output/stable/stable_landmarks.json": "60e43232978e302109a1a9ec3a390b68347faad9c3008fa01dbf9847cfd32a40",
+    "/home/lpviana/tb3_integration_20261012/repeat_01/stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+    "/home/lpviana/tb3_integration_20261012/repeat_01/geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca"
+  }
+}

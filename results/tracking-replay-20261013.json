@@ -1,0 +1,223 @@
+{
+  "scope": "Exploratory development replay; not an independent accuracy evaluation",
+  "baseline": {
+    "development_replay": true,
+    "ros_nodes_started": false,
+    "velocity_published": false,
+    "frames": 395,
+    "tracks": 12685,
+    "counts": {
+      "processed_frames": 395,
+      "features_started": 33802,
+      "tracking_reset_image_gap": 24,
+      "tracked_observations": 100179,
+      "tracking_reset_camera_rotation": 1
+    },
+    "duration_s": 15.19254765601363,
+    "process_median_s": 0.034415486035868526,
+    "process_p90_s": 0.03791296980343759,
+    "original_track_ids_missing_or_different": 0,
+    "additional_track_ids": 0,
+    "exact_original_tracks_match": true,
+    "source_sha256": {
+      "/home/lpviana/tb3_integration_20261012/repeat_01/output/keyframes.json": "cc4541d9235c158f38a794fdb84208df85e39e2a5b8f893c17c1e959f99b0b82",
+      "/home/lpviana/tb3_integration_20261012/repeat_01/output/tracks.json": "2f03672333522c0488124f964b8a3b98262d4392454579a0423b742a2f83a40b",
+      "/home/lpviana/tb3_integration_20261012/repeat_01/monocular.py": "3078858dc539d501e30dcc65abcb908680e953aa27e4adb5597de8c47b41ca72",
+      "/home/lpviana/tb3_integration_20261012/repeat_01/tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619"
+    },
+    "limitations": [
+      "Fixed schedule and recorded fused poses; no live performance claim.",
+      "Previously inspected recording is development data, not independent evaluation.",
+      "Changed tracking changes IDs and their deterministic observation splits."
+    ]
+  },
+  "candidate": {
+    "development_replay": true,
+    "ros_nodes_started": false,
+    "velocity_published": false,
+    "frames": 395,
+    "tracks": 12969,
+    "counts": {
+      "processed_frames": 395,
+      "features_started": 35688,
+      "tracking_reset_image_gap": 24,
+      "tracking_ray_rejections": 2064,
+      "tracked_observations": 97506,
+      "tracking_reset_camera_rotation": 1
+    },
+    "duration_s": 14.9107406999683,
+    "process_median_s": 0.034988049999810755,
+    "process_p90_s": 0.03847149002831429,
+    "original_track_ids_missing_or_different": 12450,
+    "additional_track_ids": 7945,
+    "exact_original_tracks_match": false,
+    "source_sha256": {
+      "/home/lpviana/tb3_integration_20261012/repeat_01/output/keyframes.json": "cc4541d9235c158f38a794fdb84208df85e39e2a5b8f893c17c1e959f99b0b82",
+      "/home/lpviana/tb3_integration_20261012/repeat_01/output/tracks.json": "2f03672333522c0488124f964b8a3b98262d4392454579a0423b742a2f83a40b",
+      "/home/lpviana/tb3_tracking_followup_20261013/runtime/monocular.py": "5ca6b3294795d1ae13324f5df596ba4c9b99e90949a5f1da39b5e9c5235f2310",
+      "/home/lpviana/tb3_tracking_followup_20261013/runtime/tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+      "/home/lpviana/tb3_tracking_followup_20261013/runtime/ray_gate.py": "4a3d7841ada7582d14798c8061e2d48f31ecfe89fa34c0674f9b8f4954388d44"
+    },
+    "limitations": [
+      "Fixed schedule and recorded fused poses; no live performance claim.",
+      "Previously inspected recording is development data, not independent evaluation.",
+      "Changed tracking changes IDs and their deterministic observation splits."
+    ]
+  },
+  "candidate_validation": {
+    "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+    "accepted_landmarks": 1603,
+    "cached_blocks_reused": 0,
+    "input_tracks": 12969,
+    "frames": 395,
+    "blocks": [
+      {
+        "block": 0,
+        "input": 1344,
+        "fit": 1044,
+        "frames": 63,
+        "accepted": 249,
+        "converged": true,
+        "nfev": 52,
+        "rejections": {
+          "parallax": 583,
+          "reprojection": 9,
+          "training_inliers": 15,
+          "pose_sensitivity": 187,
+          "baseline": 1
+        }
+      },
+      {
+        "block": 1,
+        "input": 1520,
+        "fit": 1110,
+        "frames": 57,
+        "accepted": 331,
+        "converged": true,
+        "nfev": 65,
+        "rejections": {
+          "parallax": 475,
+          "reprojection": 25,
+          "pose_sensitivity": 249,
+          "training_inliers": 17,
+          "validation_pixels": 2,
+          "baseline": 11
+        }
+      },
+      {
+        "block": 2,
+        "input": 986,
+        "fit": 588,
+        "frames": 42,
+        "accepted": 182,
+        "converged": true,
+        "nfev": 101,
+        "rejections": {
+          "pose_sensitivity": 117,
+          "parallax": 273,
+          "training_inliers": 6,
+          "reprojection": 3,
+          "baseline": 7
+        }
+      },
+      {
+        "block": 3,
+        "input": 842,
+        "fit": 267,
+        "frames": 16,
+        "accepted": 82,
+        "converged": true,
+        "nfev": 77,
+        "rejections": {
+          "pose_sensitivity": 162,
+          "parallax": 23
+        }
+      },
+      {
+        "block": 4,
+        "input": 1104,
+        "fit": 651,
+        "frames": 28,
+        "accepted": 281,
+        "converged": true,
+        "nfev": 38,
+        "rejections": {
+          "parallax": 194,
+          "pose_sensitivity": 123,
+          "baseline": 39,
+          "training_inliers": 9,
+          "validation_pixels": 2,
+          "reprojection": 3
+        }
+      },
+      {
+        "block": 5,
+        "input": 1712,
+        "fit": 1195,
+        "frames": 59,
+        "accepted": 468,
+        "converged": true,
+        "nfev": 50,
+        "rejections": {
+          "pose_sensitivity": 405,
+          "training_inliers": 29,
+          "parallax": 235,
+          "reprojection": 19,
+          "baseline": 37,
+          "validation_pixels": 2
+        }
+      },
+      {
+        "block": 6,
+        "input": 97,
+        "fit": 79,
+        "frames": 10,
+        "accepted": 10,
+        "converged": true,
+        "nfev": 38,
+        "rejections": {
+          "pose_sensitivity": 16,
+          "parallax": 53
+        }
+      }
+    ],
+    "test_pixels": {
+      "n": 3897,
+      "median": 0.28271231102014405,
+      "p90": 0.8655706442993255,
+      "max": 7.64024503479043
+    },
+    "test_scored_landmarks": 1603,
+    "test_unscored_landmarks": 0,
+    "test_landmark_medians_px": {
+      "n": 1603,
+      "median": 0.2719141471922972,
+      "p90": 0.7878254367857234,
+      "max": 3.018596061602893
+    },
+    "test_pixels_over_3px": 15,
+    "test_pixels_over_8px": 0,
+    "stress_p90_distribution_m": {
+      "n": 1603,
+      "median": 0.05514116792408064,
+      "p90": 0.09165573870285598,
+      "max": 0.09993990194480752
+    },
+    "test_never_used_for_landmark_acceptance": true,
+    "parameters_predeclared_before_test": true,
+    "duration_s": 50.32912259409204,
+    "metric_ground_truth_used": false,
+    "limitations": [
+      "Sparse landmarks only; no dense or complete 3D claim",
+      "Flat-floor motion prior",
+      "Pixel tests reserve observations within existing tracks, not independent journeys",
+      "No verified visual landmark association across separate revisits",
+      "Global submap placement uses approximate XY pose-graph alignment",
+      "Stress scenario is not calibrated posterior uncertainty",
+      "RGB colors inherited from first tracked pixel"
+    ],
+    "dataset_pixel_gate_pass": true
+  },
+  "independent_evaluation": false,
+  "raw_validation_flag_note": "parameters_predeclared_before_test describes the unchanged within-track fitting procedure only; the frontend was developed on this recording, and tracking changes also change track IDs and observation splits."
+}

@@ -1,0 +1,1160 @@
+{
+  "created_utc": "2026-10-13T14:47:48Z",
+  "execution": {
+    "started_utc": "2026-10-13T14:39:52Z",
+    "status": "execution_finished_pending_audit",
+    "navigation_budget_s": 180,
+    "outer_mission_deadline_s": 1200,
+    "ros_domain": 77,
+    "gz_partition": "tb3_ray_gate_live_20261013",
+    "seed": 26,
+    "host": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "total_memory_bytes": 7995703296,
+    "runner_sha256": "d7cf0cf15a0a47e4fe15455c0f414e8cab6f3febf0b72e0bff27a2b77c15771e",
+    "protocol_sha256": "b1c565b0f070cef9e28d71def861f125bbbdd72f6ea06977695aea93e729eaad",
+    "run": {
+      "run": "repeat_01",
+      "seed": 26,
+      "started_utc": "2026-10-13T14:39:52Z",
+      "condition": "textured",
+      "stage": "completed",
+      "source_sha256": {
+        "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+        "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+        "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+        "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+        "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+        "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+        "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+        "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+        "monocular.py": "5ca6b3294795d1ae13324f5df596ba4c9b99e90949a5f1da39b5e9c5235f2310",
+        "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+        "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+        "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+        "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+        "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+        "ray_gate.py": "4a3d7841ada7582d14798c8061e2d48f31ecfe89fa34c0674f9b8f4954388d44",
+        "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+        "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+        "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+        "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+        "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+        "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+        "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+        "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+        "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+        "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+        "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+        "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+      },
+      "gazebo_pid": 68597,
+      "mission_pid": 68613,
+      "mission_exit_code": 0,
+      "supervisor_status.json": {
+        "started_utc": "2026-10-13T14:39:52Z",
+        "mission_wall_budget_s": 180,
+        "ros_domain": 77,
+        "gz_partition": "tb3_ray_gate_live_20261013",
+        "sensor_policy": "RGB rays only for 3D; raw gyro/accel, wheel velocity and planar lidar for pose; no depth/compass/simulator pose",
+        "source_hashes": {
+          "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+          "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+          "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+          "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+          "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+          "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+          "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+          "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+          "monocular.py": "5ca6b3294795d1ae13324f5df596ba4c9b99e90949a5f1da39b5e9c5235f2310",
+          "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+          "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+          "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+          "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+          "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+          "ray_gate.py": "4a3d7841ada7582d14798c8061e2d48f31ecfe89fa34c0674f9b8f4954388d44",
+          "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+          "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+          "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+          "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+          "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+          "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+          "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+          "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+          "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+          "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+          "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+          "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+        },
+        "stage": "stopped",
+        "controller_exit": 0,
+        "result": {
+          "state": "stopped",
+          "reason": "time_budget_reached_incomplete",
+          "terminal_reason": "resource_budget_reached_incomplete",
+          "elapsed_wall_s": 311.8,
+          "travelled_m": 9.645710184208566,
+          "goals_reached": 9,
+          "failed_goals": 0,
+          "recoveries": 0,
+          "map_metrics": {
+            "frontier_groups": 0,
+            "frontier_cells": 0,
+            "view_goals_total": 152,
+            "view_goals_covered": 28,
+            "view_goals_blocked": 0,
+            "view_coverage": 0.18421052631578946,
+            "free_area_m2": 19.822399113869675,
+            "reachable_area_m2": 8.372799625706676,
+            "reason": "return_home"
+          },
+          "current_position": [
+            1.5450403741523318,
+            1.0535627934469902
+          ],
+          "accepted_landmarks": 1681,
+          "new_track_fractions": [
+            778,
+            1.160668380462725
+          ],
+          "checkpoints": [
+            {
+              "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_001",
+              "accepted_landmarks": 778,
+              "test_pixels": {
+                "n": 1904,
+                "median": 0.31571570505446883,
+                "p90": 0.9388097774406485,
+                "max": 5.379033342564062
+              },
+              "dataset_pixel_gate_pass": true,
+              "fit_seconds": 146.29686879797373
+            },
+            {
+              "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_002",
+              "accepted_landmarks": 1681,
+              "test_pixels": {
+                "n": 3947,
+                "median": 0.2650894256391705,
+                "p90": 0.8160356793324953,
+                "max": 5.379033342564062
+              },
+              "dataset_pixel_gate_pass": true,
+              "fit_seconds": 96.95285607094411
+            }
+          ],
+          "dense_3d_complete": false,
+          "limits": {
+            "wall_seconds": 180,
+            "maximum_frames": 5500
+          },
+          "available_memory_mb": 2768
+        },
+        "cleanup": {
+          "autonomy": {
+            "pid": 68950,
+            "signals": [],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.000016203965060412884
+          },
+          "vision": {
+            "pid": 68810,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.5644709069747478
+          },
+          "record": {
+            "pid": 68811,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.21377917402423918
+          },
+          "viewer": {
+            "pid": 68812,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.2137347989482805
+          },
+          "rviz": {
+            "pid": 68813,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.2638863299507648
+          },
+          "odometry": {
+            "pid": 68624,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.16379530995618552
+          },
+          "slam": {
+            "pid": 68625,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.21394040202721953
+          },
+          "image": {
+            "pid": 68623,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.21388193708844483
+          },
+          "bridge": {
+            "pid": 68622,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.21388767391908914
+          },
+          "audit": {
+            "pid": 68814,
+            "signals": [
+              "SIGINT"
+            ],
+            "escalated": false,
+            "exit_code": 0,
+            "elapsed_s": 0.16373948100954294
+          }
+        },
+        "cleanup_errors": [],
+        "cleanup_escalated": false,
+        "stop_signals_received": [],
+        "finished_utc": "2026-10-13T14:45:52Z"
+      },
+      "autonomy_status.json": {
+        "state": "stopped",
+        "reason": "time_budget_reached_incomplete",
+        "terminal_reason": "resource_budget_reached_incomplete",
+        "elapsed_wall_s": 311.8,
+        "travelled_m": 9.645710184208566,
+        "goals_reached": 9,
+        "failed_goals": 0,
+        "recoveries": 0,
+        "map_metrics": {
+          "frontier_groups": 0,
+          "frontier_cells": 0,
+          "view_goals_total": 152,
+          "view_goals_covered": 28,
+          "view_goals_blocked": 0,
+          "view_coverage": 0.18421052631578946,
+          "free_area_m2": 19.822399113869675,
+          "reachable_area_m2": 8.372799625706676,
+          "reason": "return_home"
+        },
+        "current_position": [
+          1.5450403741523318,
+          1.0535627934469902
+        ],
+        "accepted_landmarks": 1681,
+        "new_track_fractions": [
+          778,
+          1.160668380462725
+        ],
+        "checkpoints": [
+          {
+            "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_001",
+            "accepted_landmarks": 778,
+            "test_pixels": {
+              "n": 1904,
+              "median": 0.31571570505446883,
+              "p90": 0.9388097774406485,
+              "max": 5.379033342564062
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 146.29686879797373
+          },
+          {
+            "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_002",
+            "accepted_landmarks": 1681,
+            "test_pixels": {
+              "n": 3947,
+              "median": 0.2650894256391705,
+              "p90": 0.8160356793324953,
+              "max": 5.379033342564062
+            },
+            "dataset_pixel_gate_pass": true,
+            "fit_seconds": 96.95285607094411
+          }
+        ],
+        "dense_3d_complete": false,
+        "limits": {
+          "wall_seconds": 180,
+          "maximum_frames": 5500
+        },
+        "available_memory_mb": 2768
+      },
+      "stable/validation.json": {
+        "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+        "accepted_landmarks": 1681,
+        "cached_blocks_reused": 2,
+        "input_tracks": 13724,
+        "frames": 397,
+        "blocks": [
+          {
+            "block": 0,
+            "input": 1672,
+            "fit": 1382,
+            "frames": 71,
+            "accepted": 441,
+            "converged": true,
+            "nfev": 109,
+            "rejections": {
+              "pose_sensitivity": 230,
+              "parallax": 611,
+              "baseline": 39,
+              "training_inliers": 28,
+              "validation_pixels": 3,
+              "reprojection": 30
+            }
+          },
+          {
+            "block": 1,
+            "input": 1387,
+            "fit": 1127,
+            "frames": 75,
+            "accepted": 326,
+            "converged": true,
+            "nfev": 222,
+            "rejections": {
+              "validation_pixels": 4,
+              "pose_sensitivity": 341,
+              "parallax": 351,
+              "training_inliers": 16,
+              "baseline": 76,
+              "reprojection": 13
+            }
+          },
+          {
+            "block": 2,
+            "input": 941,
+            "fit": 529,
+            "frames": 62,
+            "accepted": 230,
+            "converged": true,
+            "nfev": 215,
+            "rejections": {
+              "baseline": 70,
+              "parallax": 130,
+              "pose_sensitivity": 93,
+              "reprojection": 4,
+              "training_inliers": 2
+            }
+          },
+          {
+            "block": 3,
+            "input": 1042,
+            "fit": 232,
+            "frames": 33,
+            "accepted": 18,
+            "converged": true,
+            "nfev": 142,
+            "rejections": {
+              "parallax": 74,
+              "baseline": 107,
+              "pose_sensitivity": 31,
+              "training_inliers": 2
+            }
+          },
+          {
+            "block": 4,
+            "input": 819,
+            "fit": 597,
+            "frames": 34,
+            "accepted": 198,
+            "converged": true,
+            "nfev": 156,
+            "rejections": {
+              "pose_sensitivity": 224,
+              "parallax": 173,
+              "reprojection": 2
+            }
+          },
+          {
+            "block": 5,
+            "input": 2120,
+            "fit": 1325,
+            "frames": 64,
+            "accepted": 462,
+            "converged": true,
+            "nfev": 79,
+            "rejections": {
+              "baseline": 49,
+              "training_inliers": 23,
+              "pose_sensitivity": 395,
+              "parallax": 355,
+              "reprojection": 33,
+              "validation_pixels": 8
+            }
+          },
+          {
+            "block": 6,
+            "input": 118,
+            "fit": 75,
+            "frames": 13,
+            "accepted": 6,
+            "converged": true,
+            "nfev": 116,
+            "rejections": {
+              "pose_sensitivity": 26,
+              "validation_pixels": 1,
+              "parallax": 42
+            }
+          }
+        ],
+        "test_pixels": {
+          "n": 3947,
+          "median": 0.2650894256391705,
+          "p90": 0.8160356793324953,
+          "max": 5.379033342564062
+        },
+        "test_scored_landmarks": 1681,
+        "test_unscored_landmarks": 0,
+        "test_landmark_medians_px": {
+          "n": 1681,
+          "median": 0.26165235759714367,
+          "p90": 0.7177546465687211,
+          "max": 4.865377210385752
+        },
+        "test_pixels_over_3px": 12,
+        "test_pixels_over_8px": 0,
+        "stress_p90_distribution_m": {
+          "n": 1681,
+          "median": 0.05631676500100646,
+          "p90": 0.0896817048886223,
+          "max": 0.09999691765393015
+        },
+        "test_never_used_for_landmark_acceptance": true,
+        "parameters_predeclared_before_test": true,
+        "duration_s": 96.95285607094411,
+        "metric_ground_truth_used": false,
+        "limitations": [
+          "Sparse landmarks only; no dense or complete 3D claim",
+          "Flat-floor motion prior",
+          "Pixel tests reserve observations within existing tracks, not independent journeys",
+          "No verified visual landmark association across separate revisits",
+          "Global submap placement uses approximate XY pose-graph alignment",
+          "Stress scenario is not calibrated posterior uncertainty",
+          "RGB colors inherited from first tracked pixel"
+        ],
+        "dataset_pixel_gate_pass": true
+      },
+      "paused_before_cleanup": true,
+      "finished_utc": "2026-10-13T14:45:53Z",
+      "resources": {
+        "samples": 75,
+        "minimum_available_mib": 1748.25390625,
+        "maximum_swap_used_mib": 774.21875,
+        "minimum_disk_free_gib": 13.090099334716797,
+        "maximum_sampled_sum_pss_mib": 1664.8251953125,
+        "note": "Five-second samples, not continuous peaks; PSS includes only discovered descendants. RTF includes startup/paused intervals; filter by stage for interpretation."
+      }
+    },
+    "finished_utc": "2026-10-13T14:45:53Z"
+  },
+  "audit": {
+    "run": "repeat_01",
+    "seed": 26,
+    "checks": {
+      "source_hashes_match_launch": true,
+      "supervisor_stopped_exit_zero": true,
+      "simulation_pause_confirmed": true,
+      "final_observed_command_zero": true,
+      "counts_agree": true,
+      "ply_coordinates_match": true,
+      "ply_colors_match": true,
+      "finite_xyz": true,
+      "valid_colors": true,
+      "captured_frames_equal_final_fit": true,
+      "test_count_matches": true,
+      "test_median_matches": true,
+      "test_p90_matches": true,
+      "test_max_matches": true,
+      "scored_landmark_count_matches": true,
+      "unscored_landmark_count_matches": true,
+      "reserved_test_frames_disjoint": true,
+      "bag_counts_match_metadata": true,
+      "rgb_endpoints_decode": true
+    },
+    "checks_pass": true,
+    "controller": {
+      "state": "stopped",
+      "reason": "time_budget_reached_incomplete",
+      "terminal_reason": "resource_budget_reached_incomplete",
+      "elapsed_wall_s": 311.8,
+      "travelled_m": 9.645710184208566,
+      "goals_reached": 9,
+      "failed_goals": 0,
+      "recoveries": 0,
+      "map_metrics": {
+        "frontier_groups": 0,
+        "frontier_cells": 0,
+        "view_goals_total": 152,
+        "view_goals_covered": 28,
+        "view_goals_blocked": 0,
+        "view_coverage": 0.18421052631578946,
+        "free_area_m2": 19.822399113869675,
+        "reachable_area_m2": 8.372799625706676,
+        "reason": "return_home"
+      },
+      "current_position": [
+        1.5450403741523318,
+        1.0535627934469902
+      ],
+      "accepted_landmarks": 1681,
+      "new_track_fractions": [
+        778,
+        1.160668380462725
+      ],
+      "checkpoints": [
+        {
+          "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_001",
+          "accepted_landmarks": 778,
+          "test_pixels": {
+            "n": 1904,
+            "median": 0.31571570505446883,
+            "p90": 0.9388097774406485,
+            "max": 5.379033342564062
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 146.29686879797373
+        },
+        {
+          "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_002",
+          "accepted_landmarks": 1681,
+          "test_pixels": {
+            "n": 3947,
+            "median": 0.2650894256391705,
+            "p90": 0.8160356793324953,
+            "max": 5.379033342564062
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 96.95285607094411
+        }
+      ],
+      "dense_3d_complete": false,
+      "limits": {
+        "wall_seconds": 180,
+        "maximum_frames": 5500
+      },
+      "available_memory_mb": 2768
+    },
+    "validation": {
+      "method": "Rigid RGB local submaps with metric fused pose priors and temporal regularization",
+      "accepted_landmarks": 1681,
+      "cached_blocks_reused": 2,
+      "input_tracks": 13724,
+      "frames": 397,
+      "blocks": [
+        {
+          "block": 0,
+          "input": 1672,
+          "fit": 1382,
+          "frames": 71,
+          "accepted": 441,
+          "converged": true,
+          "nfev": 109,
+          "rejections": {
+            "pose_sensitivity": 230,
+            "parallax": 611,
+            "baseline": 39,
+            "training_inliers": 28,
+            "validation_pixels": 3,
+            "reprojection": 30
+          }
+        },
+        {
+          "block": 1,
+          "input": 1387,
+          "fit": 1127,
+          "frames": 75,
+          "accepted": 326,
+          "converged": true,
+          "nfev": 222,
+          "rejections": {
+            "validation_pixels": 4,
+            "pose_sensitivity": 341,
+            "parallax": 351,
+            "training_inliers": 16,
+            "baseline": 76,
+            "reprojection": 13
+          }
+        },
+        {
+          "block": 2,
+          "input": 941,
+          "fit": 529,
+          "frames": 62,
+          "accepted": 230,
+          "converged": true,
+          "nfev": 215,
+          "rejections": {
+            "baseline": 70,
+            "parallax": 130,
+            "pose_sensitivity": 93,
+            "reprojection": 4,
+            "training_inliers": 2
+          }
+        },
+        {
+          "block": 3,
+          "input": 1042,
+          "fit": 232,
+          "frames": 33,
+          "accepted": 18,
+          "converged": true,
+          "nfev": 142,
+          "rejections": {
+            "parallax": 74,
+            "baseline": 107,
+            "pose_sensitivity": 31,
+            "training_inliers": 2
+          }
+        },
+        {
+          "block": 4,
+          "input": 819,
+          "fit": 597,
+          "frames": 34,
+          "accepted": 198,
+          "converged": true,
+          "nfev": 156,
+          "rejections": {
+            "pose_sensitivity": 224,
+            "parallax": 173,
+            "reprojection": 2
+          }
+        },
+        {
+          "block": 5,
+          "input": 2120,
+          "fit": 1325,
+          "frames": 64,
+          "accepted": 462,
+          "converged": true,
+          "nfev": 79,
+          "rejections": {
+            "baseline": 49,
+            "training_inliers": 23,
+            "pose_sensitivity": 395,
+            "parallax": 355,
+            "reprojection": 33,
+            "validation_pixels": 8
+          }
+        },
+        {
+          "block": 6,
+          "input": 118,
+          "fit": 75,
+          "frames": 13,
+          "accepted": 6,
+          "converged": true,
+          "nfev": 116,
+          "rejections": {
+            "pose_sensitivity": 26,
+            "validation_pixels": 1,
+            "parallax": 42
+          }
+        }
+      ],
+      "test_pixels": {
+        "n": 3947,
+        "median": 0.2650894256391705,
+        "p90": 0.8160356793324953,
+        "max": 5.379033342564062
+      },
+      "test_scored_landmarks": 1681,
+      "test_unscored_landmarks": 0,
+      "test_landmark_medians_px": {
+        "n": 1681,
+        "median": 0.26165235759714367,
+        "p90": 0.7177546465687211,
+        "max": 4.865377210385752
+      },
+      "test_pixels_over_3px": 12,
+      "test_pixels_over_8px": 0,
+      "stress_p90_distribution_m": {
+        "n": 1681,
+        "median": 0.05631676500100646,
+        "p90": 0.0896817048886223,
+        "max": 0.09999691765393015
+      },
+      "test_never_used_for_landmark_acceptance": true,
+      "parameters_predeclared_before_test": true,
+      "duration_s": 96.95285607094411,
+      "metric_ground_truth_used": false,
+      "limitations": [
+        "Sparse landmarks only; no dense or complete 3D claim",
+        "Flat-floor motion prior",
+        "Pixel tests reserve observations within existing tracks, not independent journeys",
+        "No verified visual landmark association across separate revisits",
+        "Global submap placement uses approximate XY pose-graph alignment",
+        "Stress scenario is not calibrated posterior uncertainty",
+        "RGB colors inherited from first tracked pixel"
+      ],
+      "dataset_pixel_gate_pass": true
+    },
+    "vision": {
+      "source": "original monocular RGB only; triangulated image tracks",
+      "pose_sources": [
+        "wheel velocity",
+        "raw gyro",
+        "raw accelerometer",
+        "2D lidar SLAM"
+      ],
+      "forbidden_inputs_used": [],
+      "frames": 397,
+      "active_tracks": 446,
+      "visual_landmarks": 318,
+      "non_ground_landmarks": 231,
+      "height_range_m": [
+        -0.027831540259717905,
+        1.0407068330567193
+      ],
+      "median_reprojection_px": 1.0178700267364165,
+      "median_parallax_deg": 3.0420878472525144,
+      "graph_nodes": 199,
+      "graph_revisions": 0,
+      "loop_edge_marker_count": 0,
+      "rejected_tracks": {
+        "baseline": 6398,
+        "reprojection": 4643,
+        "parallax": 2336,
+        "cheirality_or_range": 15,
+        "short_track": 14
+      },
+      "counts": {
+        "rgb_messages": 8295,
+        "tf_wait": 48,
+        "processed_frames": 397,
+        "features_started": 35484,
+        "tracking_reset_image_gap": 22,
+        "tracking_ray_rejections": 1607,
+        "tracked_observations": 102343,
+        "tracking_reset_camera_rotation": 1
+      }
+    },
+    "recording": {
+      "messages": {
+        "/imu": 61328,
+        "/clock": 307256,
+        "/camera/camera_info": 9297,
+        "/joint_states": 307255,
+        "/odom": 15332,
+        "/tf": 37623,
+        "/camera/image_raw/compressed": 9286,
+        "/scan": 3066,
+        "/tf_static": 1,
+        "/cmd_vel": 5358
+      },
+      "expected_messages": {
+        "/cmd_vel": 5358,
+        "/scan": 3066,
+        "/joint_states": 307255,
+        "/tf": 37623,
+        "/clock": 307256,
+        "/tf_static": 1,
+        "/camera/image_raw/compressed": 9286,
+        "/odom": 15332,
+        "/imu": 61328,
+        "/camera/camera_info": 9297
+      },
+      "matches_metadata": true,
+      "endpoint_rgb_shapes": [
+        [
+          1080,
+          1920,
+          3
+        ],
+        [
+          1080,
+          1920,
+          3
+        ]
+      ],
+      "duration_sim_s": 306.778,
+      "bytes": 1271414188,
+      "files_sha256": {
+        "raw_1.mcap": "566bf02c79c1a4940640907d488326558382d94f1cbe035f8d8f4070b116ad41",
+        "metadata.yaml": "93c3c1099248b374b0757fc0fb51d84eb5ee423a41143300fecb0928e5de7e57",
+        "raw_0.mcap": "8c7f6fc23d85b59d9bcd055d95bc7c12d4c411f047330cd3f2a84e45cc0a8fe9"
+      },
+      "limits": "Traversal and metadata agreement do not establish zero acquisition loss."
+    },
+    "recorder_transport_lost_messages_reported": 344,
+    "transport_loss_reporting_note": "None means no explicit count found, not a measured zero.",
+    "unconverged_blocks": [],
+    "source_sha256": {
+      "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+      "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+      "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+      "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+      "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+      "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+      "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+      "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+      "monocular.py": "5ca6b3294795d1ae13324f5df596ba4c9b99e90949a5f1da39b5e9c5235f2310",
+      "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+      "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+      "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+      "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+      "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+      "ray_gate.py": "4a3d7841ada7582d14798c8061e2d48f31ecfe89fa34c0674f9b8f4954388d44",
+      "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+      "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+      "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+      "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+      "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+      "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+      "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+      "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+      "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+      "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+      "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+      "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+    },
+    "estimated_home_distance_m": 1.870065324392868,
+    "resources": {
+      "samples": 75,
+      "minimum_available_mib": 1748.25390625,
+      "maximum_swap_used_mib": 774.21875,
+      "minimum_disk_free_gib": 13.090099334716797,
+      "maximum_sampled_sum_pss_mib": 1664.8251953125,
+      "note": "Five-second samples, not continuous peaks; PSS includes only discovered descendants. RTF includes startup/paused intervals; filter by stage for interpretation.",
+      "active_sample_count": 72,
+      "navigation_sample_count": 35,
+      "navigation_observed_rtf": {
+        "n": 35,
+        "minimum": 0.8161518914416724,
+        "median": 0.8824548815217227,
+        "mean": 0.8802153696227333,
+        "p90": 0.9006124955384062,
+        "maximum": 0.9056347649515024
+      },
+      "navigation_system_cpu_percent": {
+        "n": 35,
+        "minimum": 49.8,
+        "median": 55.8,
+        "mean": 55.431428571428576,
+        "p90": 59.82,
+        "maximum": 63.5
+      },
+      "navigation_owned_cpu_percent_one_core": {
+        "n": 35,
+        "minimum": 478.17131055264616,
+        "median": 582.0853736556679,
+        "mean": 559.7890356628177,
+        "p90": 595.4027679254484,
+        "maximum": 604.552306132401
+      },
+      "phase_sample_counts": {
+        "unmatched": 4,
+        "unknown": 8,
+        "frontier": 17,
+        "saving_and_refining": 27,
+        "visual_view": 10,
+        "returning": 8,
+        "stopped": 1
+      },
+      "first_swap_mib": 525.73046875,
+      "last_swap_mib": 774.171875,
+      "disk_free_decrease_gib": 1.2138290405273438,
+      "maximum_rviz_instances": 1,
+      "viewer_last_seen_before_last_resource_sample_s": 4.991774045978673,
+      "note_phase": "Nearest earlier 1 Hz controller status within six seconds labels approximately 5 s resource intervals; intervals can span transitions. RTF is not per-image latency."
+    },
+    "geometry_diagnostics": {
+      "xyz_min_m": [
+        -0.8800993237127773,
+        -2.1090559626170564,
+        -0.014141504446023924
+      ],
+      "xyz_max_m": [
+        4.600973752450042,
+        3.145908577662482,
+        0.9426030064389809
+      ],
+      "non_ground_ids_z_above_0_08_m": 1376,
+      "occupied_voxels_0_05_m": 1187,
+      "note": "Distribution diagnostics only; duplicate feature IDs are not merged and there is no surface ground truth."
+    },
+    "command_audit": {
+      "final": {
+        "finished": true,
+        "commands_total": 5358,
+        "last_command": [
+          0,
+          0
+        ],
+        "elapsed_wall_s": 351.5349614340812
+      },
+      "recorded_commands": 5358,
+      "publishers_frame_ids": [
+        "mono_autonomy",
+        "mono_autonomy_guard"
+      ],
+      "maximum_abs_linear_m_s": 0.08499999998295435,
+      "maximum_abs_angular_rad_s": 0.32
+    },
+    "log_issues": {
+      "record.log": {
+        "matching_lines": 1,
+        "examples": [
+          "[WARN] [1791902751.037837023] [rosbag2_recorder]: Number of messages lost on the transport layer: 344"
+        ]
+      }
+    },
+    "analysis_seconds": 2.5488485620589927
+  },
+  "integration_checks": {
+    "campaign_completed": true,
+    "supervisor_cleanup_without_escalation": true,
+    "supervisor_cleanup_without_errors": true,
+    "controller_cleanup_without_escalation": true,
+    "saved_frame_count_matches_marker": true,
+    "saved_track_count_matches_marker": true,
+    "autonomous_motion_observed": true,
+    "expected_short_budget_stop": true,
+    "required_topics_recorded": true,
+    "no_runtime_exception_markers": true,
+    "no_observed_owned_process_survives": true,
+    "one_rviz_at_most": true
+  },
+  "integration_pass": true,
+  "supervisor": {
+    "started_utc": "2026-10-13T14:39:52Z",
+    "mission_wall_budget_s": 180,
+    "ros_domain": 77,
+    "gz_partition": "tb3_ray_gate_live_20261013",
+    "sensor_policy": "RGB rays only for 3D; raw gyro/accel, wheel velocity and planar lidar for pose; no depth/compass/simulator pose",
+    "source_hashes": {
+      "odometry.py": "2f4a9d76f14164f5b256cfde1b453a821c600dd0036234eef8956868bbce08cd",
+      "tracking_policy.py": "9fba47ed0b174802b4b3e161c89a225ffb95a096f9a7bb67fa1b3fd62060b619",
+      "active_plan.py": "b3c55eeba8971573faaa045afad17451c6bf57a006097fc006f7c3bf9b7cd374",
+      "audit_mission.py": "484579f18b46ab2bfe9e4e12e629b20656f362cea2f59bb4ee6f8dc6a1df1aab",
+      "evaluate_trial.py": "d9143d5e28158944d137916414389e8fccdf5a94b0741901cb13b1fb328c0786",
+      "stable_reconstruct.py": "93abe8086528d9b8b2f798b61fa5dc05b81bfd68fc5f0815c49175e640aaf958",
+      "live_view.py": "322ce0976bfd38b96d7f4111e0b1dfc85dbe5fdacacc648dbf2c2bf52a70ad0e",
+      "autonomy.py": "cf131aa0ff01c9322a51428e95544425b0bd78a866b4a3eab579e7d38cacf09b",
+      "monocular.py": "5ca6b3294795d1ae13324f5df596ba4c9b99e90949a5f1da39b5e9c5235f2310",
+      "launch_mission.py": "ef2ccdd4b2f19f57fa2a2691bc594f2a4ac1c343a5ba8607f36e1df4bcedc535",
+      "finalize_report.py": "d40611d5bd3f0bd020c3734a87c3fdc3757ddf3b7727b95df0a20540d0e6cb3c",
+      "autonomy_async.py": "8670c18bea1049acdb849c27712b67c66aef05994ecc563c3750d95df939864e",
+      "plot_saved_map.py": "7af41569c7639c6f80ee2183e84f2b9ff6215194eced4cb68ef753435b68aea8",
+      "mission.rviz": "4527d73eba59659c9d6bb1ae08b812aa9504ce845ae3724c37249acea8dab24c",
+      "ray_gate.py": "4a3d7841ada7582d14798c8061e2d48f31ecfe89fa34c0674f9b8f4954388d44",
+      "lifecycle.py": "c2fa782d1de15bae2c4e9f83def47c0b20c049f4868fcbcd31ffdfce23b38542",
+      "test_guard.py": "24d6df079e4c6d0f9b38622cbfc0aeac2489ebaed9b88511441135cf7ff62fe7",
+      "geometry.py": "4b8823ee869959f840e7f1b1e1299cf4c2390a18e4fd82e9995d42a8fe91d4ca",
+      "planning.py": "11abdad09b0389c798f1b618f78eccc886a71bc3a475203010e424077fbf2679",
+      "explore.py": "be9e1292b88da588a9818b05b1e022af1ffe561e53890a0c7a6dea1477250180",
+      "stable_cached.py": "428d3002ef785f06086e805f441204f7112a7053ce1a5eeaa3853493d91b2005",
+      "command_guard.py": "7df6445527bb8cab2771a4b575fe5c34732cb3c2793cc1d7028519e0c83ae834",
+      "fusion_math.py": "c17cba7ac96432cdc4b8df0fd2b95b3b87f395c748da3e776bc2b3383e9c9239",
+      "record_qos.yaml": "a1f006616d2c8ee991681c8cf237eb3e6168b0d44e15d0c1a7f218775f40c839",
+      "slam.yaml": "f43c7e9b7ba2962cfa812dc42b5c2cab9545001fa7833061b99bb863b564f65c",
+      "probe.py": "fd17207a0de63bf3a9b2862c97ea4cd3b842137d1b491244c12a2223b45e2b9f",
+      "test_active_plan.py": "81a5ad13d8f8167af79545c85f1cef8a38deece902a332d4a607d6335756319f"
+    },
+    "stage": "stopped",
+    "controller_exit": 0,
+    "result": {
+      "state": "stopped",
+      "reason": "time_budget_reached_incomplete",
+      "terminal_reason": "resource_budget_reached_incomplete",
+      "elapsed_wall_s": 311.8,
+      "travelled_m": 9.645710184208566,
+      "goals_reached": 9,
+      "failed_goals": 0,
+      "recoveries": 0,
+      "map_metrics": {
+        "frontier_groups": 0,
+        "frontier_cells": 0,
+        "view_goals_total": 152,
+        "view_goals_covered": 28,
+        "view_goals_blocked": 0,
+        "view_coverage": 0.18421052631578946,
+        "free_area_m2": 19.822399113869675,
+        "reachable_area_m2": 8.372799625706676,
+        "reason": "return_home"
+      },
+      "current_position": [
+        1.5450403741523318,
+        1.0535627934469902
+      ],
+      "accepted_landmarks": 1681,
+      "new_track_fractions": [
+        778,
+        1.160668380462725
+      ],
+      "checkpoints": [
+        {
+          "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_001",
+          "accepted_landmarks": 778,
+          "test_pixels": {
+            "n": 1904,
+            "median": 0.31571570505446883,
+            "p90": 0.9388097774406485,
+            "max": 5.379033342564062
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 146.29686879797373
+        },
+        {
+          "snapshot": "/home/lpviana/tb3_ray_gate_live_20261013/repeat_01/output/snapshots/async_68950_002",
+          "accepted_landmarks": 1681,
+          "test_pixels": {
+            "n": 3947,
+            "median": 0.2650894256391705,
+            "p90": 0.8160356793324953,
+            "max": 5.379033342564062
+          },
+          "dataset_pixel_gate_pass": true,
+          "fit_seconds": 96.95285607094411
+        }
+      ],
+      "dense_3d_complete": false,
+      "limits": {
+        "wall_seconds": 180,
+        "maximum_frames": 5500
+      },
+      "available_memory_mb": 2768
+    },
+    "cleanup": {
+      "autonomy": {
+        "pid": 68950,
+        "signals": [],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.000016203965060412884
+      },
+      "vision": {
+        "pid": 68810,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.5644709069747478
+      },
+      "record": {
+        "pid": 68811,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.21377917402423918
+      },
+      "viewer": {
+        "pid": 68812,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.2137347989482805
+      },
+      "rviz": {
+        "pid": 68813,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.2638863299507648
+      },
+      "odometry": {
+        "pid": 68624,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.16379530995618552
+      },
+      "slam": {
+        "pid": 68625,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.21394040202721953
+      },
+      "image": {
+        "pid": 68623,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.21388193708844483
+      },
+      "bridge": {
+        "pid": 68622,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.21388767391908914
+      },
+      "audit": {
+        "pid": 68814,
+        "signals": [
+          "SIGINT"
+        ],
+        "escalated": false,
+        "exit_code": 0,
+        "elapsed_s": 0.16373948100954294
+      }
+    },
+    "cleanup_errors": [],
+    "cleanup_escalated": false,
+    "stop_signals_received": [],
+    "finished_utc": "2026-10-13T14:45:52Z"
+  },
+  "controller_cleanup": [
+    {
+      "pid": 68965,
+      "signals": [
+        "SIGINT"
+      ],
+      "escalated": false,
+      "exit_code": 0,
+      "elapsed_s": 0.2140453279716894
+    }
+  ],
+  "save_marker": {
+    "frames": 397,
+    "tracks": 13724,
+    "finished_wall": 1791902750.72402
+  },
+  "remaining_owned_processes": [],
+  "exception_markers": {},
+  "audit_sha256": "96711ce8004ee75995c30a7c8148140164f1b97ed0469b23518b826850a0212d",
+  "scope": "Short engineering integration validation. No complete-map, ground-truth accuracy, sensor-ablation or publication-readiness claim."
+}
