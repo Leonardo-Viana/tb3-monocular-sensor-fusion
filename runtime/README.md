@@ -1,5 +1,12 @@
 # Runtime
 
+As of 13 October, temporal RGB tracking also checks two-view bounded-ray
+feasibility using fused poses (`ray_gate.py`). Optical depth is constrained to
+0.15–6 m and the bidirectional tolerance is 12 pixels at 960 × 540. This heuristic
+can reject useful tracks when pose error is large; it is not a calibrated
+uncertainty test. See the [tracking follow-up](../paper/tracking-report-20261013.md)
+for exact baseline replay, the point-count tradeoff, and one fresh live test.
+
 The revised shutdown path subsequently passed a short live Gazebo integration
 on 12 October; see the [integration report](../paper/integration-report-20261012.md).
 `TB3_MISSION_SECONDS` permits a shorter navigation budget (1–2400 seconds;
@@ -9,7 +16,8 @@ Part of the TurtleBot3 monocular sensor-fusion research project. See the [main R
 
 As of 12 October 2026, this directory includes cooperative shutdown fixes. It is
 no longer byte-identical to the guarded-run archive. Historical archives and
-their metrics are unchanged. Estimator thresholds and triangulation are unchanged.
+their metrics are unchanged. Bundle-adjustment and triangulation thresholds are
+unchanged; the new gate changes temporal correspondence acceptance.
 
 The mission supervisor owns sensor shutdown. Signals request a cooperative
 stop; the vision node completes its final save before destroying the ROS context.

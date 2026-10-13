@@ -19,6 +19,7 @@ from scipy.spatial.transform import Rotation
 from tf2_ros import Buffer,TransformListener
 from geometry import OPTICAL_TO_BASE,triangulate,graph_warp
 from tracking_policy import transition_allowed
+from ray_gate import correspondence_mask
 from lifecycle import atomic_text,run_node
 
 def sec(m):return m.header.stamp.sec+m.header.stamp.nanosec*1e-9
@@ -112,6 +113,9 @@ class Monocular(Node):
             fb=np.linalg.norm(back-old,axis=2).ravel();xy=new.reshape(-1,2)
             ok=status.ravel().astype(bool)&sback.ravel().astype(bool)&(fb<.65)&(err.ravel()<12)
             ok&=(xy[:,0]>12)&(xy[:,0]<948)&(xy[:,1]>12)&(xy[:,1]<528)
+            geometry_ok=correspondence_mask(old.reshape(-1,2),xy,self.tracking_T,T,self.K)
+            self.count['tracking_ray_rejections']+=int(np.sum(ok&~geometry_ok))
+            ok&=geometry_ok
             for k,p,valid in zip(ids,xy,ok):
                 if valid:
                     surviving[k]=p;self.tracks[k]['obs'].append((fid,p.copy()))
