@@ -4,8 +4,12 @@ The files are experimental notes and reports, not a submitted manuscript. No pub
 
 | Material | Location |
 | --- | --- |
-| Latest report with explicit limits | [guarded-repeat-report.md](guarded-repeat-report.md) |
-| Latest saved map | [PNG](guarded-map.png), [PDF](guarded-map.pdf) |
+| Literature review and experimental priorities (14 October) | [English review](literature-review-20261014.md), [BibTeX bibliography](literature-20261014.bib) |
+| Latest tracking test and retained limitations (13 October) | [tracking-report-20261013.md](tracking-report-20261013.md) |
+| Latest saved sparse map (13 October) | [PNG](ray-gate-map-20261013.png), [PLY](../data/ray-gate-map-20261013.ply) |
+| Repeated-run campaign (7 October) | [replication-report-20261007.md](replication-report-20261007.md) |
+| Earlier guarded-run report | [guarded-repeat-report.md](guarded-repeat-report.md) |
+| Earlier guarded-run map | [PNG](guarded-map.png), [PDF](guarded-map.pdf) |
 | Portable result table | [summary](../results/summary.md) |
 | Texture pilot report and manuscript notes | [pilot archive](../tb3_texture_experiment.zip), `paper/` after extraction |
 | Baseline revisit/outlier diagnosis | [baseline archive](../tb3_autonomous_texture.zip), `revisit_audit_20261002/REPORT.md` after extraction |
