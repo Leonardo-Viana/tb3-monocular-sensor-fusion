@@ -2,6 +2,8 @@
 
 **Focused literature review — 14 October 2026**
 
+Follow-up: [practical vision models and planar-LiDAR structural fusion](structural-fusion-design-20261014.md) examines YOLO, SAM, Roboflow, OpenCV, learned local features and the assumptions needed to constrain RGB landmarks using scan lines.
+
 This review supports the TurtleBot3 monocular sensor-fusion experiment. It covers selected foundational papers and recent work available by the review date; it is not an exhaustive systematic review or a reproduced leaderboard. Sources are papers, author project pages, official repositories and Nav2 documentation. Publication venues are distinguished from preprints. Hardware suitability below is an engineering assessment, not a measured result on our Dell.
 
 The target remains a Dell Vostro 3710 with an i5-12400, 8 GiB of RAM and Intel UHD 730, running Gazebo, ROS 2 Jazzy and the full robot pipeline. Inputs are one RGB camera, planar LiDAR, wheel measurements and raw gyroscope/accelerometer measurements. Depth/RGB-D, compass, IMU orientation estimates and simulator truth are excluded from estimation and control. The 3D structure must be supported by monocular observations; planar LiDAR supports localization and navigation.
