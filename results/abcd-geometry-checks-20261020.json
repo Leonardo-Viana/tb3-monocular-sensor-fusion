@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-20T15:22:05.878717+00:00",
+  "kind": "analytic_development_checks",
+  "tests_run": 14,
+  "passed": true,
+  "errors": 0,
+  "failures": 0,
+  "log": "test_behind_camera_rejected (test_structural_constraints.StructuralGeometryTests.test_behind_camera_rejected) ... ok\ntest_competing_structures_are_ambiguous (test_structural_constraints.StructuralGeometryTests.test_competing_structures_are_ambiguous) ... ok\ntest_finite_support_not_infinite_wall (test_structural_constraints.StructuralGeometryTests.test_finite_support_not_infinite_wall) ... ok\ntest_foreground_visual_point_rejects_background_plane (test_structural_constraints.StructuralGeometryTests.test_foreground_visual_point_rejects_background_plane) ... ok\ntest_invalid_calibration_and_nan_rejected (test_structural_constraints.StructuralGeometryTests.test_invalid_calibration_and_nan_rejected) ... ok\ntest_known_height (test_structural_constraints.StructuralGeometryTests.test_known_height) ... ok\ntest_mask_boundary_occlusion_and_duplicate_support (test_structural_constraints.StructuralGeometryTests.test_mask_boundary_occlusion_and_duplicate_support) ... ok\ntest_optical_frame_convention (test_structural_constraints.StructuralGeometryTests.test_optical_frame_convention) ... ok\ntest_parallel_and_grazing_rays_rejected (test_structural_constraints.StructuralGeometryTests.test_parallel_and_grazing_rays_rejected) ... ok\ntest_range_limit_is_euclidean (test_structural_constraints.StructuralGeometryTests.test_range_limit_is_euclidean) ... ok\ntest_ray_scaling_does_not_change_point_or_range (test_structural_constraints.StructuralGeometryTests.test_ray_scaling_does_not_change_point_or_range) ... ok\ntest_rigid_frame_change_invariance (test_structural_constraints.StructuralGeometryTests.test_rigid_frame_change_invariance) ... ok\ntest_tilted_scan_endpoints (test_structural_constraints.StructuralGeometryTests.test_tilted_scan_endpoints) ... ok\ntest_unique_structure_is_only_a_candidate (test_structural_constraints.StructuralGeometryTests.test_unique_structure_is_only_a_candidate) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.033s\n\nOK\n",
+  "host": "394c5a27086e",
+  "target_Dell_benchmark": false,
+  "source_sha256": {
+    "structural_constraints.py": "fbc96a6e8d0674527bf064f4a3828fc013f325024f6d8ed522c1055fa87a4f0c",
+    "test_structural_constraints.py": "f7a18915731f2049af821e5fc81daea82ad99be0ecc32c8e11392cfa71e75ef7"
+  }
+}

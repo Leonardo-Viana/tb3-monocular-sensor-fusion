@@ -1,0 +1,124 @@
+{
+  "created_utc": "2026-10-20T15:22:05.777682+00:00",
+  "kind": "input_readiness_only",
+  "host": "394c5a27086e",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "dependencies": {
+    "numpy": true,
+    "scipy": true,
+    "cv2": false,
+    "torch": false,
+    "rosbag2_py": false,
+    "rclpy": false
+  },
+  "sources": [
+    {
+      "source": "tb3_guarded_trial/output",
+      "exists": true,
+      "blockers": [
+        "raw_sensor_payloads_missing",
+        "keyframes.json_missing",
+        "tracks.json_missing"
+      ],
+      "raw_payloads": [],
+      "bag_metadata_files": 1,
+      "keyframes.json": {
+        "present": false
+      },
+      "tracks.json": {
+        "present": false
+      },
+      "payload_presence_only_pass": false,
+      "notes": [
+        "Metadata alone does not contain sensor measurements.",
+        "Bag contents, complete frame coverage, sensor calibration and time association still require a decoding audit."
+      ]
+    },
+    {
+      "source": "tb3_texture_experiment/runs/textured_seed23_r01/pipeline/output",
+      "exists": true,
+      "blockers": [
+        "raw_sensor_payloads_missing"
+      ],
+      "raw_payloads": [],
+      "bag_metadata_files": 0,
+      "keyframes.json": {
+        "present": true,
+        "sha256": "77b3eaab33ffe7d546f9b9159862a55f9c399a4c2f33f4a0f89abdbc35b90c63"
+      },
+      "tracks.json": {
+        "present": true,
+        "sha256": "d4935ea6d6c06c4aa32233b72877f9c0b4aa495637b124d60f5c2fe89f556e5e"
+      },
+      "schedule_frames": 169,
+      "decoded_jpg_missing": 164,
+      "first_missing_decoded_frame_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "fixed_schedule_decoded_rgb_complete": false,
+      "payload_presence_only_pass": false,
+      "notes": [
+        "Metadata alone does not contain sensor measurements.",
+        "Bag contents, complete frame coverage, sensor calibration and time association still require a decoding audit."
+      ]
+    },
+    {
+      "source": "tb3_texture_experiment/runs/uniform_seed23_r01/pipeline/output",
+      "exists": true,
+      "blockers": [
+        "raw_sensor_payloads_missing"
+      ],
+      "raw_payloads": [],
+      "bag_metadata_files": 0,
+      "keyframes.json": {
+        "present": true,
+        "sha256": "9dfd01485b8dbfdb292e5ebbbcb5f323b604ae46a32aef6b64cd4adee953ac43"
+      },
+      "tracks.json": {
+        "present": true,
+        "sha256": "047b38378302e4249ddc050c235e519001de9684b78a54b89947ed22dbec1afd"
+      },
+      "schedule_frames": 171,
+      "decoded_jpg_missing": 166,
+      "first_missing_decoded_frame_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "fixed_schedule_decoded_rgb_complete": false,
+      "payload_presence_only_pass": false,
+      "notes": [
+        "Metadata alone does not contain sensor measurements.",
+        "Bag contents, complete frame coverage, sensor calibration and time association still require a decoding audit."
+      ]
+    }
+  ],
+  "benchmark_executed": false,
+  "no_robot_or_ros_process_started": true,
+  "implementation_status": "B/C/D integration not completed",
+  "remaining_gates": [
+    "Reconnect target Dell",
+    "Decode and hash all required sensor inputs",
+    "Verify timestamps, intrinsics, distortion and extrinsics",
+    "Implement and validate B/C/D adapters and common evaluator",
+    "Pin model weights/dependencies and freeze run manifest",
+    "Execute all arms on target hardware with identical inputs"
+  ]
+}
