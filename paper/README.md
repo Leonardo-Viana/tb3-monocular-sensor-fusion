@@ -4,6 +4,7 @@ The files are experimental notes and reports, not a submitted manuscript. No pub
 
 | Material | Location |
 | --- | --- |
+| A/B/C/D preparation, analytic checks and offline-device blocker (20 October) | [Preparation status](abcd-preparation-20261020.md), [protocol](../docs/abcd-protocol-20261020.md) |
 | Practical vision models and structural fusion proposal (14 October) | [Engineering addendum](structural-fusion-design-20261014.md) |
 | Literature review and experimental priorities (14 October) | [English review](literature-review-20261014.md), [BibTeX bibliography](literature-20261014.bib) |
 | Latest tracking test and retained limitations (13 October) | [tracking-report-20261013.md](tracking-report-20261013.md) |
